@@ -1,0 +1,60 @@
+schedule:
+  timezone: America/Denver
+  crawl_at: "06:00"
+  email_by: "08:00"
+  weekdays_only: true
+
+delivery:
+  email: brandon.rogers@turbotenant.com
+
+brands:
+  - turbotenant.com
+  - tenantcloud.com
+  - rentler.com
+  - ziprent.com
+  - ipropertymanagement.com
+  - reihub.net
+
+rss_feeds:
+  - name: Marie Haynes (Blog)
+    url: https://www.mariehaynes.com/blog/feed/
+  - name: Marie Haynes
+    url: https://www.mariehaynes.com/feed/
+  - name: Ahrefs Blog
+    url: https://ahrefs.com/blog/feed/
+  - name: Moz Blog
+    url: https://moz.com/posts/rss/blog
+  - name: Semrush Blog
+    url: https://www.semrush.com/blog/feed/
+  - name: Yoast
+    url: https://yoast.com/feed/
+  - name: Rank Math
+    url: https://rankmath.com/feed/
+  - name: SE Ranking
+    url: https://seranking.com/blog/feed/
+  - name: All in One SEO
+    url: https://aioseo.com/feed/
+  - name: Search Engine Roundtable
+    url: http://feeds.seroundtable.com/SearchEngineRoundtable1
+  - name: Search Engine Land
+    url: https://searchengineland.com/feed
+  - name: Search Engine Journal
+    url: https://www.searchenginejournal.com/feed/
+  - name: Aleyda Solis
+    url: https://www.aleydasolis.com/en/feed/
+  - name: Technical SEO
+    url: https://technicalseo.com/insights/feed/
+  - name: seoClarity
+    url: https://www.seoclarity.net/blog/rss.xml
+  - name: Lumar
+    url: https://www.lumar.io/feed/
+  - name: Rio SEO
+    url: https://feeds.feedburner.com/RioSeoNews/?mtag=www_rio_header
+  - name: Dejan Marketing
+    url: https://dejanmarketing.com/feed/
+  - name: Google Blog
+    url: https://blog.google/rss/
+  - name: Google Research Blog
+    url: https://research.google/blog/rss/
+  - name: Google Search Central
+    url: https://feeds.feedburner.com/blogspot/amDG

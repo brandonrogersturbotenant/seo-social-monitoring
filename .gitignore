@@ -20,3 +20,7 @@ credentials.json
 dist/
 build/
 *.log
+
+# Python
+*.egg-info/
+.eggs/
