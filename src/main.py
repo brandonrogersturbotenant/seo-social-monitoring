@@ -27,16 +27,19 @@ def run() -> None:
     new_articles = filter_unprocessed(articles, brain)
     print(f"   {len(new_articles)} are new (not previously processed)")
 
-    # 3. Generate briefing with Claude
+    # 3. Generate briefing with Claude (processes up to 20 articles per run)
     print("\n2. Generating briefing with Claude...")
-    briefing = generate_briefing(new_articles, brain)
+    from src.summarizer import MAX_ARTICLES_PER_RUN
+
+    articles_to_process = new_articles[:MAX_ARTICLES_PER_RUN]
+    briefing = generate_briefing(articles_to_process, brain)
     insights = briefing.get("todays_insights", [])
     print(f"   {len(insights)} actionable insights")
 
     # 4. Update brain
     print("\n3. Updating brain...")
     apply_brain_updates(brain, briefing.get("brain_updates", {}))
-    mark_processed(brain, [a.url for a in new_articles])
+    mark_processed(brain, [a.url for a in articles_to_process])
     save_brain(brain)
     print(f"   Brain now has {len(brain.get('topics', []))} topics")
 

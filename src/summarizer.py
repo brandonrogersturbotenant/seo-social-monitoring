@@ -7,6 +7,7 @@ from src.config import get_env, load_sources
 from src.fetcher import Article
 
 MODEL = "claude-sonnet-4-20250514"
+MAX_ARTICLES_PER_RUN = 20
 
 
 def _build_prompt(articles: list[Article], brain: dict) -> str:
@@ -88,14 +89,26 @@ def generate_briefing(articles: list[Article], brain: dict) -> dict:
             "no_news_summary": "No new articles were published in the last 24 hours across your tracked feeds.",
         }
 
+    if len(articles) > MAX_ARTICLES_PER_RUN:
+        print(f"   Limiting to {MAX_ARTICLES_PER_RUN} most recent articles (of {len(articles)})")
+        articles = articles[:MAX_ARTICLES_PER_RUN]
+
     client = anthropic.Anthropic(api_key=get_env("ANTHROPIC_API_KEY"))
     prompt = _build_prompt(articles, brain)
 
-    response = client.messages.create(
-        model=MODEL,
-        max_tokens=4096,
-        messages=[{"role": "user", "content": prompt}],
-    )
+    try:
+        response = client.messages.create(
+            model=MODEL,
+            max_tokens=4096,
+            messages=[{"role": "user", "content": prompt}],
+        )
+    except anthropic.BadRequestError as exc:
+        if "credit balance" in str(exc).lower():
+            raise RuntimeError(
+                "Anthropic API credit balance is too low. "
+                "Add credits at https://console.anthropic.com/settings/billing"
+            ) from exc
+        raise
 
     raw = response.content[0].text.strip()
     # Handle markdown code fences if Claude wraps JSON
