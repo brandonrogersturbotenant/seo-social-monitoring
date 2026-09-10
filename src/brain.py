@@ -15,7 +15,7 @@ def load_brain() -> dict:
 
 def save_brain(brain: dict) -> None:
     BRAIN_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(BAIN_PATH, "w") as f:
+    with open(BRAIN_PATH, "w") as f:
         json.dump(brain, f, indent=2)
         f.write("\n")
     _generate_learnings_md(brain)
