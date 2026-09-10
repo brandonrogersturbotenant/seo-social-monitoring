@@ -93,7 +93,12 @@ def generate_briefing(articles: list[Article], brain: dict) -> dict:
         print(f"   Limiting to {MAX_ARTICLES_PER_RUN} most recent articles (of {len(articles)})")
         articles = articles[:MAX_ARTICLES_PER_RUN]
 
-    client = anthropic.Anthropic(api_key=get_env("ANTHROPIC_API_KEY"))
+    client_kwargs = {"api_key": get_env("ANTHROPIC_API_KEY")}
+    workspace_id = get_env("ANTHROPIC_WORKSPACE_ID", "")
+    if workspace_id:
+        client_kwargs["default_headers"] = {"anthropic-workspace-id": workspace_id}
+
+    client = anthropic.Anthropic(**client_kwargs)
     prompt = _build_prompt(articles, brain)
 
     try:
@@ -103,10 +108,17 @@ def generate_briefing(articles: list[Article], brain: dict) -> dict:
             messages=[{"role": "user", "content": prompt}],
         )
     except anthropic.BadRequestError as exc:
-        if "credit balance" in str(exc).lower():
+        message = str(exc).lower()
+        if "credit balance" in message:
             raise RuntimeError(
                 "Anthropic API credit balance is too low. "
                 "Add credits at https://console.anthropic.com/settings/billing"
+            ) from exc
+        if "workspace" in message:
+            raise RuntimeError(
+                "This Anthropic API key requires a workspace ID. "
+                "Add GitHub secret ANTHROPIC_WORKSPACE_ID (looks like wrkspc_...), "
+                "or create a workspace-scoped key in the Anthropic console."
             ) from exc
         raise
 

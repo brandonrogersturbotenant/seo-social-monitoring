@@ -21,9 +21,12 @@ Go to your repo → **Settings** → **Secrets and variables** → **Actions** �
 | Secret | Value |
 |--------|-------|
 | `ANTHROPIC_API_KEY` | Your Claude API key (`sk-ant-...`) |
+| `ANTHROPIC_WORKSPACE_ID` | Workspace ID (`wrkspc_...`) — required for non-workspace-scoped keys |
 | `RESEND_API_KEY` | Your Resend API key (`re_...`) |
 | `RESEND_FROM` | Sender email (see note below) |
 | `EMAIL_TO` | `brandon.rogers@turbotenant.com` |
+
+**About `ANTHROPIC_WORKSPACE_ID`:** In [Anthropic Console](https://console.anthropic.com) → Settings → Workspaces, open your workspace and copy the ID (starts with `wrkspc_`). Or create an API key that is scoped to a specific workspace so this secret is not needed.
 
 **About `RESEND_FROM`:** For testing, use `onboarding@resend.dev` (Resend's sandbox sender). For production, verify a domain in [Resend](https://resend.com/domains) (e.g. `turbotenant.com`) and use something like `seo-brief@turbotenant.com`.
 
