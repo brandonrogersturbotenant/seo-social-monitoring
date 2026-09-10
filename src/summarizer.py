@@ -6,7 +6,8 @@ import anthropic
 from src.config import get_env, load_sources
 from src.fetcher import Article
 
-MODEL = "claude-sonnet-4-20250514"
+# Override with ANTHROPIC_MODEL if needed (default: current Sonnet)
+DEFAULT_MODEL = "claude-sonnet-5"
 MAX_ARTICLES_PER_RUN = 20
 
 
@@ -99,14 +100,20 @@ def generate_briefing(articles: list[Article], brain: dict) -> dict:
         client_kwargs["default_headers"] = {"anthropic-workspace-id": workspace_id}
 
     client = anthropic.Anthropic(**client_kwargs)
+    model = get_env("ANTHROPIC_MODEL", DEFAULT_MODEL)
     prompt = _build_prompt(articles, brain)
 
     try:
         response = client.messages.create(
-            model=MODEL,
+            model=model,
             max_tokens=4096,
             messages=[{"role": "user", "content": prompt}],
         )
+    except anthropic.NotFoundError as exc:
+        raise RuntimeError(
+            f"Anthropic model not found: {model}. "
+            "Set ANTHROPIC_MODEL to a valid model ID (e.g. claude-sonnet-5)."
+        ) from exc
     except anthropic.BadRequestError as exc:
         message = str(exc).lower()
         if "credit balance" in message:

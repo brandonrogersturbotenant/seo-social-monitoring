@@ -17,7 +17,9 @@ def load_sources() -> dict:
 
 
 def get_env(name: str, default: str | None = None) -> str:
-    value = os.environ.get(name, default)
-    if value is None:
+    value = os.environ.get(name)
+    if value is None or value.strip() == "":
+        if default is not None:
+            return default
         raise ValueError(f"Missing required environment variable: {name}")
     return value
