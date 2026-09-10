@@ -1,5 +1,99 @@
 {
   "version": 1,
-  "topics": [],
-  "processed_urls": []
+  "topics": [
+    {
+      "id": "ai-search-visibility-and-serp-changes",
+      "title": "AI Overviews / AI Search reshaping SERP measurement & local visibility",
+      "bullets": [
+        "Sep 2026: Google's John Mueller says traditional position 1-10 tracking is 'hard to map' due to generative AI results reshuffling SERPs \u2014 shift KPI focus toward AI Overview presence/citation tracking, especially for YMYL/informational content.",
+        "Sep 2026: Moz research ties AI local recommendation visibility to listings accuracy, review signals, and brand mentions rather than pure backlinks \u2014 treat NAP consistency, review velocity, and earned mentions as ranking factors for AI-driven local search.",
+        "Sep 2026: Google & Uberall running a live webinar (Sept 24, 2026) on upcoming AI Search changes and five local-strategy fixes \u2014 worth attending for local pages strategy."
+      ],
+      "sources": [
+        "Search Engine Roundtable",
+        "Search Engine Journal"
+      ],
+      "last_updated": "2026-09-10",
+      "relevance_to_brands": [
+        "ipropertymanagement.com",
+        "turbotenant.com",
+        "ziprent.com",
+        "rentler.com"
+      ]
+    },
+    {
+      "id": "ai-crawler-traffic-measurement",
+      "title": "AI crawler blocking & referral traffic measurement is unreliable",
+      "bullets": [
+        "Sep 2026: Duane Forrester (SEJ) flags that the commonly cited AI-referral traffic metric has an unknown/incomplete denominator, undermining decisions to block AI crawlers based on 'traffic theft' claims \u2014 recommend waiting for better first-party log-based measurement before blocking bots like GPTBot, ClaudeBot, PerplexityBot."
+      ],
+      "sources": [
+        "Search Engine Journal"
+      ],
+      "last_updated": "2026-09-10",
+      "relevance_to_brands": [
+        "turbotenant.com",
+        "tenantcloud.com",
+        "rentler.com",
+        "ziprent.com",
+        "ipropertymanagement.com",
+        "reihub.net"
+      ]
+    },
+    {
+      "id": "ranking-factors-2026",
+      "title": "2026 Google Ranking Factors Expert Survey (Zyppy/Shepard)",
+      "bullets": [
+        "Sep 2026: Content relevance, backlinks, and content quality rank as top 3 factors per surveyed SEO experts \u2014 reinforces prioritizing original content/data assets and link acquisition over marginal technical fixes when sites are already technically healthy."
+      ],
+      "sources": [
+        "Search Engine Roundtable"
+      ],
+      "last_updated": "2026-09-10",
+      "relevance_to_brands": [
+        "ipropertymanagement.com",
+        "turbotenant.com",
+        "tenantcloud.com",
+        "rentler.com"
+      ]
+    },
+    {
+      "id": "google-business-profile-updates",
+      "title": "Google Business Profile feature updates",
+      "bullets": [
+        "Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally \u2014 use to benchmark and optimize GBP post content types for local/regional brand pages."
+      ],
+      "sources": [
+        "Search Engine Journal"
+      ],
+      "last_updated": "2026-09-10",
+      "relevance_to_brands": [
+        "ziprent.com",
+        "rentler.com",
+        "turbotenant.com"
+      ]
+    }
+  ],
+  "processed_urls": [
+    "https://blog.google/innovation-and-ai/models-and-research/google-labs/dreambeans-expansion-september-2026/",
+    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+    "https://blog.google/products-and-platforms/platforms/android/switch-password-managers/",
+    "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+    "https://blog.google/products/ads-commerce/data-strength-updates/",
+    "https://www.searchenginejournal.com/ask-a-ppc-how-do-i-keep-control-as-platforms-automate-my-account/587340/",
+    "https://www.searchenginejournal.com/everyone-is-quoting-the-same-number-and-getting-different-answers/588659/",
+    "https://www.searchenginejournal.com/google-business-profile-post-view-counts/589128/",
+    "https://www.searchenginejournal.com/google-expands-data-manager-and-adds-uplift-measurement/589025/",
+    "https://www.searchenginejournal.com/google-launches-meridian-geox-globally/589030/",
+    "https://www.searchenginejournal.com/how-local-businesses-can-build-visibility-in-ai-search/588095/",
+    "https://www.searchenginejournal.com/is-your-local-seo-strategy-ready-for-googles-next-ai-updates/589119/",
+    "https://www.searchenginejournal.com/youtube-gives-you-feedback-on-shorts-before-publishing/589088/",
+    "https://www.semrush.com/blog/claude-keyword-research/",
+    "https://www.seroundtable.com/apple-siri-2-5-billion-requests-daily-42060.html",
+    "https://www.seroundtable.com/deez-nuts-google-easter-egg-42062.html",
+    "https://www.seroundtable.com/google-ads-credit-revoked-42049.html",
+    "https://www.seroundtable.com/google-position-1-10-hard-map-42053.html",
+    "https://www.seroundtable.com/google-ranking-factors-expert-survey-42057.html",
+    "https://www.seroundtable.com/recap-09-10-2026-42058.html"
+  ]
 }
