@@ -107,6 +107,8 @@ def generate_briefing(articles: list[Article], brain: dict) -> dict:
         response = client.messages.create(
             model=model,
             max_tokens=4096,
+            # Sonnet 5 enables adaptive thinking by default; disable for structured JSON output
+            thinking={"type": "disabled"},
             messages=[{"role": "user", "content": prompt}],
         )
     except anthropic.NotFoundError as exc:
@@ -129,9 +131,20 @@ def generate_briefing(articles: list[Article], brain: dict) -> dict:
             ) from exc
         raise
 
-    raw = response.content[0].text.strip()
+    raw = _extract_text(response).strip()
     # Handle markdown code fences if Claude wraps JSON
     if raw.startswith("```"):
         raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
 
     return json.loads(raw)
+
+
+def _extract_text(response) -> str:
+    """Pull the assistant text from a Messages response (skip thinking blocks)."""
+    parts = []
+    for block in response.content:
+        if getattr(block, "type", None) == "text":
+            parts.append(block.text)
+    if not parts:
+        raise RuntimeError("Claude returned no text content in the response.")
+    return "\n".join(parts)
