@@ -2,7 +2,7 @@
 
 ## AI Overviews / AI Search reshaping SERP measurement & local visibility
 
-_Last updated: 2026-09-11_
+_Last updated: 2026-09-14_
 
 - Sep 2026: Google's John Mueller says traditional position 1-10 tracking is 'hard to map' due to generative AI results reshuffling SERPs — shift KPI focus toward AI Overview presence/citation tracking, especially for YMYL/informational content.
 - Sep 2026: Moz research ties AI local recommendation visibility to listings accuracy, review signals, and brand mentions rather than pure backlinks — treat NAP consistency, review velocity, and earned mentions as ranking factors for AI-driven local search.
@@ -10,8 +10,26 @@ _Last updated: 2026-09-11_
 - Sep 2026: University of Washington study estimates AI Overviews reduced Wikipedia search referrals by ~5% (Google disputes the figure) — use as a directional benchmark for expected organic decline on high-AIO-exposure informational content.
 - Sep 2026: SEJ/LightSite AI propose 4 first-party signals to connect AI bot crawl attention to human traffic, offering a concrete framework to build AI-era KPI dashboards beyond simple referral counts.
 - Sep 2026: SEJ ties 'query fan-out' (how AI systems expand a query into related sub-queries) to a 2003-era content framework using nested phrase coverage and timely publishing — actionable pattern for structuring content briefs to capture AI-generated long-tail queries.
+- Sep 2026: SEJ publishes a practical framework (Sean McCrohan/Steve Wiideman) for connecting AI search visibility to local leads via citation clicks, calls, prompt libraries, and customer language analysis — build brand-specific prompt libraries and track citation-to-conversion, not just mention frequency.
+- Sep 2026: Google AI Mode continues expanding query fan-out UI with multi-select tools, refinement options, and paginated responses — further validates structuring content briefs around nested sub-queries to capture AI-driven long-tail traffic.
 
 _Relevant to: ipropertymanagement.com, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
+
+## Google AI Contribution Pilot — paying publishers for content used in AI answers
+
+_Last updated: 2026-09-14_
+
+- Sep 2026: Google confirmed via Search Console pilot that it is testing payments to publishers whose content contributes to Gemini, AI Overviews, and AI Mode answers; originally spotted in April 2026, now rolling out more visibly — watch Search Console for pilot access and treat this as a counter-argument to blocking AI crawlers (GPTBot, ClaudeBot, etc.) until impact on this pilot is understood.
+
+_Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com, ipropertymanagement.com, reihub.net_
+
+## Unconfirmed Google ranking volatility events
+
+_Last updated: 2026-09-14_
+
+- Sep 2026: SERoundtable flags a ranking blip around Sept 4, 2026 that appears to have reverted on Sept 13, with no official Google confirmation of either change — treat as noise unless corroborated by rank tracker tools across multiple brand properties.
+
+_Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com, ipropertymanagement.com, reihub.net_
 
 ## Google Search Console reporting bugs/data gaps
 
