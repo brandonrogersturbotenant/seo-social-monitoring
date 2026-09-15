@@ -12,17 +12,55 @@
         "Sep 2026: SEJ/LightSite AI propose 4 first-party signals to connect AI bot crawl attention to human traffic, offering a concrete framework to build AI-era KPI dashboards beyond simple referral counts.",
         "Sep 2026: SEJ ties 'query fan-out' (how AI systems expand a query into related sub-queries) to a 2003-era content framework using nested phrase coverage and timely publishing \u2014 actionable pattern for structuring content briefs to capture AI-generated long-tail queries.",
         "Sep 2026: SEJ publishes a practical framework (Sean McCrohan/Steve Wiideman) for connecting AI search visibility to local leads via citation clicks, calls, prompt libraries, and customer language analysis \u2014 build brand-specific prompt libraries and track citation-to-conversion, not just mention frequency.",
-        "Sep 2026: Google AI Mode continues expanding query fan-out UI with multi-select tools, refinement options, and paginated responses \u2014 further validates structuring content briefs around nested sub-queries to capture AI-driven long-tail traffic."
+        "Sep 2026: Google AI Mode continues expanding query fan-out UI with multi-select tools, refinement options, and paginated responses \u2014 further validates structuring content briefs around nested sub-queries to capture AI-driven long-tail traffic.",
+        "Sep 2026: Google AI Mode is now testing 'Sponsored' text-link ads styled to blend with organic AI response text \u2014 expect further compression of organic/earned visibility in AI Mode and monitor for these placements on core rental/PM queries."
       ],
       "sources": [
         "Search Engine Roundtable",
         "Search Engine Journal"
       ],
-      "last_updated": "2026-09-14",
+      "last_updated": "2026-09-15",
       "relevance_to_brands": [
         "ipropertymanagement.com",
         "rentler.com",
         "tenantcloud.com",
+        "turbotenant.com",
+        "ziprent.com"
+      ]
+    },
+    {
+      "id": "google-ranking-volatility-tracking",
+      "title": "Unconfirmed Google ranking volatility events",
+      "bullets": [
+        "Sep 2026: SERoundtable flags a ranking blip around Sept 4, 2026 that appears to have reverted on Sept 13, with no official Google confirmation of either change \u2014 treat as noise unless corroborated by rank tracker tools across multiple brand properties.",
+        "Sep 2026 (Sept 15): A new, larger volatility spike began the morning of Sept 15 with heavy community chatter and rank-tool movement; SERoundtable suspects the start of an unconfirmed Google update \u2014 monitor daily through the week and cross-reference with GSC performance data before making content/technical changes."
+      ],
+      "sources": [
+        "Search Engine Roundtable"
+      ],
+      "last_updated": "2026-09-15",
+      "relevance_to_brands": [
+        "ipropertymanagement.com",
+        "reihub.net",
+        "rentler.com",
+        "tenantcloud.com",
+        "turbotenant.com",
+        "ziprent.com"
+      ]
+    },
+    {
+      "id": "google-business-profile-updates",
+      "title": "Google Business Profile feature updates",
+      "bullets": [
+        "Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally \u2014 use to benchmark and optimize GBP post content types for local/regional brand pages.",
+        "Sep 2026: Google confirmed delays processing new GBP API access applications \u2014 apply early if planning bulk/location-management integrations for multi-location brand pages."
+      ],
+      "sources": [
+        "Search Engine Journal"
+      ],
+      "last_updated": "2026-09-15",
+      "relevance_to_brands": [
+        "rentler.com",
         "turbotenant.com",
         "ziprent.com"
       ]
@@ -35,25 +73,6 @@
       ],
       "sources": [
         "Search Engine Journal",
-        "Search Engine Roundtable"
-      ],
-      "last_updated": "2026-09-14",
-      "relevance_to_brands": [
-        "turbotenant.com",
-        "tenantcloud.com",
-        "rentler.com",
-        "ziprent.com",
-        "ipropertymanagement.com",
-        "reihub.net"
-      ]
-    },
-    {
-      "id": "google-ranking-volatility-tracking",
-      "title": "Unconfirmed Google ranking volatility events",
-      "bullets": [
-        "Sep 2026: SERoundtable flags a ranking blip around Sept 4, 2026 that appears to have reverted on Sept 13, with no official Google confirmation of either change \u2014 treat as noise unless corroborated by rank tracker tools across multiple brand properties."
-      ],
-      "sources": [
         "Search Engine Roundtable"
       ],
       "last_updated": "2026-09-14",
@@ -120,28 +139,20 @@
         "tenantcloud.com",
         "rentler.com"
       ]
-    },
-    {
-      "id": "google-business-profile-updates",
-      "title": "Google Business Profile feature updates",
-      "bullets": [
-        "Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally \u2014 use to benchmark and optimize GBP post content types for local/regional brand pages."
-      ],
-      "sources": [
-        "Search Engine Journal"
-      ],
-      "last_updated": "2026-09-10",
-      "relevance_to_brands": [
-        "ziprent.com",
-        "rentler.com",
-        "turbotenant.com"
-      ]
     }
   ],
   "processed_urls": [
     "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/",
+    "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/nevada-clean-energy-fund/",
     "https://blog.google/innovation-and-ai/models-and-research/google-labs/dreambeans-expansion-september-2026/",
+    "https://blog.google/innovation-and-ai/models-and-research/google-research/wildfire-tracking-ai/",
     "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+    "https://blog.google/innovation-and-ai/products/gemini-app/household-chores-tips/",
+    "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/",
+    "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+    "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
+    "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+    "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
     "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
     "https://blog.google/innovation-and-ai/technology/xr-ar/three-google-supported-projects-premiere-during-the-83rd-venice-international-film-festival/",
     "https://blog.google/products-and-platforms/platforms/android/switch-password-managers/",
@@ -151,7 +162,9 @@
     "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
     "https://www.mariehaynes.com/how-i-built-algo-update-mcp/",
     "https://www.searchenginejournal.com/ai-isnt-delivering-marketing-efficiency-its-repeating-programmatics-broken-promise/588722/",
+    "https://www.searchenginejournal.com/anthropic-shares-power-prompts-that-improve-ai-results/589448/",
     "https://www.searchenginejournal.com/ask-a-ppc-how-do-i-keep-control-as-platforms-automate-my-account/587340/",
+    "https://www.searchenginejournal.com/chatgpt-ads-arent-paid-search-5-questions-to-answer-before-you-shift-budget/589256/",
     "https://www.searchenginejournal.com/everyone-is-quoting-the-same-number-and-getting-different-answers/588659/",
     "https://www.searchenginejournal.com/google-business-profile-post-view-counts/589128/",
     "https://www.searchenginejournal.com/google-expands-data-manager-and-adds-uplift-measurement/589025/",
@@ -161,24 +174,32 @@
     "https://www.searchenginejournal.com/how-to-connect-ai-search-visibility-to-local-leads/588096/",
     "https://www.searchenginejournal.com/is-your-local-seo-strategy-ready-for-googles-next-ai-updates/589119/",
     "https://www.searchenginejournal.com/matt-mullenweg-apparently-back-in-charge-at-automattic/589251/",
+    "https://www.searchenginejournal.com/meta-published-2-documents-about-muse-and-only-one-mentions-attacks/589071/",
     "https://www.searchenginejournal.com/new-ai-search-seo-kpis-4-signals-that-guide-real-decisions/588605/",
+    "https://www.searchenginejournal.com/selling-on-chatgpt-how-brands-are-driving-revenue-through-ads-geo-webinar/589430/",
     "https://www.searchenginejournal.com/the-2003-framework-that-was-already-doing-query-fan-out/588595/",
     "https://www.searchenginejournal.com/what-wikipedia-reveals-about-ai-overviews-and-web-traffic/589042/",
     "https://www.searchenginejournal.com/youtube-gives-you-feedback-on-shorts-before-publishing/589088/",
     "https://www.semrush.com/blog/claude-keyword-research/",
     "https://www.semrush.com/blog/zero-click-marketing/",
     "https://www.seroundtable.com/apple-siri-2-5-billion-requests-daily-42060.html",
+    "https://www.seroundtable.com/data-google-ads-aug17-bidding-update-42086.html",
     "https://www.seroundtable.com/deez-nuts-google-easter-egg-42062.html",
     "https://www.seroundtable.com/google-ads-credit-revoked-42049.html",
     "https://www.seroundtable.com/google-ads-loyalty-program-members-segments-42050.html",
+    "https://www.seroundtable.com/google-ads-pmax-options-42087.html",
     "https://www.seroundtable.com/google-ads-product-value-optimization-42071.html",
     "https://www.seroundtable.com/google-ads-video-campaign-group-42027.html",
     "https://www.seroundtable.com/google-ads-x-days-left-42063.html",
     "https://www.seroundtable.com/google-adsense-maximize-message-coverage-optimize-consent-message-42069.html",
     "https://www.seroundtable.com/google-ai-mode-more-query-expansions-42074.html",
+    "https://www.seroundtable.com/google-ai-mode-text-link-ads-42082.html",
     "https://www.seroundtable.com/google-ai-overviews-global-general-knowledge-quiz-42054.html",
     "https://www.seroundtable.com/google-al-contribution-pilot-42076.html",
+    "https://www.seroundtable.com/google-august-17-bidding-update-finished-august-27-42090.html",
     "https://www.seroundtable.com/google-blue-more-link-in-shopping-results-42077.html",
+    "https://www.seroundtable.com/google-business-profile-api-application-delays-42085.html",
+    "https://www.seroundtable.com/google-european-ecosystem-carousel-live-42083.html",
     "https://www.seroundtable.com/google-merchant-center-add-product-videos-42064.html",
     "https://www.seroundtable.com/google-position-1-10-hard-map-42053.html",
     "https://www.seroundtable.com/google-ranking-factors-expert-survey-42057.html",
@@ -186,9 +207,11 @@
     "https://www.seroundtable.com/google-search-ranking-update-94-42079.html",
     "https://www.seroundtable.com/google-search-slow-image-thumbnails-42072.html",
     "https://www.seroundtable.com/google-sponsored-result-label-alignment-off-42059.html",
+    "https://www.seroundtable.com/google-update-42091.html",
     "https://www.seroundtable.com/recap-09-10-2026-42058.html",
     "https://www.seroundtable.com/recap-09-11-2026-42070.html",
     "https://www.seroundtable.com/recap-09-14-2026-42078.html",
+    "https://www.seroundtable.com/recap-09-15-2026-42088.html",
     "https://www.seroundtable.com/video-09-11-2026-42061.html"
   ]
 }

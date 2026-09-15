@@ -2,7 +2,7 @@
 
 ## AI Overviews / AI Search reshaping SERP measurement & local visibility
 
-_Last updated: 2026-09-14_
+_Last updated: 2026-09-15_
 
 - Sep 2026: Google's John Mueller says traditional position 1-10 tracking is 'hard to map' due to generative AI results reshuffling SERPs — shift KPI focus toward AI Overview presence/citation tracking, especially for YMYL/informational content.
 - Sep 2026: Moz research ties AI local recommendation visibility to listings accuracy, review signals, and brand mentions rather than pure backlinks — treat NAP consistency, review velocity, and earned mentions as ranking factors for AI-driven local search.
@@ -12,22 +12,33 @@ _Last updated: 2026-09-14_
 - Sep 2026: SEJ ties 'query fan-out' (how AI systems expand a query into related sub-queries) to a 2003-era content framework using nested phrase coverage and timely publishing — actionable pattern for structuring content briefs to capture AI-generated long-tail queries.
 - Sep 2026: SEJ publishes a practical framework (Sean McCrohan/Steve Wiideman) for connecting AI search visibility to local leads via citation clicks, calls, prompt libraries, and customer language analysis — build brand-specific prompt libraries and track citation-to-conversion, not just mention frequency.
 - Sep 2026: Google AI Mode continues expanding query fan-out UI with multi-select tools, refinement options, and paginated responses — further validates structuring content briefs around nested sub-queries to capture AI-driven long-tail traffic.
+- Sep 2026: Google AI Mode is now testing 'Sponsored' text-link ads styled to blend with organic AI response text — expect further compression of organic/earned visibility in AI Mode and monitor for these placements on core rental/PM queries.
 
 _Relevant to: ipropertymanagement.com, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
+
+## Unconfirmed Google ranking volatility events
+
+_Last updated: 2026-09-15_
+
+- Sep 2026: SERoundtable flags a ranking blip around Sept 4, 2026 that appears to have reverted on Sept 13, with no official Google confirmation of either change — treat as noise unless corroborated by rank tracker tools across multiple brand properties.
+- Sep 2026 (Sept 15): A new, larger volatility spike began the morning of Sept 15 with heavy community chatter and rank-tool movement; SERoundtable suspects the start of an unconfirmed Google update — monitor daily through the week and cross-reference with GSC performance data before making content/technical changes.
+
+_Relevant to: ipropertymanagement.com, reihub.net, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
+
+## Google Business Profile feature updates
+
+_Last updated: 2026-09-15_
+
+- Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally — use to benchmark and optimize GBP post content types for local/regional brand pages.
+- Sep 2026: Google confirmed delays processing new GBP API access applications — apply early if planning bulk/location-management integrations for multi-location brand pages.
+
+_Relevant to: rentler.com, turbotenant.com, ziprent.com_
 
 ## Google AI Contribution Pilot — paying publishers for content used in AI answers
 
 _Last updated: 2026-09-14_
 
 - Sep 2026: Google confirmed via Search Console pilot that it is testing payments to publishers whose content contributes to Gemini, AI Overviews, and AI Mode answers; originally spotted in April 2026, now rolling out more visibly — watch Search Console for pilot access and treat this as a counter-argument to blocking AI crawlers (GPTBot, ClaudeBot, etc.) until impact on this pilot is understood.
-
-_Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com, ipropertymanagement.com, reihub.net_
-
-## Unconfirmed Google ranking volatility events
-
-_Last updated: 2026-09-14_
-
-- Sep 2026: SERoundtable flags a ranking blip around Sept 4, 2026 that appears to have reverted on Sept 13, with no official Google confirmation of either change — treat as noise unless corroborated by rank tracker tools across multiple brand properties.
 
 _Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com, ipropertymanagement.com, reihub.net_
 
@@ -54,11 +65,3 @@ _Last updated: 2026-09-10_
 - Sep 2026: Content relevance, backlinks, and content quality rank as top 3 factors per surveyed SEO experts — reinforces prioritizing original content/data assets and link acquisition over marginal technical fixes when sites are already technically healthy.
 
 _Relevant to: ipropertymanagement.com, turbotenant.com, tenantcloud.com, rentler.com_
-
-## Google Business Profile feature updates
-
-_Last updated: 2026-09-10_
-
-- Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally — use to benchmark and optimize GBP post content types for local/regional brand pages.
-
-_Relevant to: ziprent.com, rentler.com, turbotenant.com_
