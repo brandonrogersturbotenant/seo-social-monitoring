@@ -2,7 +2,7 @@
 
 ## AI Overviews / AI Search reshaping SERP measurement & local visibility
 
-_Last updated: 2026-09-15_
+_Last updated: 2026-09-16_
 
 - Sep 2026: Google's John Mueller says traditional position 1-10 tracking is 'hard to map' due to generative AI results reshuffling SERPs — shift KPI focus toward AI Overview presence/citation tracking, especially for YMYL/informational content.
 - Sep 2026: Moz research ties AI local recommendation visibility to listings accuracy, review signals, and brand mentions rather than pure backlinks — treat NAP consistency, review velocity, and earned mentions as ranking factors for AI-driven local search.
@@ -13,8 +13,28 @@ _Last updated: 2026-09-15_
 - Sep 2026: SEJ publishes a practical framework (Sean McCrohan/Steve Wiideman) for connecting AI search visibility to local leads via citation clicks, calls, prompt libraries, and customer language analysis — build brand-specific prompt libraries and track citation-to-conversion, not just mention frequency.
 - Sep 2026: Google AI Mode continues expanding query fan-out UI with multi-select tools, refinement options, and paginated responses — further validates structuring content briefs around nested sub-queries to capture AI-driven long-tail traffic.
 - Sep 2026: Google AI Mode is now testing 'Sponsored' text-link ads styled to blend with organic AI response text — expect further compression of organic/earned visibility in AI Mode and monitor for these placements on core rental/PM queries.
+- Sep 2026 (16th): Ahrefs quantifies AI Overview impact for the first time with real GSC data — France's AIO rollout (July 22, 2026) caused a 23.1% CTR drop for the most exposed domains within 9 days (963 domains tracked, 28-day pre/post window); use as a benchmark to estimate expected CTR decline on highly AIO-exposed informational queries.
+- Sep 2026 (16th): John Mueller reiterated that GSC's AI Mode/AI Overview position and impression reporting will 'evolve over time' as the underlying AI search surfaces evolve — confirms existing guidance to avoid rigid position-tracking KPIs and build flexible, AI-resilient reporting dashboards.
+- Sep 2026 (16th): Google lowered Search Profiles eligibility to 10,000 social followers (from higher prior threshold) and added new article design, single sign-on for managing multiple profiles — consider claiming Search Profiles for named content authors on YMYL/authority content to reinforce E-E-A-T and appear in new profile-linked article displays.
+- Sep 2026 (16th): OpenAI is testing 'Sponsored Agents' in ChatGPT — conversational ads that launch a business-sponsored agent chat after an ad click — an emerging paid-visibility surface parallel to Google AI Mode's sponsored text links; watch for beta access.
 
 _Relevant to: ipropertymanagement.com, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
+
+## Content workflow standards shifting toward validated, original-knowledge content for AI search
+
+_Last updated: 2026-09-16_
+
+- Sep 2026: SEJ (Bill Hunt) proposes moving beyond 'content parity' toward a validated workflow: identify decision gaps competitors haven't addressed, acquire original/proprietary knowledge, and prove claims with evidence before publishing — directly actionable for ipropertymanagement.com legal/YMYL content and reihub.net investment guides, where proprietary data and verifiable claims can differentiate from AI-summarized competitor content.
+
+_Relevant to: ipropertymanagement.com, reihub.net, turbotenant.com_
+
+## Affiliate/partner brand bidding can leak PPC and organic revenue
+
+_Last updated: 2026-09-16_
+
+- Sep 2026: SEJ publishes a detection framework for affiliate brand bidding — build a search test list, capture ad evidence, and match violations to partner accounts — recommend an audit for turbotenant.com and tenantcloud.com given comparison/affiliate site prevalence in PM software niche.
+
+_Relevant to: turbotenant.com, tenantcloud.com_
 
 ## Unconfirmed Google ranking volatility events
 

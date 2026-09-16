@@ -13,19 +13,54 @@
         "Sep 2026: SEJ ties 'query fan-out' (how AI systems expand a query into related sub-queries) to a 2003-era content framework using nested phrase coverage and timely publishing \u2014 actionable pattern for structuring content briefs to capture AI-generated long-tail queries.",
         "Sep 2026: SEJ publishes a practical framework (Sean McCrohan/Steve Wiideman) for connecting AI search visibility to local leads via citation clicks, calls, prompt libraries, and customer language analysis \u2014 build brand-specific prompt libraries and track citation-to-conversion, not just mention frequency.",
         "Sep 2026: Google AI Mode continues expanding query fan-out UI with multi-select tools, refinement options, and paginated responses \u2014 further validates structuring content briefs around nested sub-queries to capture AI-driven long-tail traffic.",
-        "Sep 2026: Google AI Mode is now testing 'Sponsored' text-link ads styled to blend with organic AI response text \u2014 expect further compression of organic/earned visibility in AI Mode and monitor for these placements on core rental/PM queries."
+        "Sep 2026: Google AI Mode is now testing 'Sponsored' text-link ads styled to blend with organic AI response text \u2014 expect further compression of organic/earned visibility in AI Mode and monitor for these placements on core rental/PM queries.",
+        "Sep 2026 (16th): Ahrefs quantifies AI Overview impact for the first time with real GSC data \u2014 France's AIO rollout (July 22, 2026) caused a 23.1% CTR drop for the most exposed domains within 9 days (963 domains tracked, 28-day pre/post window); use as a benchmark to estimate expected CTR decline on highly AIO-exposed informational queries.",
+        "Sep 2026 (16th): John Mueller reiterated that GSC's AI Mode/AI Overview position and impression reporting will 'evolve over time' as the underlying AI search surfaces evolve \u2014 confirms existing guidance to avoid rigid position-tracking KPIs and build flexible, AI-resilient reporting dashboards.",
+        "Sep 2026 (16th): Google lowered Search Profiles eligibility to 10,000 social followers (from higher prior threshold) and added new article design, single sign-on for managing multiple profiles \u2014 consider claiming Search Profiles for named content authors on YMYL/authority content to reinforce E-E-A-T and appear in new profile-linked article displays.",
+        "Sep 2026 (16th): OpenAI is testing 'Sponsored Agents' in ChatGPT \u2014 conversational ads that launch a business-sponsored agent chat after an ad click \u2014 an emerging paid-visibility surface parallel to Google AI Mode's sponsored text links; watch for beta access."
       ],
       "sources": [
         "Search Engine Roundtable",
         "Search Engine Journal"
       ],
-      "last_updated": "2026-09-15",
+      "last_updated": "2026-09-16",
       "relevance_to_brands": [
         "ipropertymanagement.com",
         "rentler.com",
         "tenantcloud.com",
         "turbotenant.com",
         "ziprent.com"
+      ]
+    },
+    {
+      "id": "ai-content-validation-workflow",
+      "title": "Content workflow standards shifting toward validated, original-knowledge content for AI search",
+      "bullets": [
+        "Sep 2026: SEJ (Bill Hunt) proposes moving beyond 'content parity' toward a validated workflow: identify decision gaps competitors haven't addressed, acquire original/proprietary knowledge, and prove claims with evidence before publishing \u2014 directly actionable for ipropertymanagement.com legal/YMYL content and reihub.net investment guides, where proprietary data and verifiable claims can differentiate from AI-summarized competitor content."
+      ],
+      "sources": [
+        "Search Engine Journal"
+      ],
+      "last_updated": "2026-09-16",
+      "relevance_to_brands": [
+        "ipropertymanagement.com",
+        "reihub.net",
+        "turbotenant.com"
+      ]
+    },
+    {
+      "id": "affiliate-brand-bidding-leakage",
+      "title": "Affiliate/partner brand bidding can leak PPC and organic revenue",
+      "bullets": [
+        "Sep 2026: SEJ publishes a detection framework for affiliate brand bidding \u2014 build a search test list, capture ad evidence, and match violations to partner accounts \u2014 recommend an audit for turbotenant.com and tenantcloud.com given comparison/affiliate site prevalence in PM software niche."
+      ],
+      "sources": [
+        "Search Engine Journal"
+      ],
+      "last_updated": "2026-09-16",
+      "relevance_to_brands": [
+        "turbotenant.com",
+        "tenantcloud.com"
       ]
     },
     {
@@ -142,6 +177,8 @@
     }
   ],
   "processed_urls": [
+    "https://ahrefs.com/blog/ai-overviews-france-impact/",
+    "https://blog.google/company-news/outreach-and-initiatives/sustainability/terradot-superpollutants-carbon-removal/",
     "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/",
     "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/nevada-clean-energy-fund/",
     "https://blog.google/innovation-and-ai/models-and-research/google-labs/dreambeans-expansion-september-2026/",
@@ -154,27 +191,35 @@
     "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
     "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
     "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+    "https://blog.google/innovation-and-ai/technology/families/teens-ai-research-findings/",
     "https://blog.google/innovation-and-ai/technology/xr-ar/three-google-supported-projects-premiere-during-the-83rd-venice-international-film-festival/",
     "https://blog.google/products-and-platforms/platforms/android/switch-password-managers/",
+    "https://blog.google/products-and-platforms/products/search/3-new-ways-were-improving-search-profiles-for-publishers/",
     "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+    "https://blog.google/products-and-platforms/products/shopping/google-shopping-updates-holiday-shopping/",
     "https://blog.google/products/ads-commerce/data-strength-updates/",
+    "https://blog.google/products/ads-commerce/rethink-2026/",
     "https://developers.google.com/search/blog/2026/09/search-central-live-india-2026",
     "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
     "https://www.mariehaynes.com/how-i-built-algo-update-mcp/",
     "https://www.searchenginejournal.com/ai-isnt-delivering-marketing-efficiency-its-repeating-programmatics-broken-promise/588722/",
     "https://www.searchenginejournal.com/anthropic-shares-power-prompts-that-improve-ai-results/589448/",
     "https://www.searchenginejournal.com/ask-a-ppc-how-do-i-keep-control-as-platforms-automate-my-account/587340/",
+    "https://www.searchenginejournal.com/beyond-content-parity-building-a-validated-content-workflow-for-ai-search/586184/",
     "https://www.searchenginejournal.com/chatgpt-ads-arent-paid-search-5-questions-to-answer-before-you-shift-budget/589256/",
     "https://www.searchenginejournal.com/everyone-is-quoting-the-same-number-and-getting-different-answers/588659/",
     "https://www.searchenginejournal.com/google-business-profile-post-view-counts/589128/",
     "https://www.searchenginejournal.com/google-expands-data-manager-and-adds-uplift-measurement/589025/",
     "https://www.searchenginejournal.com/google-launches-meridian-geox-globally/589030/",
+    "https://www.searchenginejournal.com/google-search-profiles-10000-followers/589635/",
     "https://www.searchenginejournal.com/google-tests-paying-publishers-for-ai-answers-via-search-console/589414/",
     "https://www.searchenginejournal.com/how-local-businesses-can-build-visibility-in-ai-search/588095/",
     "https://www.searchenginejournal.com/how-to-connect-ai-search-visibility-to-local-leads/588096/",
+    "https://www.searchenginejournal.com/how-to-detect-affiliate-brand-bidding-and-hidden-revenue-leakage-spa/589274/",
     "https://www.searchenginejournal.com/is-your-local-seo-strategy-ready-for-googles-next-ai-updates/589119/",
     "https://www.searchenginejournal.com/matt-mullenweg-apparently-back-in-charge-at-automattic/589251/",
     "https://www.searchenginejournal.com/meta-published-2-documents-about-muse-and-only-one-mentions-attacks/589071/",
+    "https://www.searchenginejournal.com/mit-anthropic-openai-sent-the-same-warning-get-your-evidence-house-in-order-now/589249/",
     "https://www.searchenginejournal.com/new-ai-search-seo-kpis-4-signals-that-guide-real-decisions/588605/",
     "https://www.searchenginejournal.com/selling-on-chatgpt-how-brands-are-driving-revenue-through-ads-geo-webinar/589430/",
     "https://www.searchenginejournal.com/the-2003-framework-that-was-already-doing-query-fan-out/588595/",
@@ -183,12 +228,15 @@
     "https://www.semrush.com/blog/claude-keyword-research/",
     "https://www.semrush.com/blog/zero-click-marketing/",
     "https://www.seroundtable.com/apple-siri-2-5-billion-requests-daily-42060.html",
+    "https://www.seroundtable.com/bing-sidebar-shopping-filters-42084.html",
     "https://www.seroundtable.com/data-google-ads-aug17-bidding-update-42086.html",
     "https://www.seroundtable.com/deez-nuts-google-easter-egg-42062.html",
     "https://www.seroundtable.com/google-ads-credit-revoked-42049.html",
     "https://www.seroundtable.com/google-ads-loyalty-program-members-segments-42050.html",
+    "https://www.seroundtable.com/google-ads-multi-source-conversions-42080.html",
     "https://www.seroundtable.com/google-ads-pmax-options-42087.html",
     "https://www.seroundtable.com/google-ads-product-value-optimization-42071.html",
+    "https://www.seroundtable.com/google-ads-spend-benchmarks-report-competitors-42097.html",
     "https://www.seroundtable.com/google-ads-video-campaign-group-42027.html",
     "https://www.seroundtable.com/google-ads-x-days-left-42063.html",
     "https://www.seroundtable.com/google-adsense-maximize-message-coverage-optimize-consent-message-42069.html",
@@ -200,18 +248,25 @@
     "https://www.seroundtable.com/google-blue-more-link-in-shopping-results-42077.html",
     "https://www.seroundtable.com/google-business-profile-api-application-delays-42085.html",
     "https://www.seroundtable.com/google-european-ecosystem-carousel-live-42083.html",
+    "https://www.seroundtable.com/google-images-suggested-by-al-42096.html",
     "https://www.seroundtable.com/google-merchant-center-add-product-videos-42064.html",
+    "https://www.seroundtable.com/google-merchant-center-ai-updates-42095.html",
     "https://www.seroundtable.com/google-position-1-10-hard-map-42053.html",
+    "https://www.seroundtable.com/google-product-listings-direct-merchant-42089.html",
     "https://www.seroundtable.com/google-ranking-factors-expert-survey-42057.html",
+    "https://www.seroundtable.com/google-search-console-ai-reporting-change-42099.html",
     "https://www.seroundtable.com/google-search-console-indexing-report-missing-data-42073.html",
+    "https://www.seroundtable.com/google-search-profiles-updates-42098.html",
     "https://www.seroundtable.com/google-search-ranking-update-94-42079.html",
     "https://www.seroundtable.com/google-search-slow-image-thumbnails-42072.html",
     "https://www.seroundtable.com/google-sponsored-result-label-alignment-off-42059.html",
     "https://www.seroundtable.com/google-update-42091.html",
+    "https://www.seroundtable.com/openai-chatgpt-sponsored-agents-42104.html",
     "https://www.seroundtable.com/recap-09-10-2026-42058.html",
     "https://www.seroundtable.com/recap-09-11-2026-42070.html",
     "https://www.seroundtable.com/recap-09-14-2026-42078.html",
     "https://www.seroundtable.com/recap-09-15-2026-42088.html",
+    "https://www.seroundtable.com/recap-09-16-2026-42100.html",
     "https://www.seroundtable.com/video-09-11-2026-42061.html"
   ]
 }
