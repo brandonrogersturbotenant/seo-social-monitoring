@@ -2,7 +2,7 @@
 
 ## AI Overviews / AI Search reshaping SERP measurement & local visibility
 
-_Last updated: 2026-09-16_
+_Last updated: 2026-09-17_
 
 - Sep 2026: Google's John Mueller says traditional position 1-10 tracking is 'hard to map' due to generative AI results reshuffling SERPs — shift KPI focus toward AI Overview presence/citation tracking, especially for YMYL/informational content.
 - Sep 2026: Moz research ties AI local recommendation visibility to listings accuracy, review signals, and brand mentions rather than pure backlinks — treat NAP consistency, review velocity, and earned mentions as ranking factors for AI-driven local search.
@@ -17,8 +17,27 @@ _Last updated: 2026-09-16_
 - Sep 2026 (16th): John Mueller reiterated that GSC's AI Mode/AI Overview position and impression reporting will 'evolve over time' as the underlying AI search surfaces evolve — confirms existing guidance to avoid rigid position-tracking KPIs and build flexible, AI-resilient reporting dashboards.
 - Sep 2026 (16th): Google lowered Search Profiles eligibility to 10,000 social followers (from higher prior threshold) and added new article design, single sign-on for managing multiple profiles — consider claiming Search Profiles for named content authors on YMYL/authority content to reinforce E-E-A-T and appear in new profile-linked article displays.
 - Sep 2026 (16th): OpenAI is testing 'Sponsored Agents' in ChatGPT — conversational ads that launch a business-sponsored agent chat after an ad click — an emerging paid-visibility surface parallel to Google AI Mode's sponsored text links; watch for beta access.
+- Sep 2026 (17th): Duane Forrester (SEJ) predicts the ranking surface and the earning surface will fully decouple by 2027, making current visibility reporting largely unverifiable — accelerates need for citation-to-conversion KPIs over position tracking across all brand properties.
+- Sep 2026 (17th): SEJ flags that AI tools/agents can defer to stale or incorrect tool-call data even when the underlying model 'knows' the correct answer — periodically re-verify AI-cited facts (pricing, legal/compliance info) against current live pages rather than trusting a single AI answer capture.
+- Sep 2026 (17th): Audit of Reddit's AI search shows it disproportionately surfaces already-popular, formally-worded comments over experiential/anecdotal ones — when running community seeding/monitoring in landlord/renter subreddits, prioritize concise, authoritative, well-upvoted responses to increase odds of AI summarization pickup.
 
-_Relevant to: ipropertymanagement.com, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
+_Relevant to: ipropertymanagement.com, reihub.net, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
+
+## Google Search Profile badges — new publisher/creator follow mechanism
+
+_Last updated: 2026-09-17_
+
+- Sep 2026 (16th-17th): Google published implementation guidance and a widget for a 'Search Profile badge' that lets users follow creators/publishers directly from a website into Search — combined with the lowered 10K-follower eligibility threshold noted previously, add badges to named-author pages on ipropertymanagement.com and reihub.net to capture follow-based visibility as publisher traffic patterns shift.
+
+_Relevant to: ipropertymanagement.com, reihub.net, turbotenant.com_
+
+## On-page product/feature copy remains necessary despite AI feeds and schema
+
+_Last updated: 2026-09-17_
+
+- Sep 2026: SEJ argues product page narrative copy still builds trust and fills information gaps that structured feeds/schema cannot address for AI shopping agents — audit turbotenant.com and tenantcloud.com pricing/feature pages to confirm differentiator messaging exists in prose, not just schema markup, so AI agents summarizing the product don't default to generic feed data.
+
+_Relevant to: turbotenant.com, tenantcloud.com_
 
 ## Content workflow standards shifting toward validated, original-knowledge content for AI search
 
