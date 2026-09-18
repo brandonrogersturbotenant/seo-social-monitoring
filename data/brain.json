@@ -20,19 +20,81 @@
         "Sep 2026 (16th): OpenAI is testing 'Sponsored Agents' in ChatGPT \u2014 conversational ads that launch a business-sponsored agent chat after an ad click \u2014 an emerging paid-visibility surface parallel to Google AI Mode's sponsored text links; watch for beta access.",
         "Sep 2026 (17th): Duane Forrester (SEJ) predicts the ranking surface and the earning surface will fully decouple by 2027, making current visibility reporting largely unverifiable \u2014 accelerates need for citation-to-conversion KPIs over position tracking across all brand properties.",
         "Sep 2026 (17th): SEJ flags that AI tools/agents can defer to stale or incorrect tool-call data even when the underlying model 'knows' the correct answer \u2014 periodically re-verify AI-cited facts (pricing, legal/compliance info) against current live pages rather than trusting a single AI answer capture.",
-        "Sep 2026 (17th): Audit of Reddit's AI search shows it disproportionately surfaces already-popular, formally-worded comments over experiential/anecdotal ones \u2014 when running community seeding/monitoring in landlord/renter subreddits, prioritize concise, authoritative, well-upvoted responses to increase odds of AI summarization pickup."
+        "Sep 2026 (17th): Audit of Reddit's AI search shows it disproportionately surfaces already-popular, formally-worded comments over experiential/anecdotal ones \u2014 when running community seeding/monitoring in landlord/renter subreddits, prioritize concise, authoritative, well-upvoted responses to increase odds of AI summarization pickup.",
+        "Sep 2026 (18th): Google is testing an AI Mode button embedded directly in the SERP search bar (not just the homepage), further funneling users toward AI Mode mid-session \u2014 continue prioritizing AI citation/mention tracking over position tracking for informational queries on ipropertymanagement.com and reihub.net.",
+        "Sep 2026 (18th): Bing has also begun showing human-verification challenges before returning results, mirroring Google's anti-bot measures \u2014 expect further degradation of third-party rank-tracker reliability on Bing as well as Google."
       ],
       "sources": [
         "Search Engine Roundtable",
         "Search Engine Journal"
       ],
-      "last_updated": "2026-09-17",
+      "last_updated": "2026-09-18",
       "relevance_to_brands": [
         "ipropertymanagement.com",
         "reihub.net",
         "rentler.com",
         "tenantcloud.com",
         "turbotenant.com",
+        "ziprent.com"
+      ]
+    },
+    {
+      "id": "google-ranking-volatility-tracking",
+      "title": "Unconfirmed Google ranking volatility events",
+      "bullets": [
+        "Sep 2026: SERoundtable flags a ranking blip around Sept 4, 2026 that appears to have reverted on Sept 13, with no official Google confirmation of either change \u2014 treat as noise unless corroborated by rank tracker tools across multiple brand properties.",
+        "Sep 2026 (Sept 15): A new, larger volatility spike began the morning of Sept 15 with heavy community chatter and rank-tool movement; SERoundtable suspects the start of an unconfirmed Google update \u2014 monitor daily through the week and cross-reference with GSC performance data before making content/technical changes.",
+        "Sep 2026 (18th): SERoundtable now links the volatility spikes since Sept 4/12/15 to Google's stepped-up blocking of scrapers, rank-tracking tools, and third-party bots rather than a core algorithm update \u2014 treat recent third-party rank-tracker swings with added skepticism and validate against GSC clicks/impressions before making changes to any brand site."
+      ],
+      "sources": [
+        "Search Engine Roundtable"
+      ],
+      "last_updated": "2026-09-18",
+      "relevance_to_brands": [
+        "ipropertymanagement.com",
+        "reihub.net",
+        "rentler.com",
+        "tenantcloud.com",
+        "turbotenant.com",
+        "ziprent.com"
+      ]
+    },
+    {
+      "id": "ai-crawler-traffic-measurement",
+      "title": "AI crawler blocking & referral traffic measurement is unreliable",
+      "bullets": [
+        "Sep 2026: Duane Forrester (SEJ) flags that the commonly cited AI-referral traffic metric has an unknown/incomplete denominator, undermining decisions to block AI crawlers based on 'traffic theft' claims \u2014 recommend waiting for better first-party log-based measurement before blocking bots like GPTBot, ClaudeBot, PerplexityBot.",
+        "Sep 2026 (18th): Cloudflare's Bot Preference Sync governs AI crawler access by category rather than individual bot, meaning nuanced 'allow this bot, block that one' policies may not translate correctly \u2014 review Cloudflare bot settings on any brand property before assuming granular control is preserved.",
+        "Sep 2026 (18th): Semrush confirms Cloudflare's 'Disallow AI Training' toggle exempts Googlebot and Bing won't honor Cloudflare's preference signals until early 2027 \u2014 don't assume a single CDN-level setting uniformly controls AI crawler access across Google, Bing, and AI labs; verify per-engine behavior.",
+        "Sep 2026 (18th): SEJ frames Google's AI Contribution Pilot, Cloudflare's pay-per-crawl model, and Microsoft's approach as three diverging, incompatible publisher payment/control systems \u2014 track all three separately since a blocking or opt-in decision made for one system doesn't apply to the others."
+      ],
+      "sources": [
+        "Search Engine Journal"
+      ],
+      "last_updated": "2026-09-18",
+      "relevance_to_brands": [
+        "ipropertymanagement.com",
+        "reihub.net",
+        "rentler.com",
+        "tenantcloud.com",
+        "turbotenant.com",
+        "ziprent.com"
+      ]
+    },
+    {
+      "id": "technical-indexing-canonical-hygiene",
+      "title": "Cross-domain canonical misconfiguration can cause silent de-indexing",
+      "bullets": [
+        "Sep 2026 (18th): John Mueller addressed a cross-domain canonical de-indexing report, outlining proactive audit steps publishers can take to catch canonical errors before they escalate \u2014 run a canonical tag audit across all brand domains, particularly any syndicated content, partner integrations, or shared templates between turbotenant.com/tenantcloud.com/rentler.com/ziprent.com."
+      ],
+      "sources": [
+        "Search Engine Journal"
+      ],
+      "last_updated": "2026-09-18",
+      "relevance_to_brands": [
+        "turbotenant.com",
+        "tenantcloud.com",
+        "rentler.com",
         "ziprent.com"
       ]
     },
@@ -100,26 +162,6 @@
       ]
     },
     {
-      "id": "google-ranking-volatility-tracking",
-      "title": "Unconfirmed Google ranking volatility events",
-      "bullets": [
-        "Sep 2026: SERoundtable flags a ranking blip around Sept 4, 2026 that appears to have reverted on Sept 13, with no official Google confirmation of either change \u2014 treat as noise unless corroborated by rank tracker tools across multiple brand properties.",
-        "Sep 2026 (Sept 15): A new, larger volatility spike began the morning of Sept 15 with heavy community chatter and rank-tool movement; SERoundtable suspects the start of an unconfirmed Google update \u2014 monitor daily through the week and cross-reference with GSC performance data before making content/technical changes."
-      ],
-      "sources": [
-        "Search Engine Roundtable"
-      ],
-      "last_updated": "2026-09-15",
-      "relevance_to_brands": [
-        "ipropertymanagement.com",
-        "reihub.net",
-        "rentler.com",
-        "tenantcloud.com",
-        "turbotenant.com",
-        "ziprent.com"
-      ]
-    },
-    {
       "id": "google-business-profile-updates",
       "title": "Google Business Profile feature updates",
       "bullets": [
@@ -176,25 +218,6 @@
       ]
     },
     {
-      "id": "ai-crawler-traffic-measurement",
-      "title": "AI crawler blocking & referral traffic measurement is unreliable",
-      "bullets": [
-        "Sep 2026: Duane Forrester (SEJ) flags that the commonly cited AI-referral traffic metric has an unknown/incomplete denominator, undermining decisions to block AI crawlers based on 'traffic theft' claims \u2014 recommend waiting for better first-party log-based measurement before blocking bots like GPTBot, ClaudeBot, PerplexityBot."
-      ],
-      "sources": [
-        "Search Engine Journal"
-      ],
-      "last_updated": "2026-09-10",
-      "relevance_to_brands": [
-        "turbotenant.com",
-        "tenantcloud.com",
-        "rentler.com",
-        "ziprent.com",
-        "ipropertymanagement.com",
-        "reihub.net"
-      ]
-    },
-    {
       "id": "ranking-factors-2026",
       "title": "2026 Google Ranking Factors Expert Survey (Zyppy/Shepard)",
       "bullets": [
@@ -227,6 +250,8 @@
     "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
     "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
     "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+    "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+    "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
     "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
     "https://blog.google/innovation-and-ai/technology/families/teens-ai-research-findings/",
     "https://blog.google/innovation-and-ai/technology/xr-ar/three-google-supported-projects-premiere-during-the-83rd-venice-international-film-festival/",
@@ -234,6 +259,7 @@
     "https://blog.google/products-and-platforms/products/search/3-new-ways-were-improving-search-profiles-for-publishers/",
     "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
     "https://blog.google/products-and-platforms/products/shopping/google-shopping-updates-holiday-shopping/",
+    "https://blog.google/products/ads-commerce/ads-decoded-podcast-data-strength/",
     "https://blog.google/products/ads-commerce/data-strength-updates/",
     "https://blog.google/products/ads-commerce/rethink-2026/",
     "https://blog.google/waze/waze-forgotten-island/",
@@ -247,14 +273,18 @@
     "https://www.searchenginejournal.com/ask-an-seo-does-product-page-copy-matter-since-agents-read-feeds/585090/",
     "https://www.searchenginejournal.com/beyond-content-parity-building-a-validated-content-workflow-for-ai-search/586184/",
     "https://www.searchenginejournal.com/chatgpt-ads-arent-paid-search-5-questions-to-answer-before-you-shift-budget/589256/",
+    "https://www.searchenginejournal.com/cloudflare-will-write-your-robots-txt-and-it-has-a-point/589262/",
     "https://www.searchenginejournal.com/everyone-is-quoting-the-same-number-and-getting-different-answers/588659/",
     "https://www.searchenginejournal.com/google-business-profile-post-view-counts/589128/",
     "https://www.searchenginejournal.com/google-expands-data-manager-and-adds-uplift-measurement/589025/",
     "https://www.searchenginejournal.com/google-launches-meridian-geox-globally/589030/",
+    "https://www.searchenginejournal.com/google-responds-to-cross-domain-canonical-de-indexing-report/589917/",
     "https://www.searchenginejournal.com/google-search-profile-badges-expose-the-publisher-traffic-crisis/589724/",
     "https://www.searchenginejournal.com/google-search-profiles-10000-followers/589635/",
     "https://www.searchenginejournal.com/google-tests-paying-publishers-for-ai-answers-via-search-console/589414/",
     "https://www.searchenginejournal.com/google-ucp-update-lets-merchants-enable-cart-transfer-to-site/589713/",
+    "https://www.searchenginejournal.com/google-updates-mediapartners-google-crawler-guidance-less-about-adsense/589821/",
+    "https://www.searchenginejournal.com/googles-ai-payment-pilot-vs-cloudflare-and-microsoft-models/589636/",
     "https://www.searchenginejournal.com/how-local-businesses-can-build-visibility-in-ai-search/588095/",
     "https://www.searchenginejournal.com/how-to-connect-ai-search-visibility-to-local-leads/588096/",
     "https://www.searchenginejournal.com/how-to-detect-affiliate-brand-bidding-and-hidden-revenue-leakage-spa/589274/",
@@ -264,18 +294,23 @@
     "https://www.searchenginejournal.com/meta-published-2-documents-about-muse-and-only-one-mentions-attacks/589071/",
     "https://www.searchenginejournal.com/mit-anthropic-openai-sent-the-same-warning-get-your-evidence-house-in-order-now/589249/",
     "https://www.searchenginejournal.com/new-ai-search-seo-kpis-4-signals-that-guide-real-decisions/588605/",
+    "https://www.searchenginejournal.com/pew-ai-job-loss-expectations-survey/589836/",
     "https://www.searchenginejournal.com/reddit-ai-search-picks-already-popular-comments-audit-finds/589771/",
     "https://www.searchenginejournal.com/selling-on-chatgpt-how-brands-are-driving-revenue-through-ads-geo-webinar/589430/",
+    "https://www.searchenginejournal.com/state-of-search-2027-what-to-stop-measure-fund/589617/",
     "https://www.searchenginejournal.com/the-2003-framework-that-was-already-doing-query-fan-out/588595/",
     "https://www.searchenginejournal.com/what-wikipedia-reveals-about-ai-overviews-and-web-traffic/589042/",
     "https://www.searchenginejournal.com/youtube-gives-you-feedback-on-shorts-before-publishing/589088/",
     "https://www.semrush.com/blog/claude-keyword-research/",
+    "https://www.semrush.com/blog/cloudfare-blocks-ai-training/",
     "https://www.semrush.com/blog/my-editing-approaches-framework/",
     "https://www.semrush.com/blog/zero-click-marketing/",
     "https://www.seroundtable.com/apple-siri-2-5-billion-requests-daily-42060.html",
     "https://www.seroundtable.com/bing-sidebar-shopping-filters-42084.html",
+    "https://www.seroundtable.com/bing-verify-you-are-human-42102.html",
     "https://www.seroundtable.com/data-google-ads-aug17-bidding-update-42086.html",
     "https://www.seroundtable.com/deez-nuts-google-easter-egg-42062.html",
+    "https://www.seroundtable.com/google-ads-commerce-audience-sharing-42109.html",
     "https://www.seroundtable.com/google-ads-credit-revoked-42049.html",
     "https://www.seroundtable.com/google-ads-loyalty-program-members-segments-42050.html",
     "https://www.seroundtable.com/google-ads-multi-source-conversions-42080.html",
@@ -285,20 +320,26 @@
     "https://www.seroundtable.com/google-ads-video-campaign-group-42027.html",
     "https://www.seroundtable.com/google-ads-x-days-left-42063.html",
     "https://www.seroundtable.com/google-adsense-maximize-message-coverage-optimize-consent-message-42069.html",
+    "https://www.seroundtable.com/google-adult-products-labels-42116.html",
     "https://www.seroundtable.com/google-ai-mode-more-query-expansions-42074.html",
     "https://www.seroundtable.com/google-ai-mode-text-link-ads-42082.html",
     "https://www.seroundtable.com/google-ai-overviews-global-general-knowledge-quiz-42054.html",
     "https://www.seroundtable.com/google-al-contribution-pilot-42076.html",
     "https://www.seroundtable.com/google-august-17-bidding-update-finished-august-27-42090.html",
+    "https://www.seroundtable.com/google-blocking-scrapers-and-tracking-tools-42118.html",
     "https://www.seroundtable.com/google-blue-more-link-in-shopping-results-42077.html",
     "https://www.seroundtable.com/google-business-profile-api-application-delays-42085.html",
+    "https://www.seroundtable.com/google-drops-free-product-listings-eea-42113.html",
     "https://www.seroundtable.com/google-european-ecosystem-carousel-live-42083.html",
     "https://www.seroundtable.com/google-images-suggested-by-al-42096.html",
+    "https://www.seroundtable.com/google-local-business-query-units-42115.html",
     "https://www.seroundtable.com/google-merchant-center-add-product-videos-42064.html",
     "https://www.seroundtable.com/google-merchant-center-ai-updates-42095.html",
+    "https://www.seroundtable.com/google-merchant-center-api-supports-product-reviews-42101.html",
     "https://www.seroundtable.com/google-position-1-10-hard-map-42053.html",
     "https://www.seroundtable.com/google-product-listings-direct-merchant-42089.html",
     "https://www.seroundtable.com/google-ranking-factors-expert-survey-42057.html",
+    "https://www.seroundtable.com/google-search-bar-testing-ai-mode-button-42110.html",
     "https://www.seroundtable.com/google-search-console-ai-reporting-change-42099.html",
     "https://www.seroundtable.com/google-search-console-indexing-report-missing-data-42073.html",
     "https://www.seroundtable.com/google-search-profile-badge-42106.html",
@@ -313,7 +354,9 @@
     "https://www.seroundtable.com/recap-09-14-2026-42078.html",
     "https://www.seroundtable.com/recap-09-15-2026-42088.html",
     "https://www.seroundtable.com/recap-09-16-2026-42100.html",
+    "https://www.seroundtable.com/recap-09-18-2026-42117.html",
     "https://www.seroundtable.com/video-09-11-2026-42061.html",
+    "https://www.seroundtable.com/video-09-18-2026-42112.html",
     "https://yoast.com/prompting-guide-ai-website-builders/"
   ]
 }
