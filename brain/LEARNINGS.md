@@ -2,7 +2,7 @@
 
 ## AI Overviews / AI Search reshaping SERP measurement & local visibility
 
-_Last updated: 2026-09-18_
+_Last updated: 2026-09-21_
 
 - Sep 2026: Google's John Mueller says traditional position 1-10 tracking is 'hard to map' due to generative AI results reshuffling SERPs — shift KPI focus toward AI Overview presence/citation tracking, especially for YMYL/informational content.
 - Sep 2026: Moz research ties AI local recommendation visibility to listings accuracy, review signals, and brand mentions rather than pure backlinks — treat NAP consistency, review velocity, and earned mentions as ranking factors for AI-driven local search.
@@ -22,8 +22,35 @@ _Last updated: 2026-09-18_
 - Sep 2026 (17th): Audit of Reddit's AI search shows it disproportionately surfaces already-popular, formally-worded comments over experiential/anecdotal ones — when running community seeding/monitoring in landlord/renter subreddits, prioritize concise, authoritative, well-upvoted responses to increase odds of AI summarization pickup.
 - Sep 2026 (18th): Google is testing an AI Mode button embedded directly in the SERP search bar (not just the homepage), further funneling users toward AI Mode mid-session — continue prioritizing AI citation/mention tracking over position tracking for informational queries on ipropertymanagement.com and reihub.net.
 - Sep 2026 (18th): Bing has also begun showing human-verification challenges before returning results, mirroring Google's anti-bot measures — expect further degradation of third-party rank-tracker reliability on Bing as well as Google.
+- Sep 2026 (21st): Independent research cited by SEJ confirms Google AI Mode both reduces click volume to publisher sites and delivers a subjectively poor user experience — strengthens the case for de-prioritizing CTR/position KPIs on AI-Mode-exposed queries in favor of citation tracking across all six brand properties.
+- Sep 2026 (21st): SEJ Live session details concrete local-page tactics for AI citation: write in clean citable passages, ensure descriptive alt text (AI reads it directly), and only publish verifiable numbers since AI systems quote stats verbatim — apply to turbotenant.com, rentler.com, and ziprent.com local/city landing pages.
+- Sep 2026 (21st): Semrush released a hands-on workflow combining Semrush data with Claude Code to find and target the specific pages AI engines cite for brand-fact queries — pilot on ipropertymanagement.com and reihub.net to move from passive mention-tracking to active citation-acquisition outreach.
 
 _Relevant to: ipropertymanagement.com, reihub.net, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
+
+## AI agent resource discovery (ARD) tooling and standards still fragmented
+
+_Last updated: 2026-09-21_
+
+- Sep 2026 (21st): Google Lighthouse 13.5 shipped an audit for AI agent resource discovery, but its checks diverge from the community-proposed ARD standard — use Lighthouse as an early diagnostic on turbotenant.com/tenantcloud.com/rentler.com/ziprent.com but don't treat a passing score as compliance with the eventual standard; re-audit once ARD finalizes.
+
+_Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com_
+
+## Agentic commerce (AI-driven checkout/purchasing) remains unproven at scale
+
+_Last updated: 2026-09-21_
+
+- Sep 2026 (21st): SEJ reports Visa, Mastercard, PayPal, and Stripe cannot name a single live agentic-commerce merchant, and Google names only three — low-priority/watch-only for turbotenant.com and tenantcloud.com subscription checkout flows; no urgent build needed.
+
+_Relevant to: turbotenant.com, tenantcloud.com_
+
+## Unreviewed AI-generated content creating quality/workflow risk
+
+_Last updated: 2026-09-21_
+
+- Sep 2026 (21st): Shopify CEO publicly warns unreviewed AI output ('slop grenades') is shifting cleanup burden to coworkers, echoed by rising freelance demand for AI-cleanup work — mandate human editorial review gates for AI-assisted content across ipropertymanagement.com, reihub.net, and help-center/blog content on turbotenant.com and tenantcloud.com to protect E-E-A-T and avoid quality regressions.
+
+_Relevant to: ipropertymanagement.com, reihub.net, turbotenant.com, tenantcloud.com_
 
 ## Unconfirmed Google ranking volatility events
 
