@@ -25,19 +25,59 @@
         "Sep 2026 (18th): Bing has also begun showing human-verification challenges before returning results, mirroring Google's anti-bot measures \u2014 expect further degradation of third-party rank-tracker reliability on Bing as well as Google.",
         "Sep 2026 (21st): Independent research cited by SEJ confirms Google AI Mode both reduces click volume to publisher sites and delivers a subjectively poor user experience \u2014 strengthens the case for de-prioritizing CTR/position KPIs on AI-Mode-exposed queries in favor of citation tracking across all six brand properties.",
         "Sep 2026 (21st): SEJ Live session details concrete local-page tactics for AI citation: write in clean citable passages, ensure descriptive alt text (AI reads it directly), and only publish verifiable numbers since AI systems quote stats verbatim \u2014 apply to turbotenant.com, rentler.com, and ziprent.com local/city landing pages.",
-        "Sep 2026 (21st): Semrush released a hands-on workflow combining Semrush data with Claude Code to find and target the specific pages AI engines cite for brand-fact queries \u2014 pilot on ipropertymanagement.com and reihub.net to move from passive mention-tracking to active citation-acquisition outreach."
+        "Sep 2026 (21st): Semrush released a hands-on workflow combining Semrush data with Claude Code to find and target the specific pages AI engines cite for brand-fact queries \u2014 pilot on ipropertymanagement.com and reihub.net to move from passive mention-tracking to active citation-acquisition outreach.",
+        "Sep 2026 (22nd): Google is now embedding normal-looking links inside AI Overviews that route users into AI Mode follow-up prompts rather than to publisher websites, further reducing AIO-to-website click paths \u2014 reinforces prioritizing citation/mention tracking over CTR on AIO-exposed queries for all brand properties.",
+        "Sep 2026 (22nd): Semrush clarifies Google's AI Contribution Pilot pays only for direct content contribution to AI answers, not for standard citations/links appearing in AI answers \u2014 temper expectations that increased AI citation volume will translate into monetization for ipropertymanagement.com or reihub.net.",
+        "Sep 2026 (22nd): Fiverr's freelancer survey shows GEO request volume now outpacing traditional Google SEO requests among search freelancers, even as most freelancers still back SEO long-term \u2014 useful market signal to justify continued AI-citation-focused resourcing internally.",
+        "Sep 2026 (22nd): SEJ (Trendos) publishes a repeatable framework to map which sources AI engines cite by industry/engine and convert gaps into content/outreach priorities \u2014 run this audit against PM software and landlord/tenant legal queries to find citation-acquisition targets for ipropertymanagement.com and reihub.net."
       ],
       "sources": [
         "Search Engine Roundtable",
         "Search Engine Journal"
       ],
-      "last_updated": "2026-09-21",
+      "last_updated": "2026-09-22",
       "relevance_to_brands": [
         "ipropertymanagement.com",
         "reihub.net",
         "rentler.com",
         "tenantcloud.com",
         "turbotenant.com",
+        "ziprent.com"
+      ]
+    },
+    {
+      "id": "google-business-profile-updates",
+      "title": "Google Business Profile feature updates",
+      "bullets": [
+        "Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally \u2014 use to benchmark and optimize GBP post content types for local/regional brand pages.",
+        "Sep 2026: Google confirmed delays processing new GBP API access applications \u2014 apply early if planning bulk/location-management integrations for multi-location brand pages.",
+        "Sep 2026 (22nd): GBP now sends automated email alerts when it detects and removes a spam review spike from a profile \u2014 monitor these notifications as an early signal of review-manipulation attacks and verify removed reviews didn't include legitimate negative feedback.",
+        "Sep 2026 (22nd): The 'Permanently closed' (and related temporarily closed) status option appears to have disappeared from GBP self-service management with no Google announcement \u2014 confirm current process with GBP support before relying on self-service for any location status change."
+      ],
+      "sources": [
+        "Search Engine Journal"
+      ],
+      "last_updated": "2026-09-22",
+      "relevance_to_brands": [
+        "rentler.com",
+        "turbotenant.com",
+        "ziprent.com"
+      ]
+    },
+    {
+      "id": "google-indexing-api-access-delays",
+      "title": "Google Indexing API approval delays impacting listing-heavy sites",
+      "bullets": [
+        "Sep 2026 (21st): Job board operators report months-long, unresolved waits for Google Indexing API approval with no documented review timeframe \u2014 relevant precedent for turbotenant.com, tenantcloud.com, and rentler.com if pursuing Indexing API access for rental listing freshness; do not build indexing strategy dependent on timely API approval."
+      ],
+      "sources": [
+        "Search Engine Journal"
+      ],
+      "last_updated": "2026-09-22",
+      "relevance_to_brands": [
+        "turbotenant.com",
+        "tenantcloud.com",
+        "rentler.com",
         "ziprent.com"
       ]
     },
@@ -214,23 +254,6 @@
       ]
     },
     {
-      "id": "google-business-profile-updates",
-      "title": "Google Business Profile feature updates",
-      "bullets": [
-        "Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally \u2014 use to benchmark and optimize GBP post content types for local/regional brand pages.",
-        "Sep 2026: Google confirmed delays processing new GBP API access applications \u2014 apply early if planning bulk/location-management integrations for multi-location brand pages."
-      ],
-      "sources": [
-        "Search Engine Journal"
-      ],
-      "last_updated": "2026-09-15",
-      "relevance_to_brands": [
-        "rentler.com",
-        "turbotenant.com",
-        "ziprent.com"
-      ]
-    },
-    {
       "id": "ai-content-monetization-pilot",
       "title": "Google AI Contribution Pilot \u2014 paying publishers for content used in AI answers",
       "bullets": [
@@ -289,6 +312,8 @@
   ],
   "processed_urls": [
     "https://ahrefs.com/blog/ai-overviews-france-impact/",
+    "https://blog.google/company-news/outreach-and-initiatives/google-org/sensemaking-ai/",
+    "https://blog.google/company-news/outreach-and-initiatives/grow-with-google/itu-ai-skills-training/",
     "https://blog.google/company-news/outreach-and-initiatives/sustainability/google-stegra-green-steel/",
     "https://blog.google/company-news/outreach-and-initiatives/sustainability/terradot-superpollutants-carbon-removal/",
     "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/",
@@ -328,12 +353,17 @@
     "https://www.searchenginejournal.com/anthropic-shares-power-prompts-that-improve-ai-results/589448/",
     "https://www.searchenginejournal.com/ask-a-ppc-how-do-i-keep-control-as-platforms-automate-my-account/587340/",
     "https://www.searchenginejournal.com/ask-an-seo-does-product-page-copy-matter-since-agents-read-feeds/585090/",
+    "https://www.searchenginejournal.com/b2b-brand-consideration-day-zero-decides-the-shortlist/588593/",
     "https://www.searchenginejournal.com/beyond-content-parity-building-a-validated-content-workflow-for-ai-search/586184/",
     "https://www.searchenginejournal.com/chatgpt-ads-arent-paid-search-5-questions-to-answer-before-you-shift-budget/589256/",
     "https://www.searchenginejournal.com/cloudflare-will-write-your-robots-txt-and-it-has-a-point/589262/",
+    "https://www.searchenginejournal.com/customer-lifecycle-goals-the-good-the-bad-the-ugly/588192/",
     "https://www.searchenginejournal.com/everyone-is-quoting-the-same-number-and-getting-different-answers/588659/",
+    "https://www.searchenginejournal.com/fiverr-survey-search-freelancers-geo-demand/590403/",
+    "https://www.searchenginejournal.com/google-analytics-include-hostname-filters/590336/",
     "https://www.searchenginejournal.com/google-business-profile-post-view-counts/589128/",
     "https://www.searchenginejournal.com/google-expands-data-manager-and-adds-uplift-measurement/589025/",
+    "https://www.searchenginejournal.com/google-indexing-api-approval-job-sites/590316/",
     "https://www.searchenginejournal.com/google-launches-meridian-geox-globally/589030/",
     "https://www.searchenginejournal.com/google-lighthouse-ai-agent-resource-discovery-audit/590274/",
     "https://www.searchenginejournal.com/google-responds-to-cross-domain-canonical-de-indexing-report/589917/",
@@ -347,6 +377,8 @@
     "https://www.searchenginejournal.com/how-to-build-local-pages-ai-systems-can-find-and-trust/588097/",
     "https://www.searchenginejournal.com/how-to-connect-ai-search-visibility-to-local-leads/588096/",
     "https://www.searchenginejournal.com/how-to-detect-affiliate-brand-bidding-and-hidden-revenue-leakage-spa/589274/",
+    "https://www.searchenginejournal.com/how-to-find-the-sources-shaping-ai-answers-in-your-industry/589756/",
+    "https://www.searchenginejournal.com/international-seo-for-publishers-how-to-succeed-across-borders/589631/",
     "https://www.searchenginejournal.com/is-your-local-seo-strategy-ready-for-googles-next-ai-updates/589119/",
     "https://www.searchenginejournal.com/it-was-there-a-minute-ago/589500/",
     "https://www.searchenginejournal.com/matt-mullenweg-apparently-back-in-charge-at-automattic/589251/",
@@ -365,6 +397,7 @@
     "https://www.semrush.com/blog/ai-citation-outreach/",
     "https://www.semrush.com/blog/claude-keyword-research/",
     "https://www.semrush.com/blog/cloudfare-blocks-ai-training/",
+    "https://www.semrush.com/blog/google-launches-ai-contribution-pilot/",
     "https://www.semrush.com/blog/my-editing-approaches-framework/",
     "https://www.semrush.com/blog/zero-click-marketing/",
     "https://www.seroundtable.com/apple-siri-2-5-billion-requests-daily-42060.html",
@@ -372,8 +405,10 @@
     "https://www.seroundtable.com/bing-verify-you-are-human-42102.html",
     "https://www.seroundtable.com/data-google-ads-aug17-bidding-update-42086.html",
     "https://www.seroundtable.com/deez-nuts-google-easter-egg-42062.html",
+    "https://www.seroundtable.com/gemini-notebook-spam-google-search-42136.html",
     "https://www.seroundtable.com/google-ads-commerce-audience-sharing-42109.html",
     "https://www.seroundtable.com/google-ads-credit-revoked-42049.html",
+    "https://www.seroundtable.com/google-ads-gun-accessories-42133.html",
     "https://www.seroundtable.com/google-ads-loyalty-program-members-segments-42050.html",
     "https://www.seroundtable.com/google-ads-multi-source-conversions-42080.html",
     "https://www.seroundtable.com/google-ads-pmax-options-42087.html",
@@ -385,12 +420,15 @@
     "https://www.seroundtable.com/google-adult-products-labels-42116.html",
     "https://www.seroundtable.com/google-ai-mode-more-query-expansions-42074.html",
     "https://www.seroundtable.com/google-ai-mode-text-link-ads-42082.html",
+    "https://www.seroundtable.com/google-ai-overview-links-to-ai-mode-42132.html",
     "https://www.seroundtable.com/google-ai-overviews-global-general-knowledge-quiz-42054.html",
     "https://www.seroundtable.com/google-al-contribution-pilot-42076.html",
     "https://www.seroundtable.com/google-august-17-bidding-update-finished-august-27-42090.html",
     "https://www.seroundtable.com/google-blocking-scrapers-and-tracking-tools-42118.html",
     "https://www.seroundtable.com/google-blue-more-link-in-shopping-results-42077.html",
     "https://www.seroundtable.com/google-business-profile-api-application-delays-42085.html",
+    "https://www.seroundtable.com/google-business-profiles-permanently-closed-42121.html",
+    "https://www.seroundtable.com/google-business-profiles-spike-in-spam-reviews-42123.html",
     "https://www.seroundtable.com/google-drops-free-product-listings-eea-42113.html",
     "https://www.seroundtable.com/google-european-ecosystem-carousel-live-42083.html",
     "https://www.seroundtable.com/google-images-suggested-by-al-42096.html",
@@ -398,6 +436,8 @@
     "https://www.seroundtable.com/google-merchant-center-add-product-videos-42064.html",
     "https://www.seroundtable.com/google-merchant-center-ai-updates-42095.html",
     "https://www.seroundtable.com/google-merchant-center-api-supports-product-reviews-42101.html",
+    "https://www.seroundtable.com/google-merchant-center-google-store-ratings-42125.html",
+    "https://www.seroundtable.com/google-native-checkout-emails-42140.html",
     "https://www.seroundtable.com/google-position-1-10-hard-map-42053.html",
     "https://www.seroundtable.com/google-product-listings-direct-merchant-42089.html",
     "https://www.seroundtable.com/google-ranking-factors-expert-survey-42057.html",
@@ -409,6 +449,7 @@
     "https://www.seroundtable.com/google-search-ranking-update-94-42079.html",
     "https://www.seroundtable.com/google-search-slow-image-thumbnails-42072.html",
     "https://www.seroundtable.com/google-sponsored-result-label-alignment-off-42059.html",
+    "https://www.seroundtable.com/google-sponsored-results-sitelinks-titles-42122.html",
     "https://www.seroundtable.com/google-update-42091.html",
     "https://www.seroundtable.com/openai-chatgpt-sponsored-agents-42104.html",
     "https://www.seroundtable.com/recap-09-10-2026-42058.html",
@@ -417,6 +458,7 @@
     "https://www.seroundtable.com/recap-09-15-2026-42088.html",
     "https://www.seroundtable.com/recap-09-16-2026-42100.html",
     "https://www.seroundtable.com/recap-09-18-2026-42117.html",
+    "https://www.seroundtable.com/recap-09-22-2026-42134.html",
     "https://www.seroundtable.com/video-09-11-2026-42061.html",
     "https://www.seroundtable.com/video-09-18-2026-42112.html",
     "https://yoast.com/prompting-guide-ai-website-builders/"

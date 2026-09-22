@@ -2,7 +2,7 @@
 
 ## AI Overviews / AI Search reshaping SERP measurement & local visibility
 
-_Last updated: 2026-09-21_
+_Last updated: 2026-09-22_
 
 - Sep 2026: Google's John Mueller says traditional position 1-10 tracking is 'hard to map' due to generative AI results reshuffling SERPs — shift KPI focus toward AI Overview presence/citation tracking, especially for YMYL/informational content.
 - Sep 2026: Moz research ties AI local recommendation visibility to listings accuracy, review signals, and brand mentions rather than pure backlinks — treat NAP consistency, review velocity, and earned mentions as ranking factors for AI-driven local search.
@@ -25,8 +25,31 @@ _Last updated: 2026-09-21_
 - Sep 2026 (21st): Independent research cited by SEJ confirms Google AI Mode both reduces click volume to publisher sites and delivers a subjectively poor user experience — strengthens the case for de-prioritizing CTR/position KPIs on AI-Mode-exposed queries in favor of citation tracking across all six brand properties.
 - Sep 2026 (21st): SEJ Live session details concrete local-page tactics for AI citation: write in clean citable passages, ensure descriptive alt text (AI reads it directly), and only publish verifiable numbers since AI systems quote stats verbatim — apply to turbotenant.com, rentler.com, and ziprent.com local/city landing pages.
 - Sep 2026 (21st): Semrush released a hands-on workflow combining Semrush data with Claude Code to find and target the specific pages AI engines cite for brand-fact queries — pilot on ipropertymanagement.com and reihub.net to move from passive mention-tracking to active citation-acquisition outreach.
+- Sep 2026 (22nd): Google is now embedding normal-looking links inside AI Overviews that route users into AI Mode follow-up prompts rather than to publisher websites, further reducing AIO-to-website click paths — reinforces prioritizing citation/mention tracking over CTR on AIO-exposed queries for all brand properties.
+- Sep 2026 (22nd): Semrush clarifies Google's AI Contribution Pilot pays only for direct content contribution to AI answers, not for standard citations/links appearing in AI answers — temper expectations that increased AI citation volume will translate into monetization for ipropertymanagement.com or reihub.net.
+- Sep 2026 (22nd): Fiverr's freelancer survey shows GEO request volume now outpacing traditional Google SEO requests among search freelancers, even as most freelancers still back SEO long-term — useful market signal to justify continued AI-citation-focused resourcing internally.
+- Sep 2026 (22nd): SEJ (Trendos) publishes a repeatable framework to map which sources AI engines cite by industry/engine and convert gaps into content/outreach priorities — run this audit against PM software and landlord/tenant legal queries to find citation-acquisition targets for ipropertymanagement.com and reihub.net.
 
 _Relevant to: ipropertymanagement.com, reihub.net, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
+
+## Google Business Profile feature updates
+
+_Last updated: 2026-09-22_
+
+- Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally — use to benchmark and optimize GBP post content types for local/regional brand pages.
+- Sep 2026: Google confirmed delays processing new GBP API access applications — apply early if planning bulk/location-management integrations for multi-location brand pages.
+- Sep 2026 (22nd): GBP now sends automated email alerts when it detects and removes a spam review spike from a profile — monitor these notifications as an early signal of review-manipulation attacks and verify removed reviews didn't include legitimate negative feedback.
+- Sep 2026 (22nd): The 'Permanently closed' (and related temporarily closed) status option appears to have disappeared from GBP self-service management with no Google announcement — confirm current process with GBP support before relying on self-service for any location status change.
+
+_Relevant to: rentler.com, turbotenant.com, ziprent.com_
+
+## Google Indexing API approval delays impacting listing-heavy sites
+
+_Last updated: 2026-09-22_
+
+- Sep 2026 (21st): Job board operators report months-long, unresolved waits for Google Indexing API approval with no documented review timeframe — relevant precedent for turbotenant.com, tenantcloud.com, and rentler.com if pursuing Indexing API access for rental listing freshness; do not build indexing strategy dependent on timely API approval.
+
+_Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com_
 
 ## AI agent resource discovery (ARD) tooling and standards still fragmented
 
@@ -112,15 +135,6 @@ _Last updated: 2026-09-16_
 - Sep 2026: SEJ publishes a detection framework for affiliate brand bidding — build a search test list, capture ad evidence, and match violations to partner accounts — recommend an audit for turbotenant.com and tenantcloud.com given comparison/affiliate site prevalence in PM software niche.
 
 _Relevant to: turbotenant.com, tenantcloud.com_
-
-## Google Business Profile feature updates
-
-_Last updated: 2026-09-15_
-
-- Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally — use to benchmark and optimize GBP post content types for local/regional brand pages.
-- Sep 2026: Google confirmed delays processing new GBP API access applications — apply early if planning bulk/location-management integrations for multi-location brand pages.
-
-_Relevant to: rentler.com, turbotenant.com, ziprent.com_
 
 ## Google AI Contribution Pilot — paying publishers for content used in AI answers
 
