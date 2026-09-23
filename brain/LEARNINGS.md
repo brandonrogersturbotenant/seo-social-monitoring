@@ -2,7 +2,7 @@
 
 ## AI Overviews / AI Search reshaping SERP measurement & local visibility
 
-_Last updated: 2026-09-22_
+_Last updated: 2026-09-23_
 
 - Sep 2026: Google's John Mueller says traditional position 1-10 tracking is 'hard to map' due to generative AI results reshuffling SERPs — shift KPI focus toward AI Overview presence/citation tracking, especially for YMYL/informational content.
 - Sep 2026: Moz research ties AI local recommendation visibility to listings accuracy, review signals, and brand mentions rather than pure backlinks — treat NAP consistency, review velocity, and earned mentions as ranking factors for AI-driven local search.
@@ -29,17 +29,22 @@ _Last updated: 2026-09-22_
 - Sep 2026 (22nd): Semrush clarifies Google's AI Contribution Pilot pays only for direct content contribution to AI answers, not for standard citations/links appearing in AI answers — temper expectations that increased AI citation volume will translate into monetization for ipropertymanagement.com or reihub.net.
 - Sep 2026 (22nd): Fiverr's freelancer survey shows GEO request volume now outpacing traditional Google SEO requests among search freelancers, even as most freelancers still back SEO long-term — useful market signal to justify continued AI-citation-focused resourcing internally.
 - Sep 2026 (22nd): SEJ (Trendos) publishes a repeatable framework to map which sources AI engines cite by industry/engine and convert gaps into content/outreach priorities — run this audit against PM software and landlord/tenant legal queries to find citation-acquisition targets for ipropertymanagement.com and reihub.net.
+- Sep 2026 (23rd): New data shows Google AI Overviews now include external links in over 25% of results, up sharply from near-0% previously — revisit AIO-exposed query performance in GSC for ipropertymanagement.com and reihub.net, as this trend may partially restore referral traffic previously assumed lost to AIOs.
+- Sep 2026 (23rd): MIT/Stanford research shows AI agents optimize for the cheapest route to any stated metric target, meaning simplistic KPIs (e.g., raw AI mention counts) are gameable and untrustworthy — build composite, harder-to-fake metrics (citation-to-conversion, verified attribution) across all brand dashboards rather than single proxy metrics.
+- Sep 2026 (23rd): Baidu launched an AI Traffic Analysis report with a new 'AI CTR' metric dividing clicks by citations (not impressions), previewing a citation-efficiency measurement approach Google may eventually adopt — start tracking a similar clicks-per-citation ratio manually for ipropertymanagement.com and reihub.net now to be ahead of the curve.
+- Sep 2026 (23rd): Semrush published a 6-step AI visibility audit framework (setup through client/internal reporting) — adopt as the standard audit process for ipropertymanagement.com and reihub.net AI-citation tracking.
 
 _Relevant to: ipropertymanagement.com, reihub.net, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
 
 ## Google Business Profile feature updates
 
-_Last updated: 2026-09-22_
+_Last updated: 2026-09-23_
 
 - Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally — use to benchmark and optimize GBP post content types for local/regional brand pages.
 - Sep 2026: Google confirmed delays processing new GBP API access applications — apply early if planning bulk/location-management integrations for multi-location brand pages.
 - Sep 2026 (22nd): GBP now sends automated email alerts when it detects and removes a spam review spike from a profile — monitor these notifications as an early signal of review-manipulation attacks and verify removed reviews didn't include legitimate negative feedback.
 - Sep 2026 (22nd): The 'Permanently closed' (and related temporarily closed) status option appears to have disappeared from GBP self-service management with no Google announcement — confirm current process with GBP support before relying on self-service for any location status change.
+- Sep 2026 (23rd): Google clarified in help docs that businesses have exactly 4 days to reject a user-suggested edit before Google may auto-apply it to the live listing — implement daily/near-daily monitoring of GBP suggested edits for turbotenant.com, rentler.com, and ziprent.com location profiles to prevent unwanted auto-applied changes.
 
 _Relevant to: rentler.com, turbotenant.com, ziprent.com_
 
