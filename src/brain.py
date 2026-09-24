@@ -1,7 +1,6 @@
 import json
 import re
 from datetime import date
-from pathlib import Path
 
 from src.config import BRAIN_PATH, LEARNINGS_PATH
 
@@ -9,11 +8,25 @@ from src.config import BRAIN_PATH, LEARNINGS_PATH
 def load_brain() -> dict:
     if BRAIN_PATH.exists():
         with open(BRAIN_PATH) as f:
-            return json.load(f)
+            brain = json.load(f)
+        _normalize_topics(brain)
+        return brain
     return {"version": 1, "topics": [], "processed_urls": []}
 
 
+def _normalize_topics(brain: dict) -> None:
+    """Migrate legacy `bullets` into `action_items` and drop unused fields."""
+    for topic in brain.get("topics", []):
+        if "action_items" not in topic:
+            topic["action_items"] = topic.pop("bullets", [])
+        else:
+            topic.pop("bullets", None)
+        topic.pop("sources", None)
+        topic.pop("relevance_to_brands", None)
+
+
 def save_brain(brain: dict) -> None:
+    _normalize_topics(brain)
     BRAIN_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(BRAIN_PATH, "w") as f:
         json.dump(brain, f, indent=2)
@@ -44,46 +57,48 @@ def apply_brain_updates(brain: dict, updates: dict) -> None:
 
     for topic_update in updates.get("topics", []):
         topic_id = topic_update.get("id") or _slugify(topic_update.get("title", "topic"))
+        new_items = topic_update.get("action_items") or topic_update.get("bullets") or []
 
         if topic_id in topics_by_id:
             existing = topics_by_id[topic_id]
-            for bullet in topic_update.get("bullets", []):
-                if bullet not in existing.get("bullets", []):
-                    existing.setdefault("bullets", []).append(bullet)
+            items = existing.setdefault("action_items", [])
+            for item in new_items:
+                if item and item not in items:
+                    items.append(item)
+            if topic_update.get("title"):
+                existing["title"] = topic_update["title"]
             existing["last_updated"] = today
-            if topic_update.get("relevance_to_brands"):
-                brands = set(existing.get("relevance_to_brands", []))
-                brands.update(topic_update["relevance_to_brands"])
-                existing["relevance_to_brands"] = sorted(brands)
         else:
             topics_by_id[topic_id] = {
                 "id": topic_id,
                 "title": topic_update.get("title", topic_id),
-                "bullets": topic_update.get("bullets", []),
-                "sources": topic_update.get("sources", []),
+                "action_items": [i for i in new_items if i],
                 "last_updated": today,
-                "relevance_to_brands": topic_update.get("relevance_to_brands", []),
             }
 
-    brain["topics"] = sorted(topics_by_id.values(), key=lambda t: t.get("last_updated", ""), reverse=True)
+    brain["topics"] = sorted(
+        topics_by_id.values(),
+        key=lambda t: (t.get("title") or "").lower(),
+    )
 
 
 def _generate_learnings_md(brain: dict) -> None:
     LEARNINGS_PATH.parent.mkdir(parents=True, exist_ok=True)
     lines = ["# SEO Brain — Running Learnings\n"]
+    lines.append("Topics sorted alphabetically. Action items accumulate over time.\n")
 
-    topics = brain.get("topics", [])
+    topics = sorted(brain.get("topics", []), key=lambda t: (t.get("title") or "").lower())
     if not topics:
         lines.append("_No learnings yet. They'll appear here after the first briefing._\n")
     else:
         for topic in topics:
             lines.append(f"## {topic['title']}\n")
-            lines.append(f"_Last updated: {topic.get('last_updated', 'unknown')}_\n")
-            for bullet in topic.get("bullets", []):
-                lines.append(f"- {bullet}")
-            brands = topic.get("relevance_to_brands", [])
-            if brands:
-                lines.append(f"\n_Relevant to: {', '.join(brands)}_")
+            items = topic.get("action_items") or []
+            if not items:
+                lines.append("- _(no action items yet)_")
+            else:
+                for item in items:
+                    lines.append(f"- {item}")
             lines.append("")
 
     LEARNINGS_PATH.write_text("\n".join(lines))

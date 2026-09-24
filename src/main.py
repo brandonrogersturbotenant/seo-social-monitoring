@@ -1,6 +1,7 @@
 """SEO Morning Brief — daily RSS monitoring pipeline."""
 
 import sys
+from collections import Counter
 
 from src.brain import (
     apply_brain_updates,
@@ -10,7 +11,7 @@ from src.brain import (
     save_brain,
 )
 from src.emailer import send_briefing
-from src.fetcher import fetch_recent_articles
+from src.fetcher import diversify_articles, fetch_recent_articles
 from src.summarizer import generate_briefing
 
 
@@ -20,21 +21,22 @@ def run() -> None:
     # 1. Fetch articles from last 24 hours
     print("1. Fetching RSS feeds (last 24h)...")
     articles = fetch_recent_articles(hours=24)
+    by_source = Counter(a.source for a in articles)
     print(f"   Found {len(articles)} articles across all feeds")
+    if by_source:
+        print("   By source: " + ", ".join(f"{k}={v}" for k, v in sorted(by_source.items())))
 
     # 2. Load brain and filter already-processed
     brain = load_brain()
     new_articles = filter_unprocessed(articles, brain)
     print(f"   {len(new_articles)} are new (not previously processed)")
 
-    # 3. Generate briefing with Claude (processes up to 20 articles per run)
+    # 3. Diversify across sources, then generate briefing
     print("\n2. Generating briefing with Claude...")
-    from src.summarizer import MAX_ARTICLES_PER_RUN
-
-    articles_to_process = new_articles[:MAX_ARTICLES_PER_RUN]
+    articles_to_process = diversify_articles(new_articles)
     briefing = generate_briefing(articles_to_process, brain)
     insights = briefing.get("todays_insights", [])
-    print(f"   {len(insights)} actionable insights")
+    print(f"   {len(insights)} topics")
 
     # 4. Update brain
     print("\n3. Updating brain...")

@@ -15,17 +15,55 @@ brands:
   - ipropertymanagement.com
   - reihub.net
 
+# Round-robin: max 3 articles per source per run (see src/fetcher.py)
 rss_feeds:
-  - name: Marie Haynes (Blog)
-    url: https://www.mariehaynes.com/blog/feed/
+  # --- Practitioners / news ---
   - name: Marie Haynes
-    url: https://www.mariehaynes.com/feed/
+    url: https://www.mariehaynes.com/blog/feed/
+  - name: Aleyda Solis
+    url: https://www.aleydasolis.com/en/feed/
+  - name: Glenn Gabe (GSQI)
+    url: https://www.gsqi.com/marketing-blog/feed/
+  - name: Lily Ray
+    url: https://lilyray.substack.com/feed
+  - name: Kevin Indig (Growth Memo)
+    url: https://www.growth-memo.com/feed
+  - name: iPullRank
+    url: https://ipullrank.com/feed
+  - name: Search Engine Roundtable
+    url: http://feeds.seroundtable.com/SearchEngineRoundtable1
+  - name: Search Engine Journal
+    url: https://www.searchenginejournal.com/feed/
+  - name: Seer Interactive
+    url: https://www.seerinteractive.com/blog/rss.xml
+  - name: SearchPilot
+    url: https://www.searchpilot.com/resources/blog/rss.xml
+  - name: SparkToro
+    url: https://sparktoro.com/blog/feed/
+  - name: Dejan Marketing
+    url: https://dejanmarketing.com/feed/
+
+  # --- Platforms / tools (SEO research) ---
   - name: Ahrefs Blog
     url: https://ahrefs.com/blog/feed/
   - name: Moz Blog
     url: https://moz.com/posts/rss/blog
   - name: Semrush Blog
     url: https://www.semrush.com/blog/feed/
+  - name: Oncrawl
+    url: https://www.oncrawl.com/feed/
+  - name: seoClarity
+    url: https://www.seoclarity.net/blog/rss.xml
+  - name: Lumar
+    url: https://www.lumar.io/feed/
+  - name: Screaming Frog
+    url: https://www.screamingfrog.co.uk/blog/feed/
+  - name: DebugBear
+    url: https://www.debugbear.com/blog/rss.xml
+  - name: Majestic Blog
+    url: https://blog.majestic.com/feed/
+
+  # --- CMS / plugin SEO (lower priority signal, kept for product/feature changes) ---
   - name: Yoast
     url: https://yoast.com/feed/
   - name: Rank Math
@@ -34,27 +72,19 @@ rss_feeds:
     url: https://seranking.com/blog/feed/
   - name: All in One SEO
     url: https://aioseo.com/feed/
-  - name: Search Engine Roundtable
-    url: http://feeds.seroundtable.com/SearchEngineRoundtable1
-  - name: Search Engine Land
-    url: https://searchengineland.com/feed
-  - name: Search Engine Journal
-    url: https://www.searchenginejournal.com/feed/
-  - name: Aleyda Solis
-    url: https://www.aleydasolis.com/en/feed/
-  - name: Technical SEO
-    url: https://technicalseo.com/insights/feed/
-  - name: seoClarity
-    url: https://www.seoclarity.net/blog/rss.xml
-  - name: Lumar
-    url: https://www.lumar.io/feed/
-  - name: Rio SEO
-    url: https://feeds.feedburner.com/RioSeoNews/?mtag=www_rio_header
-  - name: Dejan Marketing
-    url: https://dejanmarketing.com/feed/
-  - name: Google Blog
-    url: https://blog.google/rss/
-  - name: Google Research Blog
-    url: https://research.google/blog/rss/
+
+  # --- Google / Bing / web platform (docs + product) ---
   - name: Google Search Central
     url: https://feeds.feedburner.com/blogspot/amDG
+  - name: Google Search Blog
+    url: https://blog.google/products/search/rss/
+  - name: Google AI Blog
+    url: https://blog.google/technology/ai/rss/
+  - name: Google Research Blog
+    url: https://research.google/blog/rss/
+  - name: Chrome Developers
+    url: https://developer.chrome.com/static/blog/feed.xml
+  - name: web.dev
+    url: https://web.dev/feed.xml
+  - name: Bing Blog
+    url: https://blogs.bing.com/feed

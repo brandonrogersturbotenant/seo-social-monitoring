@@ -64,12 +64,21 @@ rss_feeds:
     url: https://example.com/feed/
 ```
 
-## The brain
+## Email + brain format
 
-- `data/brain.json` — structured knowledge store (topics, bullets, processed URLs)
-- `brain/LEARNINGS.md` — human-readable version, auto-generated
+**Today's section** (skimmable):
+- Topic Title
+  - Summary (1–2 sentences)
+  - Action Items (1–3 high-level projects/audits/tests — no brand domains named)
+  - Source (linked)
 
-The brain grows over time. Each morning Claude checks new posts against existing topics before adding insights, so you don't get duplicate coverage.
+**Running Brain** (accumulates over time):
+- Topic Title
+  - Growing list of action items only
+
+## Source diversity
+
+High-volume publishers (Search Engine Roundtable, Search Engine Journal) can post many times/day. The pipeline still **round-robins across sources** (up to **15 articles per feed**, **100 total per run**) so quieter feeds get read when they publish, without truncating a busy news day down to a tiny sample.
 
 ## Brands in scope
 
