@@ -66,15 +66,17 @@ rss_feeds:
 
 ## Email + brain format
 
-**Today's section** (skimmable):
-- Topic Title
+**Today's section** (skimmable, numbered, 2px black border per topic):
+- Topic Title — tagged **ACTION** (goes to brain) or **FYI** (email only)
   - Summary (1–2 sentences)
   - Action Items (1–3 high-level projects/audits/tests — no brand domains named)
   - Source (linked)
 
-**Running Brain** (accumulates over time):
+**Running Brain** (revised each run — actionable website work only):
 - Topic Title
-  - Growing list of action items only
+  - 2–5 punchy action-oriented bullets
+- Cool new features / awareness items stay in Today's section only — they are not added to the brain
+- New info **updates existing bullets in place** instead of appending dated notes
 
 ## Source diversity
 

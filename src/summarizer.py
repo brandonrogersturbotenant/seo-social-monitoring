@@ -8,6 +8,7 @@ from src.fetcher import Article
 
 # Override with ANTHROPIC_MODEL if needed (default: current Sonnet)
 DEFAULT_MODEL = "claude-sonnet-5"
+MAX_BRAIN_ITEMS_PER_TOPIC = 5
 
 
 def _build_prompt(articles: list[Article], brain: dict) -> str:
@@ -26,14 +27,13 @@ Published: {a.published.isoformat()}
 Summary: {a.summary}
 """
 
-    # Brain for dedup: topic titles + existing action items only
     brain_for_prompt = [
         {
             "id": t.get("id"),
             "title": t.get("title"),
             "action_items": t.get("action_items") or t.get("bullets") or [],
         }
-        for t in brain.get("topics", [])[:100]
+        for t in brain.get("topics", [])
     ]
     brain_summary = json.dumps(brain_for_prompt, indent=2)
 
@@ -41,31 +41,59 @@ Summary: {a.summary}
 
 Today is {today}.
 
-## Your task
+## Your tasks
 
-1. Read the EXISTING BRAIN — past topics and action items we've already captured.
-2. Read today's NEW ARTICLES from tracked feeds (last 24 hours, diversified across sources).
-3. Consolidate into distinct TOPICS (not one card per article — group related coverage).
-4. Skip only pure fluff / product ads with no SEO insight. Prefer completeness: if something is useful research, a Google change, AI-search finding, or a testable idea, include it.
-5. If a topic already exists in the brain, treat it as an UPDATE and only add net-new action items.
-6. Cite the best primary source URL for each topic (prefer Google/official docs when available).
+### A) Today's briefing (top of email)
+1. Read EXISTING BRAIN and NEW ARTICLES.
+2. Consolidate into distinct TOPICS (group related coverage; not one card per article).
+3. Skip only pure fluff / product ads with no SEO insight. Prefer completeness.
+4. Cite the best primary source URL per topic (prefer Google/official docs when available).
+5. Mark each topic with brainworthy true/false (see rules below).
 
-## Topic title rules
-Use short, sortable labels like:
-- "Schema"
-- "AI Citations"
-- "Google Algorithm Update"
-- "AI Overviews"
-- "Local SEO / GBP"
-- "GSC Reporting"
-- "Structured Data — Video"
+Include BOTH:
+- Actionable work we can do on brand websites (schema, content, CWV, local/GBP, internal linking, AI citation strategy, measurement, crawler policy, etc.)
+- Interesting "cool new feature" / industry FYI items worth knowing today
+
+### B) Revised Running Brain (bottom of email) — ACTIONABLE ONLY
+The brain is a durable playbook of things we can act on across our brand websites.
+It is NOT a dumping ground for every interesting Google feature.
+
+Every run, return a COMPLETE revised brain covering:
+- All existing brain topics that are still website-actionable (rewritten condensed), PLUS
+- Any NEW topics from today where brainworthy=true
+
+Do NOT add cool-new-feature / FYI-only items to the brain.
+If an existing brain topic is no longer actionable (pure product announcement with nothing to do on our sites), drop it.
+
+Brain style rules:
+- 2–5 punchy, action-oriented bullets per topic (REPLACES the prior list for that topic).
+- When new info arrives about an existing idea, UPDATE that bullet in place — do not append another historical note.
+- Drop redundant bullets; merge overlapping ones.
+- Do NOT start bullets with dates like "Sep 2026:" or "Sep 2026 (24th):".
+- Do NOT name specific brand domains.
+- Style example (good):
+  - "Hold off on blocking AI bots (GPTBot, ClaudeBot, etc.): Popular AI referral metrics are inaccurate. Wait for first-party log data before restricting access."
+  - "Verify CDN & search engine settings directly: Cloudflare manages bots by broad category rather than individually. Plus, settings like Disallow AI Training exempt Googlebot and won't affect Bing until early 2027."
+  - "Manage publisher models separately: Google's AI Contribution Pilot, Cloudflare's pay-per-crawl, and Microsoft's framework are incompatible — a decision for one won't apply to the others."
+- Style example (bad): long "Sep 2026 (18th): Source says..." chronicle entries.
+
+### brainworthy rules
+Set brainworthy=true when the topic implies durable work on our sites, e.g.:
+- audits, tests, content/structure changes, schema, CWV, local/GBP ops, measurement/KPI changes, crawler/CDN policy, citation/AEO strategy
+
+Set brainworthy=false when it's mainly awareness / a cool feature with nothing clear to implement yet, e.g.:
+- UI experiments we can't control, conference announcements, vendor product launches, speculative features with no site action
+
+FYI items still appear in todays_insights — they just must NOT appear in brain_updates.
+
+## Topic title rules (today + brain)
+Short sortable labels: "Schema", "AI Citations", "Google Algorithm Update", "AI Overviews", "Local SEO / GBP", "GSC Reporting", "AI Crawler Access".
 NOT long article headlines.
 
-## Action item rules
-- High-level projects, audits, or concepts to test
-- Do NOT name specific brand domains (no turbotenant.com, etc.)
-- Keep each action item to one concise sentence
-- 1–3 action items per topic for today's email; brain updates can reuse those same items
+## Today's action item rules
+- High-level projects, audits, or concepts to test (or "None — FYI only" style empty list for pure awareness items)
+- No brand domain names
+- 1–3 concise action items per topic when brainworthy; optional/empty for FYI
 
 ## Response format
 
@@ -76,46 +104,40 @@ Return ONLY valid JSON:
       "type": "new" | "update",
       "topic": "Short Topic Title",
       "summary": "1-2 sentence summary of what changed or was learned.",
-      "action_items": [
-        "High-level project, audit, or test idea",
-        "Another action item if useful"
-      ],
+      "action_items": ["...", "..."],
       "source": "Source name",
-      "url": "https://article-url"
+      "url": "https://article-url",
+      "brainworthy": true
     }}
   ],
   "brain_updates": {{
     "topics": [
       {{
-        "id": "kebab-case-slug-matching-topic",
-        "title": "Same Short Topic Title",
+        "id": "kebab-case-slug",
+        "title": "Short Topic Title",
         "action_items": [
-          "Only net-new action items to append to the brain for this topic"
+          "Complete revised condensed bullets for this topic (2-5 max) — this REPLACES the prior list"
         ]
       }}
     ]
   }},
-  "no_news_summary": "If nothing worth reporting, a brief note explaining why."
+  "no_news_summary": "If nothing worth reporting today, a brief note."
 }}
 
-Be comprehensive: include every distinct actionable topic worth capturing (often 8–25 on a busy day). Do not aggressively truncate to a short "top N" list — missing useful analysis is worse than a longer email. Prefer breadth across sources when quality is equal.
+Be comprehensive on today's insights (often 8–25 topics on a busy day). Prefer breadth across sources when quality is equal.
+brain_updates.topics must include every KEPT existing actionable brain topic (rewritten) plus new brainworthy topics only.
 
 ## EXISTING BRAIN
 {brain_summary if brain_summary.strip() != "[]" else "Empty — this is the first run."}
 
 ## NEW ARTICLES
-{articles_text if articles_text.strip() else "No new articles found."}
+{articles_text if articles_text.strip() else "No new articles found — still revise/condense the existing brain (actionable topics only)."}
 """
 
 
 def generate_briefing(articles: list[Article], brain: dict) -> dict:
-    if not articles:
-        return {
-            "todays_insights": [],
-            "brain_updates": {"topics": []},
-            "no_news_summary": "No new articles were published in the last 24 hours across your tracked feeds.",
-        }
-
+    # Always call Claude so the brain can be revised/condensed every run,
+    # even on quiet news days.
     client_kwargs = {"api_key": get_env("ANTHROPIC_API_KEY")}
     workspace_id = get_env("ANTHROPIC_WORKSPACE_ID", "")
     if workspace_id:

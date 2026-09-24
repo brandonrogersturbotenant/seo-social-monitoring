@@ -36,14 +36,16 @@ def run() -> None:
     articles_to_process = diversify_articles(new_articles)
     briefing = generate_briefing(articles_to_process, brain)
     insights = briefing.get("todays_insights", [])
-    print(f"   {len(insights)} topics")
+    actionable = sum(1 for i in insights if i.get("brainworthy", True))
+    fyi = len(insights) - actionable
+    print(f"   {len(insights)} topics ({actionable} actionable → brain, {fyi} FYI only)")
 
-    # 4. Update brain
+    # 4. Update brain (actionable playbook only — FYI topics stay out)
     print("\n3. Updating brain...")
     apply_brain_updates(brain, briefing.get("brain_updates", {}))
     mark_processed(brain, [a.url for a in articles_to_process])
     save_brain(brain)
-    print(f"   Brain now has {len(brain.get('topics', []))} topics")
+    print(f"   Brain now has {len(brain.get('topics', []))} actionable topics")
 
     # 5. Send email
     print("\n4. Sending email...")

@@ -4,6 +4,8 @@ from datetime import date
 
 from src.config import BRAIN_PATH, LEARNINGS_PATH
 
+MAX_ACTION_ITEMS = 5
+
 
 def load_brain() -> dict:
     if BRAIN_PATH.exists():
@@ -51,41 +53,49 @@ def _slugify(text: str) -> str:
 
 
 def apply_brain_updates(brain: dict, updates: dict) -> None:
-    """Merge Claude's structured brain updates into brain.json."""
+    """Replace the brain with Claude's revised actionable playbook.
+
+    Each run returns the complete revised brain for topics worth keeping.
+    We replace action_items (and the topic set) rather than appending forever.
+    Topics Claude omits are dropped — used to prune non-actionable FYI residue.
+    """
     today = date.today().isoformat()
-    topics_by_id = {t["id"]: t for t in brain.get("topics", [])}
+    revised_topics = updates.get("topics") or []
+    if not revised_topics:
+        # No revision payload — leave brain unchanged
+        return
 
-    for topic_update in updates.get("topics", []):
+    new_topics = []
+    for topic_update in revised_topics:
         topic_id = topic_update.get("id") or _slugify(topic_update.get("title", "topic"))
-        new_items = topic_update.get("action_items") or topic_update.get("bullets") or []
+        items = [
+            i.strip()
+            for i in (topic_update.get("action_items") or topic_update.get("bullets") or [])
+            if i and str(i).strip()
+        ][:MAX_ACTION_ITEMS]
+        if not items:
+            continue
 
-        if topic_id in topics_by_id:
-            existing = topics_by_id[topic_id]
-            items = existing.setdefault("action_items", [])
-            for item in new_items:
-                if item and item not in items:
-                    items.append(item)
-            if topic_update.get("title"):
-                existing["title"] = topic_update["title"]
-            existing["last_updated"] = today
-        else:
-            topics_by_id[topic_id] = {
+        new_topics.append(
+            {
                 "id": topic_id,
-                "title": topic_update.get("title", topic_id),
-                "action_items": [i for i in new_items if i],
+                "title": topic_update.get("title") or topic_id,
+                "action_items": items,
                 "last_updated": today,
             }
+        )
 
     brain["topics"] = sorted(
-        topics_by_id.values(),
+        new_topics,
         key=lambda t: (t.get("title") or "").lower(),
     )
-
 
 def _generate_learnings_md(brain: dict) -> None:
     LEARNINGS_PATH.parent.mkdir(parents=True, exist_ok=True)
     lines = ["# SEO Brain — Running Learnings\n"]
-    lines.append("Topics sorted alphabetically. Action items accumulate over time.\n")
+    lines.append(
+        "Condensed action playbook. Revised each morning — bullets are updated in place, not appended forever.\n"
+    )
 
     topics = sorted(brain.get("topics", []), key=lambda t: (t.get("title") or "").lower())
     if not topics:

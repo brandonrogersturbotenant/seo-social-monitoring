@@ -21,31 +21,37 @@ def _build_html(briefing: dict, brain: dict) -> str:
 
     if insights:
         html += f'<p style="color:#666; margin: 0 0 16px;">{len(insights)} topics</p>'
-        html += '<ul style="padding-left: 18px; margin: 0;">'
+        html += '<ol style="padding-left: 22px; margin: 0;">'
         for item in insights:
             topic = escape(item.get("topic") or item.get("headline") or "Topic")
             summary = escape(item.get("summary") or item.get("detail") or "")
             source = escape(item.get("source", "Unknown"))
             url = escape(item.get("url", "#"), quote=True)
+            brainworthy = item.get("brainworthy", True)
+            badge = "ACTION" if brainworthy else "FYI"
+            badge_color = "#16a34a" if brainworthy else "#6b7280"
             action_items = item.get("action_items") or []
             if not action_items and item.get("detail"):
                 action_items = [item["detail"]]
 
-            actions_html = ""
             if action_items:
                 actions_html = "<ul style='margin: 4px 0 0; padding-left: 18px;'>"
                 for action in action_items:
                     actions_html += f"<li style='margin: 2px 0;'>{escape(action)}</li>"
                 actions_html += "</ul>"
+            else:
+                actions_html = " <em>None — awareness only</em>"
 
             html += f"""
-            <li style="margin: 0 0 16px;">
-              <strong>{topic}</strong>
-              <ul style="margin: 4px 0 0; padding-left: 18px; list-style-type: disc;">
+            <li style="border: 2px solid #000; padding: 12px 14px; margin: 0 0 12px;">
+              <strong style="display: block; margin-bottom: 6px;">
+                <span style="font-size: 10px; font-weight: 700; letter-spacing: 0.04em; color: {badge_color}; margin-right: 8px;">{badge}</span>
+                {topic}
+              </strong>
+              <ul style="margin: 0; padding-left: 18px; list-style-type: disc;">
                 <li style="margin: 2px 0;"><strong>Summary:</strong> {summary}</li>
                 <li style="margin: 2px 0;">
-                  <strong>Action Items:</strong>
-                  {actions_html if actions_html else "<em>None</em>"}
+                  <strong>Action Items:</strong>{actions_html}
                 </li>
                 <li style="margin: 2px 0;">
                   <strong>Source:</strong>
@@ -53,8 +59,7 @@ def _build_html(briefing: dict, brain: dict) -> str:
                 </li>
               </ul>
             </li>
-            """
-        html += "</ul>"
+            """        html += "</ol>"
     else:
         summary = escape(
             briefing.get(
@@ -66,12 +71,12 @@ def _build_html(briefing: dict, brain: dict) -> str:
 
     if topics:
         html += '<h2 style="font-size: 16px; color: #2563eb; margin-top: 28px; margin-bottom: 4px;">Running Brain</h2>'
-        html += '<p style="font-size: 13px; color: #666; margin-top: 0;">Accumulated action items by topic.</p>'
-        html += '<ul style="padding-left: 18px; margin: 0;">'
+        html += '<p style="font-size: 13px; color: #666; margin-top: 0;">Condensed action playbook — revised each run (not a chronicle).</p>'
+        html += '<ol style="padding-left: 22px; margin: 0;">'
         for topic in topics:
             title = escape(topic.get("title") or topic.get("id") or "Topic")
             items = topic.get("action_items") or topic.get("bullets") or []
-            html += f'<li style="margin: 0 0 12px;"><strong>{title}</strong>'
+            html += f'<li style="margin: 0 0 14px;"><strong>{title}</strong>'
             if items:
                 html += '<ul style="margin: 4px 0 0; padding-left: 18px;">'
                 for item in items:
@@ -80,7 +85,7 @@ def _build_html(briefing: dict, brain: dict) -> str:
             else:
                 html += '<div style="color:#888; font-size:13px;">(no action items yet)</div>'
             html += "</li>"
-        html += "</ul>"
+        html += "</ol>"
 
     brands = ", ".join(config["brands"])
     html += f"""
