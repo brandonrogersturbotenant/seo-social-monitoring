@@ -1,8 +1,31 @@
 # SEO Brain — Running Learnings
 
-## AI Overviews / AI Search reshaping SERP measurement & local visibility
+Topics sorted alphabetically. Action items accumulate over time.
 
-_Last updated: 2026-09-24_
+## 2026 Google Ranking Factors Expert Survey (Zyppy/Shepard)
+
+- Sep 2026: Content relevance, backlinks, and content quality rank as top 3 factors per surveyed SEO experts — reinforces prioritizing original content/data assets and link acquisition over marginal technical fixes when sites are already technically healthy.
+
+## Affiliate/partner brand bidding can leak PPC and organic revenue
+
+- Sep 2026: SEJ publishes a detection framework for affiliate brand bidding — build a search test list, capture ad evidence, and match violations to partner accounts — recommend an audit for turbotenant.com and tenantcloud.com given comparison/affiliate site prevalence in PM software niche.
+
+## Agentic commerce (AI-driven checkout/purchasing) remains unproven at scale
+
+- Sep 2026 (21st): SEJ reports Visa, Mastercard, PayPal, and Stripe cannot name a single live agentic-commerce merchant, and Google names only three — low-priority/watch-only for turbotenant.com and tenantcloud.com subscription checkout flows; no urgent build needed.
+
+## AI agent resource discovery (ARD) tooling and standards still fragmented
+
+- Sep 2026 (21st): Google Lighthouse 13.5 shipped an audit for AI agent resource discovery, but its checks diverge from the community-proposed ARD standard — use Lighthouse as an early diagnostic on turbotenant.com/tenantcloud.com/rentler.com/ziprent.com but don't treat a passing score as compliance with the eventual standard; re-audit once ARD finalizes.
+
+## AI crawler blocking & referral traffic measurement is unreliable
+
+- Sep 2026: Duane Forrester (SEJ) flags that the commonly cited AI-referral traffic metric has an unknown/incomplete denominator, undermining decisions to block AI crawlers based on 'traffic theft' claims — recommend waiting for better first-party log-based measurement before blocking bots like GPTBot, ClaudeBot, PerplexityBot.
+- Sep 2026 (18th): Cloudflare's Bot Preference Sync governs AI crawler access by category rather than individual bot, meaning nuanced 'allow this bot, block that one' policies may not translate correctly — review Cloudflare bot settings on any brand property before assuming granular control is preserved.
+- Sep 2026 (18th): Semrush confirms Cloudflare's 'Disallow AI Training' toggle exempts Googlebot and Bing won't honor Cloudflare's preference signals until early 2027 — don't assume a single CDN-level setting uniformly controls AI crawler access across Google, Bing, and AI labs; verify per-engine behavior.
+- Sep 2026 (18th): SEJ frames Google's AI Contribution Pilot, Cloudflare's pay-per-crawl model, and Microsoft's approach as three diverging, incompatible publisher payment/control systems — track all three separately since a blocking or opt-in decision made for one system doesn't apply to the others.
+
+## AI Overviews / AI Search reshaping SERP measurement & local visibility
 
 - Sep 2026: Google's John Mueller says traditional position 1-10 tracking is 'hard to map' due to generative AI results reshuffling SERPs — shift KPI focus toward AI Overview presence/citation tracking, especially for YMYL/informational content.
 - Sep 2026: Moz research ties AI local recommendation visibility to listings accuracy, review signals, and brand mentions rather than pure backlinks — treat NAP consistency, review velocity, and earned mentions as ranking factors for AI-driven local search.
@@ -37,12 +60,29 @@ _Last updated: 2026-09-24_
 - Sep 2026 (24th): Google announced R4T-Diffusion, a new query fan-out framework described as production-scale ready — expect broader/faster AI Mode sub-query expansion; revalidate content briefs on ipropertymanagement.com and reihub.net for nested long-tail coverage.
 - Sep 2026 (24th): Google is testing moving AI Overviews to a bottom-right side panel for hotel knowledge panel searches rather than top-of-page — watch for similar placement changes on rental listing/property knowledge panels which could restore top-of-SERP visibility for organic results.
 - Sep 2026 (24th): GSC rolling out a new 'Multimodal' vs 'Text-based' filter under the Web search type in Performance reports — use to isolate image-search traffic performance on image-heavy pages (listing photos, infographics) for all brand sites.
+- Sep 2026 (24th): Seer Interactive finds ChatGPT-5.6 Luna cites fewer sources per answer despite searching the web more often and using 3x more domain-targeted searches — focus on becoming one of the fewer chosen citations rather than chasing mention volume.
+- Sep 2026 (24th): Duane Forrester (SEJ) warns AI answers are frozen 'time machine' snapshots with no indication of staleness — add visible last-updated dates/changelogs to key pages to help both users and AI systems assess content freshness.
 
-_Relevant to: ipropertymanagement.com, reihub.net, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
+## Content workflow standards shifting toward validated, original-knowledge content for AI search
+
+- Sep 2026: SEJ (Bill Hunt) proposes moving beyond 'content parity' toward a validated workflow: identify decision gaps competitors haven't addressed, acquire original/proprietary knowledge, and prove claims with evidence before publishing — directly actionable for ipropertymanagement.com legal/YMYL content and reihub.net investment guides, where proprietary data and verifiable claims can differentiate from AI-summarized competitor content.
+
+## Cross-domain canonical misconfiguration can cause silent de-indexing
+
+- Sep 2026 (18th): John Mueller addressed a cross-domain canonical de-indexing report, outlining proactive audit steps publishers can take to catch canonical errors before they escalate — run a canonical tag audit across all brand domains, particularly any syndicated content, partner integrations, or shared templates between turbotenant.com/tenantcloud.com/rentler.com/ziprent.com.
+
+## Google AI Contribution Pilot — paying publishers for content used in AI answers
+
+- Sep 2026: Google confirmed via Search Console pilot that it is testing payments to publishers whose content contributes to Gemini, AI Overviews, and AI Mode answers; originally spotted in April 2026, now rolling out more visibly — watch Search Console for pilot access and treat this as a counter-argument to blocking AI crawlers (GPTBot, ClaudeBot, etc.) until impact on this pilot is understood.
+
+## Google Algorithm Update
+
+- Sep 2026: SERoundtable flags a ranking blip around Sept 4, 2026 that appears to have reverted on Sept 13, with no official Google confirmation of either change — treat as noise unless corroborated by rank tracker tools across multiple brand properties.
+- Sep 2026 (Sept 15): A new, larger volatility spike began the morning of Sept 15 with heavy community chatter and rank-tool movement; SERoundtable suspects the start of an unconfirmed Google update — monitor daily through the week and cross-reference with GSC performance data before making content/technical changes.
+- Sep 2026 (18th): SERoundtable now links the volatility spikes since Sept 4/12/15 to Google's stepped-up blocking of scrapers, rank-tracking tools, and third-party bots rather than a core algorithm update — treat recent third-party rank-tracker swings with added skepticism and validate against GSC clicks/impressions before making changes to any brand site.
+- Sep 24, 2026: Google confirmed the September 2026 spam update is rolling out globally over up to two weeks — monitor rankings and only attribute drops to this update if the site engages in policy-violating practices.
 
 ## Google Business Profile feature updates
-
-_Last updated: 2026-09-24_
 
 - Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally — use to benchmark and optimize GBP post content types for local/regional brand pages.
 - Sep 2026: Google confirmed delays processing new GBP API access applications — apply early if planning bulk/location-management integrations for multi-location brand pages.
@@ -51,137 +91,31 @@ _Last updated: 2026-09-24_
 - Sep 2026 (23rd): Google clarified in help docs that businesses have exactly 4 days to reject a user-suggested edit before Google may auto-apply it to the live listing — implement daily/near-daily monitoring of GBP suggested edits for turbotenant.com, rentler.com, and ziprent.com location profiles to prevent unwanted auto-applied changes.
 - Sep 2026 (24th): GBP is testing AI-interpreted business hours — owners describe hours in free text and Google converts them to structured format for the local panel — low-effort NAP-accuracy improvement to adopt for rentler.com, turbotenant.com, and ziprent.com once available.
 
-_Relevant to: rentler.com, turbotenant.com, ziprent.com_
-
-## Video structured data adds creator/author property support
-
-_Last updated: 2026-09-24_
-
-- Sep 2026 (24th): Google updated VideoObject documentation to support 'creator' and 'author' properties and clarified supported interactionStatistic types — add creator/author schema to any video content on turbotenant.com, tenantcloud.com, or reihub.net to strengthen E-E-A-T signals, complementing the existing Search Profile badge initiative for named authors.
-
-_Relevant to: turbotenant.com, tenantcloud.com, reihub.net_
-
-## Publisher organic search referral decline accelerating YoY
-
-_Last updated: 2026-09-24_
-
-- Sep 2026 (24th): Chartbeat-based report shows Google Search + Discover referral decline steepened to 40% YoY for publishers, while direct, internal, and dark social traffic grew — prioritize direct-traffic channel investment (email, app, community) for ipropertymanagement.com and reihub.net as a hedge against continued organic erosion.
-
-_Relevant to: ipropertymanagement.com, reihub.net_
-
 ## Google Indexing API approval delays impacting listing-heavy sites
-
-_Last updated: 2026-09-22_
 
 - Sep 2026 (21st): Job board operators report months-long, unresolved waits for Google Indexing API approval with no documented review timeframe — relevant precedent for turbotenant.com, tenantcloud.com, and rentler.com if pursuing Indexing API access for rental listing freshness; do not build indexing strategy dependent on timely API approval.
 
-_Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com_
-
-## AI agent resource discovery (ARD) tooling and standards still fragmented
-
-_Last updated: 2026-09-21_
-
-- Sep 2026 (21st): Google Lighthouse 13.5 shipped an audit for AI agent resource discovery, but its checks diverge from the community-proposed ARD standard — use Lighthouse as an early diagnostic on turbotenant.com/tenantcloud.com/rentler.com/ziprent.com but don't treat a passing score as compliance with the eventual standard; re-audit once ARD finalizes.
-
-_Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com_
-
-## Agentic commerce (AI-driven checkout/purchasing) remains unproven at scale
-
-_Last updated: 2026-09-21_
-
-- Sep 2026 (21st): SEJ reports Visa, Mastercard, PayPal, and Stripe cannot name a single live agentic-commerce merchant, and Google names only three — low-priority/watch-only for turbotenant.com and tenantcloud.com subscription checkout flows; no urgent build needed.
-
-_Relevant to: turbotenant.com, tenantcloud.com_
-
-## Unreviewed AI-generated content creating quality/workflow risk
-
-_Last updated: 2026-09-21_
-
-- Sep 2026 (21st): Shopify CEO publicly warns unreviewed AI output ('slop grenades') is shifting cleanup burden to coworkers, echoed by rising freelance demand for AI-cleanup work — mandate human editorial review gates for AI-assisted content across ipropertymanagement.com, reihub.net, and help-center/blog content on turbotenant.com and tenantcloud.com to protect E-E-A-T and avoid quality regressions.
-
-_Relevant to: ipropertymanagement.com, reihub.net, turbotenant.com, tenantcloud.com_
-
-## Unconfirmed Google ranking volatility events
-
-_Last updated: 2026-09-18_
-
-- Sep 2026: SERoundtable flags a ranking blip around Sept 4, 2026 that appears to have reverted on Sept 13, with no official Google confirmation of either change — treat as noise unless corroborated by rank tracker tools across multiple brand properties.
-- Sep 2026 (Sept 15): A new, larger volatility spike began the morning of Sept 15 with heavy community chatter and rank-tool movement; SERoundtable suspects the start of an unconfirmed Google update — monitor daily through the week and cross-reference with GSC performance data before making content/technical changes.
-- Sep 2026 (18th): SERoundtable now links the volatility spikes since Sept 4/12/15 to Google's stepped-up blocking of scrapers, rank-tracking tools, and third-party bots rather than a core algorithm update — treat recent third-party rank-tracker swings with added skepticism and validate against GSC clicks/impressions before making changes to any brand site.
-
-_Relevant to: ipropertymanagement.com, reihub.net, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
-
-## AI crawler blocking & referral traffic measurement is unreliable
-
-_Last updated: 2026-09-18_
-
-- Sep 2026: Duane Forrester (SEJ) flags that the commonly cited AI-referral traffic metric has an unknown/incomplete denominator, undermining decisions to block AI crawlers based on 'traffic theft' claims — recommend waiting for better first-party log-based measurement before blocking bots like GPTBot, ClaudeBot, PerplexityBot.
-- Sep 2026 (18th): Cloudflare's Bot Preference Sync governs AI crawler access by category rather than individual bot, meaning nuanced 'allow this bot, block that one' policies may not translate correctly — review Cloudflare bot settings on any brand property before assuming granular control is preserved.
-- Sep 2026 (18th): Semrush confirms Cloudflare's 'Disallow AI Training' toggle exempts Googlebot and Bing won't honor Cloudflare's preference signals until early 2027 — don't assume a single CDN-level setting uniformly controls AI crawler access across Google, Bing, and AI labs; verify per-engine behavior.
-- Sep 2026 (18th): SEJ frames Google's AI Contribution Pilot, Cloudflare's pay-per-crawl model, and Microsoft's approach as three diverging, incompatible publisher payment/control systems — track all three separately since a blocking or opt-in decision made for one system doesn't apply to the others.
-
-_Relevant to: ipropertymanagement.com, reihub.net, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
-
-## Cross-domain canonical misconfiguration can cause silent de-indexing
-
-_Last updated: 2026-09-18_
-
-- Sep 2026 (18th): John Mueller addressed a cross-domain canonical de-indexing report, outlining proactive audit steps publishers can take to catch canonical errors before they escalate — run a canonical tag audit across all brand domains, particularly any syndicated content, partner integrations, or shared templates between turbotenant.com/tenantcloud.com/rentler.com/ziprent.com.
-
-_Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com_
-
 ## Google Search Profile badges — new publisher/creator follow mechanism
-
-_Last updated: 2026-09-17_
 
 - Sep 2026 (16th-17th): Google published implementation guidance and a widget for a 'Search Profile badge' that lets users follow creators/publishers directly from a website into Search — combined with the lowered 10K-follower eligibility threshold noted previously, add badges to named-author pages on ipropertymanagement.com and reihub.net to capture follow-based visibility as publisher traffic patterns shift.
 
-_Relevant to: ipropertymanagement.com, reihub.net, turbotenant.com_
+## GSC Reporting
+
+- Sep 2026: GSC page indexing report is missing a large chunk of June 2026 data; Google confirmed a temporary indexing reporting bug in a related video recap — flag anomalous indexing count drops as likely reporting issues before initiating technical audits, but keep monitoring since SERoundtable notes elevated indexing complaints this month.
+- Sep 2026 (24th): Google officially launched a Multimodal vs Text-based filter in Search Console's Web search Performance report — use it to baseline visual/image search contribution on listing-photo and infographic-heavy pages.
 
 ## On-page product/feature copy remains necessary despite AI feeds and schema
 
-_Last updated: 2026-09-17_
-
 - Sep 2026: SEJ argues product page narrative copy still builds trust and fills information gaps that structured feeds/schema cannot address for AI shopping agents — audit turbotenant.com and tenantcloud.com pricing/feature pages to confirm differentiator messaging exists in prose, not just schema markup, so AI agents summarizing the product don't default to generic feed data.
 
-_Relevant to: turbotenant.com, tenantcloud.com_
+## Publisher organic search referral decline accelerating YoY
 
-## Content workflow standards shifting toward validated, original-knowledge content for AI search
+- Sep 2026 (24th): Chartbeat-based report shows Google Search + Discover referral decline steepened to 40% YoY for publishers, while direct, internal, and dark social traffic grew — prioritize direct-traffic channel investment (email, app, community) for ipropertymanagement.com and reihub.net as a hedge against continued organic erosion.
 
-_Last updated: 2026-09-16_
+## Unreviewed AI-generated content creating quality/workflow risk
 
-- Sep 2026: SEJ (Bill Hunt) proposes moving beyond 'content parity' toward a validated workflow: identify decision gaps competitors haven't addressed, acquire original/proprietary knowledge, and prove claims with evidence before publishing — directly actionable for ipropertymanagement.com legal/YMYL content and reihub.net investment guides, where proprietary data and verifiable claims can differentiate from AI-summarized competitor content.
+- Sep 2026 (21st): Shopify CEO publicly warns unreviewed AI output ('slop grenades') is shifting cleanup burden to coworkers, echoed by rising freelance demand for AI-cleanup work — mandate human editorial review gates for AI-assisted content across ipropertymanagement.com, reihub.net, and help-center/blog content on turbotenant.com and tenantcloud.com to protect E-E-A-T and avoid quality regressions.
 
-_Relevant to: ipropertymanagement.com, reihub.net, turbotenant.com_
+## Video structured data adds creator/author property support
 
-## Affiliate/partner brand bidding can leak PPC and organic revenue
-
-_Last updated: 2026-09-16_
-
-- Sep 2026: SEJ publishes a detection framework for affiliate brand bidding — build a search test list, capture ad evidence, and match violations to partner accounts — recommend an audit for turbotenant.com and tenantcloud.com given comparison/affiliate site prevalence in PM software niche.
-
-_Relevant to: turbotenant.com, tenantcloud.com_
-
-## Google AI Contribution Pilot — paying publishers for content used in AI answers
-
-_Last updated: 2026-09-14_
-
-- Sep 2026: Google confirmed via Search Console pilot that it is testing payments to publishers whose content contributes to Gemini, AI Overviews, and AI Mode answers; originally spotted in April 2026, now rolling out more visibly — watch Search Console for pilot access and treat this as a counter-argument to blocking AI crawlers (GPTBot, ClaudeBot, etc.) until impact on this pilot is understood.
-
-_Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com, ipropertymanagement.com, reihub.net_
-
-## Google Search Console reporting bugs/data gaps
-
-_Last updated: 2026-09-11_
-
-- Sep 2026: GSC page indexing report is missing a large chunk of June 2026 data; Google confirmed a temporary indexing reporting bug in a related video recap — flag anomalous indexing count drops as likely reporting issues before initiating technical audits, but keep monitoring since SERoundtable notes elevated indexing complaints this month.
-
-_Relevant to: turbotenant.com, tenantcloud.com, rentler.com, ziprent.com, ipropertymanagement.com, reihub.net_
-
-## 2026 Google Ranking Factors Expert Survey (Zyppy/Shepard)
-
-_Last updated: 2026-09-10_
-
-- Sep 2026: Content relevance, backlinks, and content quality rank as top 3 factors per surveyed SEO experts — reinforces prioritizing original content/data assets and link acquisition over marginal technical fixes when sites are already technically healthy.
-
-_Relevant to: ipropertymanagement.com, turbotenant.com, tenantcloud.com, rentler.com_
+- Sep 2026 (24th): Google updated VideoObject documentation to support 'creator' and 'author' properties and clarified supported interactionStatistic types — add creator/author schema to any video content on turbotenant.com, tenantcloud.com, or reihub.net to strengthen E-E-A-T signals, complementing the existing Search Profile badge initiative for named authors.
