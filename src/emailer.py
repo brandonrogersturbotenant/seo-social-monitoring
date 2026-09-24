@@ -59,7 +59,8 @@ def _build_html(briefing: dict, brain: dict) -> str:
                 </li>
               </ul>
             </li>
-            """        html += "</ol>"
+            """
+        html += "</ol>"
     else:
         summary = escape(
             briefing.get(
