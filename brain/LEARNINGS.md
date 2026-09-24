@@ -2,7 +2,7 @@
 
 ## AI Overviews / AI Search reshaping SERP measurement & local visibility
 
-_Last updated: 2026-09-23_
+_Last updated: 2026-09-24_
 
 - Sep 2026: Google's John Mueller says traditional position 1-10 tracking is 'hard to map' due to generative AI results reshuffling SERPs — shift KPI focus toward AI Overview presence/citation tracking, especially for YMYL/informational content.
 - Sep 2026: Moz research ties AI local recommendation visibility to listings accuracy, review signals, and brand mentions rather than pure backlinks — treat NAP consistency, review velocity, and earned mentions as ranking factors for AI-driven local search.
@@ -33,20 +33,41 @@ _Last updated: 2026-09-23_
 - Sep 2026 (23rd): MIT/Stanford research shows AI agents optimize for the cheapest route to any stated metric target, meaning simplistic KPIs (e.g., raw AI mention counts) are gameable and untrustworthy — build composite, harder-to-fake metrics (citation-to-conversion, verified attribution) across all brand dashboards rather than single proxy metrics.
 - Sep 2026 (23rd): Baidu launched an AI Traffic Analysis report with a new 'AI CTR' metric dividing clicks by citations (not impressions), previewing a citation-efficiency measurement approach Google may eventually adopt — start tracking a similar clicks-per-citation ratio manually for ipropertymanagement.com and reihub.net now to be ahead of the curve.
 - Sep 2026 (23rd): Semrush published a 6-step AI visibility audit framework (setup through client/internal reporting) — adopt as the standard audit process for ipropertymanagement.com and reihub.net AI-citation tracking.
+- Sep 2026 (24th): SEJ confirms Search Console's block flattening can make weak AI Overview visibility appear as a top-1 ranking position; Google's own guidance is to 'forget position, focus on outcomes' (visits/conversions) — formalizes existing brand guidance to abandon position tracking on AIO-exposed queries across all six properties.
+- Sep 2026 (24th): Google announced R4T-Diffusion, a new query fan-out framework described as production-scale ready — expect broader/faster AI Mode sub-query expansion; revalidate content briefs on ipropertymanagement.com and reihub.net for nested long-tail coverage.
+- Sep 2026 (24th): Google is testing moving AI Overviews to a bottom-right side panel for hotel knowledge panel searches rather than top-of-page — watch for similar placement changes on rental listing/property knowledge panels which could restore top-of-SERP visibility for organic results.
+- Sep 2026 (24th): GSC rolling out a new 'Multimodal' vs 'Text-based' filter under the Web search type in Performance reports — use to isolate image-search traffic performance on image-heavy pages (listing photos, infographics) for all brand sites.
 
 _Relevant to: ipropertymanagement.com, reihub.net, rentler.com, tenantcloud.com, turbotenant.com, ziprent.com_
 
 ## Google Business Profile feature updates
 
-_Last updated: 2026-09-23_
+_Last updated: 2026-09-24_
 
 - Sep 2026: GBP now shows post view counts (Search + Maps combined) for posts published in the past 18 months, rolling out globally — use to benchmark and optimize GBP post content types for local/regional brand pages.
 - Sep 2026: Google confirmed delays processing new GBP API access applications — apply early if planning bulk/location-management integrations for multi-location brand pages.
 - Sep 2026 (22nd): GBP now sends automated email alerts when it detects and removes a spam review spike from a profile — monitor these notifications as an early signal of review-manipulation attacks and verify removed reviews didn't include legitimate negative feedback.
 - Sep 2026 (22nd): The 'Permanently closed' (and related temporarily closed) status option appears to have disappeared from GBP self-service management with no Google announcement — confirm current process with GBP support before relying on self-service for any location status change.
 - Sep 2026 (23rd): Google clarified in help docs that businesses have exactly 4 days to reject a user-suggested edit before Google may auto-apply it to the live listing — implement daily/near-daily monitoring of GBP suggested edits for turbotenant.com, rentler.com, and ziprent.com location profiles to prevent unwanted auto-applied changes.
+- Sep 2026 (24th): GBP is testing AI-interpreted business hours — owners describe hours in free text and Google converts them to structured format for the local panel — low-effort NAP-accuracy improvement to adopt for rentler.com, turbotenant.com, and ziprent.com once available.
 
 _Relevant to: rentler.com, turbotenant.com, ziprent.com_
+
+## Video structured data adds creator/author property support
+
+_Last updated: 2026-09-24_
+
+- Sep 2026 (24th): Google updated VideoObject documentation to support 'creator' and 'author' properties and clarified supported interactionStatistic types — add creator/author schema to any video content on turbotenant.com, tenantcloud.com, or reihub.net to strengthen E-E-A-T signals, complementing the existing Search Profile badge initiative for named authors.
+
+_Relevant to: turbotenant.com, tenantcloud.com, reihub.net_
+
+## Publisher organic search referral decline accelerating YoY
+
+_Last updated: 2026-09-24_
+
+- Sep 2026 (24th): Chartbeat-based report shows Google Search + Discover referral decline steepened to 40% YoY for publishers, while direct, internal, and dark social traffic grew — prioritize direct-traffic channel investment (email, app, community) for ipropertymanagement.com and reihub.net as a hedge against continued organic erosion.
+
+_Relevant to: ipropertymanagement.com, reihub.net_
 
 ## Google Indexing API approval delays impacting listing-heavy sites
 
