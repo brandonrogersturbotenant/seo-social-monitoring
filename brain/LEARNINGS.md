@@ -16,14 +16,18 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Use Lighthouse 13.5's ARD audit as an early diagnostic, not a compliance signal — its checks diverge from the emerging community ARD standard.
 - Re-audit sites once the ARD standard finalizes rather than relying on current Lighthouse scores.
+- Track NLWeb/ASK protocol adoption as a related, complementary agentic-web discovery mechanism and assess structured data readiness for it.
 
 ## AI Citation Behavior
 
 - Optimize to become one of the fewer, higher-quality sources AI engines actually cite rather than chasing overall mention volume, as models increasingly cite fewer sources per answer despite broader web searching.
+- Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness) rather than a separate discipline — fix foundational issues first.
+- For B2B/software pages, structure content around buying-committee questions likely surfaced in AI answers.
 
 ## AI Content Quality Control
 
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers to protect E-E-A-T and avoid quality regressions.
+- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's new AI-content spam detection system.
 
 ## AI Crawler Access & Traffic Measurement
 
@@ -34,15 +38,20 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## AI Overviews / AI Search Measurement Strategy
 
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — Search Console block flattening distorts position data, and Google's own guidance is to focus on outcomes (visits/conversions), not rank.
+- Segment AIO link interactions by destination (web vs AI Mode) in GSC, since rising AIO link counts don't guarantee proportional web traffic.
 - Build citation-to-conversion and clicks-per-citation KPIs (composite, harder-to-game metrics) rather than raw AI mention/citation counts.
-- Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic; revalidate as Google's fan-out frameworks (e.g., R4T-Diffusion) expand.
-- Optimize local/informational pages for AI citation: write clean citable passages, use descriptive alt text, and only publish verifiable, current numbers/stats.
+- Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic.
 - Add visible last-updated dates/changelogs to key pages and periodically re-verify AI-cited facts (pricing, legal/compliance) against live pages to counter stale AI answer snapshots.
 
 ## AI-Era Content Validation Workflow
 
 - Identify decision gaps competitors/AI summaries haven't addressed and fill them with original, proprietary knowledge.
 - Prove claims with evidence/data before publishing, especially on YMYL legal and investment guide content, to differentiate from AI-summarized competitor content.
+
+## Audience Data Quality for AI Agents
+
+- Audit first-party audience/segment data quality feeding any AI-driven personalization, targeting, or agent-facing tools.
+- Treat audience/data hygiene as a prerequisite for AI visibility strategy, not just an ads/marketing concern.
 
 ## Canonical Tag Hygiene
 
@@ -58,7 +67,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Treat unconfirmed ranking volatility spikes with skepticism — recent swings have been linked to Google's scraper/bot-blocking crackdowns, not core updates.
 - Validate any suspected update impact against GSC clicks/impressions before making content or technical changes.
-- For the confirmed September 2026 spam update, only attribute drops to it if a site engages in policy-violating practices; monitor through the multi-week global rollout.
+- For the confirmed September 2026 spam update, only attribute drops to it if a site engages in policy-violating practices (including AI content spam flagged by Google's new SAFE detection system); monitor through the multi-week global rollout.
 
 ## Google Indexing API Delays
 
@@ -80,7 +89,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations.
 - Monitor automated spam-review-removal alerts as an early signal of review manipulation, and verify legitimate negative reviews weren't wrongly removed.
 - Implement near-daily monitoring of GBP suggested edits — Google may auto-apply unrejected edits after 4 days.
-- Confirm current process with GBP support before relying on self-service for closure status changes, since that option appears removed without notice.
+- Audit LSA call tracking numbers against GBP numbers for attribution discrepancies, and ensure only verified phone numbers are used in Google Posts to avoid policy removal.
 
 ## Product Page Copy for AI Agents
 
