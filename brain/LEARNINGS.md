@@ -17,17 +17,18 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Use Lighthouse 13.5's ARD audit as an early diagnostic, not a compliance signal — its checks diverge from the emerging community ARD standard.
 - Re-audit sites once the ARD standard finalizes rather than relying on current Lighthouse scores.
 - Track NLWeb/ASK protocol adoption as a related, complementary agentic-web discovery mechanism and assess structured data readiness for it.
+- Evaluate llms.txt as a low-cost experiment, but confirm actual crawler adoption before investing significant effort.
 
-## AI Citation Behavior
+## AI Citations
 
-- Optimize to become one of the fewer, higher-quality sources AI engines actually cite rather than chasing overall mention volume, as models increasingly cite fewer sources per answer despite broader web searching.
+- Optimize to become one of the fewer, higher-quality sources AI engines actually cite rather than chasing overall mention volume.
 - Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness) rather than a separate discipline — fix foundational issues first.
 - For B2B/software pages, structure content around buying-committee questions likely surfaced in AI answers.
 
 ## AI Content Quality Control
 
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers to protect E-E-A-T and avoid quality regressions.
-- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's new AI-content spam detection system.
+- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's active AI-content spam detection (SAFE) enforcement.
 
 ## AI Crawler Access & Traffic Measurement
 
@@ -35,13 +36,24 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Verify CDN and per-engine settings directly: Cloudflare governs bots by broad category, its 'Disallow AI Training' toggle exempts Googlebot, and Bing won't honor these signals until early 2027.
 - Manage publisher AI-payment models separately: Google's AI Contribution Pilot, Cloudflare's pay-per-crawl, and Microsoft's framework are incompatible systems requiring independent decisions.
 
+## AI Localization/Translation Quality
+
+- Benchmark leading LLMs directly against human translators for any planned multilingual content expansion.
+- Select translation workflow (model vs. human vs. hybrid) per content type based on task-specific performance rather than defaulting to human-only.
+
 ## AI Overviews / AI Search Measurement Strategy
 
-- Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — Search Console block flattening distorts position data, and Google's own guidance is to focus on outcomes (visits/conversions), not rank.
+- Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank.
 - Segment AIO link interactions by destination (web vs AI Mode) in GSC, since rising AIO link counts don't guarantee proportional web traffic.
-- Build citation-to-conversion and clicks-per-citation KPIs (composite, harder-to-game metrics) rather than raw AI mention/citation counts.
+- Build citation-to-conversion and clicks-per-citation KPIs, and layer commercial/traffic-dependency data on top of raw visibility reports rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic.
 - Add visible last-updated dates/changelogs to key pages and periodically re-verify AI-cited facts (pricing, legal/compliance) against live pages to counter stale AI answer snapshots.
+
+## AI Search Attribution
+
+- Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit).
+- Segment analytics to compare AI-referral traffic value against standard organic, since AI-referred visitors can convert at multiples of average organic value.
+- Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, not raw citation/visibility counts alone.
 
 ## AI-Era Content Validation Workflow
 
@@ -65,9 +77,9 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Algorithm Update
 
-- Treat unconfirmed ranking volatility spikes with skepticism — recent swings have been linked to Google's scraper/bot-blocking crackdowns, not core updates.
-- Validate any suspected update impact against GSC clicks/impressions before making content or technical changes.
-- For the confirmed September 2026 spam update, only attribute drops to it if a site engages in policy-violating practices (including AI content spam flagged by Google's new SAFE detection system); monitor through the multi-week global rollout.
+- Treat unconfirmed ranking volatility spikes with skepticism — some past swings have been linked to bot-blocking crackdowns rather than core updates.
+- For the confirmed September 2026 spam update, check GSC clicks/impressions for weekend (9/25-9/27) impact and only attribute drops to it if policy-violating practices (including AI content spam flagged by SAFE) are present.
+- Continue monitoring through the remainder of the two-week global rollout before finalizing any content/technical remediation.
 
 ## Google Indexing API Delays
 
@@ -75,7 +87,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Search Profile Badges
 
-- Add Search Profile badge widgets to named-author pages to let users follow creators/publishers directly into Search.
+- Keep Search Profile badge widgets live on named-author pages for mobile, since the Follow button was removed from desktop results but remains on mobile.
+- Delay heavier investment in desktop-specific Search Profile UX until the feature stabilizes.
 - Pair with the lowered 10K-follower eligibility threshold to capture follow-based visibility as traffic patterns shift.
 
 ## GSC Reporting
