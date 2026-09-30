@@ -19,30 +19,33 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Track NLWeb/ASK protocol and WebMCP adoption as complementary agentic-web discovery/commerce mechanisms; assess whether checkout/lead-gen forms are agent-accessible.
 - Evaluate llms.txt as a low-cost experiment, but confirm actual crawler adoption before investing significant effort.
 
-## AI Agent SEO Tooling (MCP)
+## AI Agent SEO Tooling (MCP / Claude Code)
 
-- Pilot MCP-based/agentic SEO tools on one brand site to automate detection and fixing of schema mismatches and stale links.
-- Evaluate agentic workflow tooling before scaling across all brand domains.
+- Pilot MCP-based/agentic SEO tools and Claude Code workflows on one brand site to automate detection and fixing of schema mismatches, stale links, and content briefs.
+- Prioritize highest-value use cases (GSC analysis, internal linking audits, technical fixes) before scaling to all domains.
+- Evaluate agentic workflow tooling against manual process time savings before broad adoption.
 
 ## AI Citations
 
 - Optimize to become one of the fewer, higher-quality sources AI engines actually cite rather than chasing overall mention volume.
 - Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness) rather than a separate discipline — fix foundational issues first.
 - Audit how LLMs describe brand positioning/differentiators vs. current messaging and refresh key pages to close any 'positioning lag.'
-- Weigh prompt-level tracking tools against outcome-based metrics before heavy investment, given the probabilistic nature of LLM outputs.
-- For B2B/software pages, structure content around buying-committee questions likely surfaced in AI answers.
+- Pursue third-party trust signals (Wikipedia presence, podcast appearances, Reddit engagement) via PR as a deliberate AI-citation-building tactic.
+- Use a diagnostic framework (missing from conversations / losing recommendations / wrong topic associations / outdated info / inaccessible content) to triage visibility gaps before picking tactics.
 
 ## AI Content Quality Control
 
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers to protect E-E-A-T and avoid quality regressions.
 - Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's active AI-content spam detection (SAFE) enforcement.
+- Benchmark internal AI content production volume/workflow against industry norms (now ~93% of marketers use AI in content creation) to ensure quality controls scale with volume.
 
 ## AI Crawler Access & Traffic Measurement
 
 - Hold off on blocking AI bots (GPTBot, ClaudeBot, PerplexityBot, etc.) — commonly cited AI-referral metrics have unknown/incomplete denominators; wait for first-party log data.
 - Verify CDN and per-engine settings directly: Cloudflare governs bots by broad category, its 'Disallow AI Training' toggle exempts Googlebot, and Bing won't honor these signals until early 2027.
-- Manage publisher AI-payment models separately: Google's AI Contribution Pilot, Cloudflare's pay-per-crawl, and Microsoft's framework are incompatible systems requiring independent decisions.
+- Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot covers only ~100 publishers paying ~0.1% of ad revenue, distinct from Cloudflare's pay-per-crawl and Microsoft's framework.
 - Supplement robots.txt with terms-of-service language for unwanted shopping/browser agents, since robots.txt directives alone can't distinguish agents from real visitors.
+- Test publishing sourced, structured brand-context content aimed at AI crawlers (machine-layer approach) on one property and measure recommendation/citation rate change.
 
 ## AI Localization/Translation Quality
 
@@ -53,13 +56,13 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank.
 - Segment AIO link interactions by destination (web vs AI Mode) in GSC, since rising AIO link counts don't guarantee proportional web traffic.
-- Build citation-to-conversion and clicks-per-citation KPIs, and layer commercial/traffic-dependency data on top of raw visibility reports rather than reporting mention counts alone.
+- Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic.
-- Add visible last-updated dates/changelogs to key pages and periodically re-verify AI-cited facts (pricing, legal/compliance) against live pages, since AI Mode's global monitoring rollout may surface stale info to users directly.
+- Add visible last-updated dates/changelogs to key pages and periodically re-verify AI-cited facts (pricing, legal/compliance) against live pages, since AIOs now increasingly surface on branded queries too.
 
 ## AI Search Attribution
 
-- Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit) — reinforced by reports/court filings confirming AI chat interfaces drive minimal click-through.
+- Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit) — reinforced by reports confirming AI chat interfaces drive minimal click-through.
 - Segment analytics to compare AI-referral traffic value against standard organic, since AI-referred visitors can convert at multiples of average organic value.
 - Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, not raw citation/visibility counts alone.
 
@@ -79,9 +82,9 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google AI Contribution Pilot
 
-- Watch Search Console for pilot access to Google's AI Contribution Pilot program.
+- Watch Search Console for pilot access, but keep expectations minimal — confirmed payouts are ~100 publishers receiving roughly 0.1% of ad revenue.
 - Note it pays only for direct content contribution to AI answers, not standard citations/links — temper monetization expectations from rising citation volume alone.
-- Treat this pilot as a reason to avoid blocking AI crawlers until its impact and eligibility are better understood.
+- Treat this pilot as a reason to avoid blocking AI crawlers until its impact and eligibility are better understood, not as a revenue strategy.
 
 ## Google Algorithm Update
 
@@ -104,6 +107,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Flag anomalous indexing count drops as likely reporting bugs before launching technical audits, but keep monitoring given elevated indexing complaints.
 - Use the new Multimodal vs Text-based filter in the Web search Performance report to baseline image-search contribution on listing-photo and infographic-heavy pages.
 - Re-baseline desktop vs. mobile CTR trends now that the prior Search Console logging error has been resolved, and segment CTR analysis by device going forward.
+- Discount any GA anomalies during known outage windows before drawing performance conclusions.
+- Enable app conversion tracking in GA cross-channel reports if a companion app exists, for unified attribution.
 
 ## Local SEO / GBP
 
@@ -111,7 +116,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations.
 - Monitor automated spam-review-removal alerts as an early signal of review manipulation, and verify legitimate negative reviews weren't wrongly removed.
 - Implement near-daily monitoring of GBP suggested edits — Google may auto-apply unrejected edits after 4 days.
-- Check service-area listings without public addresses for mispositioned/ocean map pins, and review support-channel usage against the new 'Misuse of support channels' policy.
+- Adjust review-monitoring workflows now that Google Maps requires sign-in to read/sort/leave all reviews, which may break scraping-based tools.
 
 ## Product Page Copy for AI Agents
 
