@@ -6,6 +6,10 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Prioritize original content/data assets, content quality, and backlink acquisition over marginal technical fixes on already-healthy sites — these rank as top factors in expert surveys.
 
+## Accessibility & SEO
+
+- Run an accessibility audit (semantic HTML, alt text, heading structure, ARIA labels, keyboard navigation) on key page templates as a dual-purpose SEO/accessibility improvement.
+
 ## Affiliate/Partner Brand Bidding Leakage
 
 - Build a recurring search test list to detect partners bidding on brand terms in paid ads.
@@ -24,12 +28,13 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Pilot MCP-based/agentic SEO tools and Claude Code workflows on one brand site to automate detection and fixing of schema mismatches, stale links, and content briefs.
 - Prioritize highest-value use cases (GSC analysis, internal linking audits, technical fixes) before scaling to all domains.
 - Evaluate agentic workflow tooling against manual process time savings before broad adoption.
+- Test low-stakes, high-volume tasks against local/on-device models (e.g., Gemini Nano) to cut API costs before defaulting to frontier-model tooling.
 
 ## AI Citations
 
 - Optimize to become one of the fewer, higher-quality sources AI engines actually cite rather than chasing overall mention volume.
-- Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness) rather than a separate discipline — fix foundational issues first.
-- Audit how LLMs describe brand positioning/differentiators vs. current messaging and refresh key pages to close any 'positioning lag.'
+- Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness, correct schema) rather than a separate discipline — fix foundational issues first.
+- Mine first-party customer support/FAQ queries to surface exact phrasing that earns citations, and build content blocks around it.
 - Pursue third-party trust signals (Wikipedia presence, podcast appearances, Reddit engagement) via PR as a deliberate AI-citation-building tactic.
 - Use a diagnostic framework (missing from conversations / losing recommendations / wrong topic associations / outdated info / inaccessible content) to triage visibility gaps before picking tactics.
 
@@ -37,13 +42,13 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers to protect E-E-A-T and avoid quality regressions.
 - Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's active AI-content spam detection (SAFE) enforcement.
-- Benchmark internal AI content production volume/workflow against industry norms (now ~93% of marketers use AI in content creation) to ensure quality controls scale with volume.
+- Benchmark internal AI content production volume/workflow against industry norms to ensure quality controls scale with volume.
 
 ## AI Crawler Access & Traffic Measurement
 
 - Hold off on blocking AI bots (GPTBot, ClaudeBot, PerplexityBot, etc.) — commonly cited AI-referral metrics have unknown/incomplete denominators; wait for first-party log data.
 - Verify CDN and per-engine settings directly: Cloudflare governs bots by broad category, its 'Disallow AI Training' toggle exempts Googlebot, and Bing won't honor these signals until early 2027.
-- Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot covers only ~100 publishers paying ~0.1% of ad revenue, distinct from Cloudflare's pay-per-crawl and Microsoft's framework.
+- Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot pays some sites under 0.1% of ad revenue with unclear calculation methods; Cloudflare's new Monetization Gateway/Pay Per Use beta and Microsoft's framework are separate, immature programs.
 - Supplement robots.txt with terms-of-service language for unwanted shopping/browser agents, since robots.txt directives alone can't distinguish agents from real visitors.
 - Test publishing sourced, structured brand-context content aimed at AI crawlers (machine-layer approach) on one property and measure recommendation/citation rate change.
 
@@ -58,12 +63,12 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Segment AIO link interactions by destination (web vs AI Mode) in GSC, since rising AIO link counts don't guarantee proportional web traffic.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic.
-- Add visible last-updated dates/changelogs to key pages and periodically re-verify AI-cited facts (pricing, legal/compliance) against live pages, since AIOs now increasingly surface on branded queries too.
+- Audit list/roster/directory-style factual pages for AIO displacement risk as Google expands full-answer AIOs into more content categories; differentiate with analysis AI can't easily replicate.
 
 ## AI Search Attribution
 
-- Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit) — reinforced by reports confirming AI chat interfaces drive minimal click-through.
-- Segment analytics to compare AI-referral traffic value against standard organic, since AI-referred visitors can convert at multiples of average organic value.
+- Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit).
+- Update analytics referral rules to capture Gemini's new UTM parameters and segment Gemini traffic value against standard organic and other AI referral sources.
 - Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, not raw citation/visibility counts alone.
 
 ## AI-Era Content Validation Workflow
@@ -79,17 +84,18 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Canonical Tag Hygiene
 
 - Run periodic canonical tag audits across all brand domains, especially syndicated content, partner integrations, and shared templates, to catch cross-domain misconfigurations before they cause silent de-indexing.
+- For any statically-generated site or section, confirm canonicals, sitemaps, redirects, and 404 handling are manually implemented since CMS plugin automation won't apply.
 
 ## Google AI Contribution Pilot
 
-- Watch Search Console for pilot access, but keep expectations minimal — confirmed payouts are ~100 publishers receiving roughly 0.1% of ad revenue.
+- Watch Search Console for pilot access, but keep expectations minimal — confirmed payouts are under 0.1% of ad revenue with unclear/inconsistent calculation methods across participants.
 - Note it pays only for direct content contribution to AI answers, not standard citations/links — temper monetization expectations from rising citation volume alone.
 - Treat this pilot as a reason to avoid blocking AI crawlers until its impact and eligibility are better understood, not as a revenue strategy.
 
 ## Google Algorithm Update
 
 - Treat unconfirmed ranking volatility spikes with skepticism — some past swings have been linked to bot-blocking crackdowns rather than core updates.
-- For the confirmed September 2026 spam update, check GSC clicks/impressions for weekend (9/25-9/27) impact and only attribute drops to it if policy-violating practices (including AI content spam flagged by SAFE) are present.
+- For the confirmed September 2026 spam update (two waves: ~9/25-9/27 and 9/30), check GSC clicks/impressions across both windows and only attribute drops to it if policy-violating practices (including AI content spam flagged by SAFE) are present.
 - Continue monitoring through the full two-week global rollout before finalizing any content/technical remediation.
 
 ## Google Indexing API Delays
@@ -116,7 +122,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations.
 - Monitor automated spam-review-removal alerts as an early signal of review manipulation, and verify legitimate negative reviews weren't wrongly removed.
 - Implement near-daily monitoring of GBP suggested edits — Google may auto-apply unrejected edits after 4 days.
-- Adjust review-monitoring workflows now that Google Maps requires sign-in to read/sort/leave all reviews, which may break scraping-based tools.
+- If running Local Service Ads, audit served locations against configured service areas given a confirmed bug serving ads outside targeted locations.
 
 ## Product Page Copy for AI Agents
 
@@ -126,10 +132,19 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Prioritize investment in direct channels (email, app, community) to hedge against accelerating YoY organic search/Discover referral decline.
 
+## Schema — AI Visibility Mistakes
+
+- Audit schema across key templates for completeness and content-match accuracy (not just validator pass/fail), since mismatches actively hurt AI visibility.
+- Prioritize fixing missing/outdated/mismatched structured data on pages targeted for AEO/AI citation.
+
 ## Schema — Video Structured Data
 
 - Add creator/author properties to VideoObject schema on any video content to strengthen E-E-A-T signals.
 - Coordinate with Search Profile badge rollout for named authors/creators across video and article content.
+
+## Static Site SEO Gaps
+
+- Audit any static-site-generator-based brand property or microsite for manually-required canonicals, sitemaps, redirects, metadata, schema, and 404 handling that CMS plugins normally automate.
 
 ## Technical SEO Process
 
