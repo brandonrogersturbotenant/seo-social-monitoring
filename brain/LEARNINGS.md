@@ -40,8 +40,9 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Content Quality Control
 
-- Mandate human editorial review gates for all AI-assisted content across blogs and help centers to protect E-E-A-T and avoid quality regressions.
+- Mandate human editorial review gates for all AI-assisted content across blogs and help centers, now explicitly extended to titles, alt text, and other metadata per Google's updated guidance.
 - Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's active AI-content spam detection (SAFE) enforcement.
+- Document a formal fact-check sign-off step in the editorial workflow before publishing any AI-assisted content.
 - Benchmark internal AI content production volume/workflow against industry norms to ensure quality controls scale with volume.
 
 ## AI Crawler Access & Traffic Measurement
@@ -60,10 +61,10 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## AI Overviews / AI Search Measurement Strategy
 
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank.
-- Segment AIO link interactions by destination (web vs AI Mode) in GSC, since rising AIO link counts don't guarantee proportional web traffic.
+- Segment AIO link interactions by destination (web vs AI Mode) in GSC, and watch for newly-tested AIO URL tracking parameters that could enable AIO-specific click attribution.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic.
-- Audit list/roster/directory-style factual pages for AIO displacement risk as Google expands full-answer AIOs into more content categories; differentiate with analysis AI can't easily replicate.
+- Audit branded-query AIOs (now present on ~83% of branded searches) for third-party source displacement, and strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites).
 
 ## AI Search Attribution
 
@@ -75,6 +76,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Identify decision gaps competitors/AI summaries haven't addressed and fill them with original, proprietary knowledge.
 - Prove claims with evidence/data before publishing, especially on YMYL legal and investment guide content, to differentiate from AI-summarized competitor content.
+- Test writing precise, unambiguous 'technical manual' style passages on key guide/help pages to improve LLM parsing and citation accuracy.
 
 ## Audience Data Quality for AI Agents
 
@@ -116,13 +118,19 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Discount any GA anomalies during known outage windows before drawing performance conclusions.
 - Enable app conversion tracking in GA cross-channel reports if a companion app exists, for unified attribution.
 
+## Helpful Content Guidelines — Main Content & Fake Authors
+
+- Audit key templates to ensure Main Content (not boilerplate, ads, or navigation) is substantive, original, and clearly the primary focus, per Google's rater-aligned definition.
+- Verify all published author bios/profiles are real, accurate, and not fabricated or templated placeholders.
+- Tie this audit into existing E-E-A-T and author schema initiatives given Google's increased scrutiny on both fronts.
+
 ## Local SEO / GBP
 
 - Use new GBP post view counts (Search + Maps, 18-month lookback) to benchmark and optimize post content types on local/regional pages.
 - Apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations.
 - Monitor automated spam-review-removal alerts as an early signal of review manipulation, and verify legitimate negative reviews weren't wrongly removed.
 - Implement near-daily monitoring of GBP suggested edits — Google may auto-apply unrejected edits after 4 days.
-- If running Local Service Ads, audit served locations against configured service areas given a confirmed bug serving ads outside targeted locations.
+- If running Local Service Ads, audit served locations against configured service areas (confirmed targeting bug) and verify the new default-hidden phone number display isn't suppressing call conversions.
 
 ## Product Page Copy for AI Agents
 
@@ -131,6 +139,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Publisher Organic Traffic Decline
 
 - Prioritize investment in direct channels (email, app, community) to hedge against accelerating YoY organic search/Discover referral decline.
+- Benchmark visibility trend against vertical-wide SaaS decline (~1/3 YoY loss reported) and real-estate-category movers to contextualize brand performance.
 
 ## Schema — AI Visibility Mistakes
 
