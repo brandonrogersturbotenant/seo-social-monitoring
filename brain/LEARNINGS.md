@@ -36,12 +36,12 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness, correct schema) rather than a separate discipline — fix foundational issues first.
 - Mine first-party customer support/FAQ queries to surface exact phrasing that earns citations, and build content blocks around it.
 - Pursue third-party trust signals (Wikipedia presence, podcast appearances, Reddit engagement) via PR as a deliberate AI-citation-building tactic.
-- Use a diagnostic framework (missing from conversations / losing recommendations / wrong topic associations / outdated info / inaccessible content) to triage visibility gaps before picking tactics.
+- Use a diagnostic framework (missing from conversations / losing recommendations / wrong topic associations / outdated info / inaccessible content) to triage visibility gaps and assign the correct fix (content, PR, or technical) before picking tactics.
 
 ## AI Content Quality Control
 
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers, now explicitly extended to titles, alt text, and other metadata per Google's updated guidance.
-- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's active AI-content spam detection (SAFE) enforcement.
+- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's active, AI-powered spam detection targeting AI-generated content specifically.
 - Document a formal fact-check sign-off step in the editorial workflow before publishing any AI-assisted content.
 - Benchmark internal AI content production volume/workflow against industry norms to ensure quality controls scale with volume.
 
@@ -88,6 +88,17 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Run periodic canonical tag audits across all brand domains, especially syndicated content, partner integrations, and shared templates, to catch cross-domain misconfigurations before they cause silent de-indexing.
 - For any statically-generated site or section, confirm canonicals, sitemaps, redirects, and 404 handling are manually implemented since CMS plugin automation won't apply.
 
+## Content Distribution System
+
+- Assign a named distribution owner to every major content asset at publish time.
+- Build a repeatable 90-day post-publish checklist (outreach, syndication, internal linking, PR) aimed at earning backlinks and AI citations.
+- Review underperforming older content against this checklist to re-ignite distribution rather than only focusing on new launches.
+
+## Feed / Rendered Listing Data Integrity
+
+- Audit live listing/product SERP presentation (prices, sale badges, images) against current source feed data to catch Google's cached/derived data mismatches.
+- Set a recurring spot-check process for high-value listing pages comparing rendered search results to the actual feed.
+
 ## Google AI Contribution Pilot
 
 - Watch Search Console for pilot access, but keep expectations minimal — confirmed payouts are under 0.1% of ad revenue with unclear/inconsistent calculation methods across participants.
@@ -97,8 +108,9 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Google Algorithm Update
 
 - Treat unconfirmed ranking volatility spikes with skepticism — some past swings have been linked to bot-blocking crackdowns rather than core updates.
-- For the confirmed September 2026 spam update (two waves: ~9/25-9/27 and 9/30), check GSC clicks/impressions across both windows and only attribute drops to it if policy-violating practices (including AI content spam flagged by SAFE) are present.
-- Continue monitoring through the full two-week global rollout before finalizing any content/technical remediation.
+- For the confirmed September 2026 spam update, check GSC clicks/impressions and only attribute drops to it if policy-violating practices (including AI content spam) are present.
+- Proactively re-audit AI-assisted content for thin/unoriginal patterns given Google's confirmed escalation of AI-powered AI-spam detection and hints this will intensify in the next core update.
+- Use Google's published crawling/indexing/serving/recovery timeframes as a baseline before escalating indexing or recovery concerns post-update.
 
 ## Google Indexing API Delays
 
