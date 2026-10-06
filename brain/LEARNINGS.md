@@ -40,18 +40,18 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Content Quality Control
 
-- Mandate human editorial review gates for all AI-assisted content across blogs and help centers, now explicitly extended to titles, alt text, and other metadata per Google's updated guidance.
+- Mandate human editorial review gates for all AI-assisted content across blogs and help centers, extended to titles, alt text, and other metadata per Google's updated guidance.
 - Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's active, AI-powered spam detection targeting AI-generated content specifically.
 - Document a formal fact-check sign-off step in the editorial workflow before publishing any AI-assisted content.
-- Benchmark internal AI content production volume/workflow against industry norms to ensure quality controls scale with volume.
+- Verify no author bios or bylines use fabricated/deceptive authorship information per Google's explicit new warning.
 
 ## AI Crawler Access & Traffic Measurement
 
 - Hold off on blocking AI bots (GPTBot, ClaudeBot, PerplexityBot, etc.) — commonly cited AI-referral metrics have unknown/incomplete denominators; wait for first-party log data.
+- Ensure sitemaps use discoverable default naming and maintain active RSS feeds, since AI training crawlers typically can't be directly submitted to but do access sitemaps/RSS per Google's own logs.
 - Verify CDN and per-engine settings directly: Cloudflare governs bots by broad category, its 'Disallow AI Training' toggle exempts Googlebot, and Bing won't honor these signals until early 2027.
-- Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot pays some sites under 0.1% of ad revenue with unclear calculation methods; Cloudflare's new Monetization Gateway/Pay Per Use beta and Microsoft's framework are separate, immature programs.
-- Supplement robots.txt with terms-of-service language for unwanted shopping/browser agents, since robots.txt directives alone can't distinguish agents from real visitors.
-- Test publishing sourced, structured brand-context content aimed at AI crawlers (machine-layer approach) on one property and measure recommendation/citation rate change.
+- Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot, Cloudflare's Monetization Gateway/Pay Per Use, and Microsoft's framework are immature, incompatible programs.
+- Audit parent/child property Search generative AI control settings in GSC for any multi-property setups to confirm intended inheritance behavior.
 
 ## AI Localization/Translation Quality
 
@@ -61,16 +61,17 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## AI Overviews / AI Search Measurement Strategy
 
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank.
-- Segment AIO link interactions by destination (web vs AI Mode) in GSC, and watch for newly-tested AIO URL tracking parameters that could enable AIO-specific click attribution.
+- Re-audit branded query AIOs weekly given they now appear on over 80% of tracked branded queries (up sharply from ~26% a month prior); strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic.
-- Audit branded-query AIOs (now present on ~83% of branded searches) for third-party source displacement, and strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites).
+- Diversify rank-tracking tooling as a contingency given Google's active pushback on SERP scraping, which AI agent traffic growth may accelerate.
 
 ## AI Search Attribution
 
-- Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit).
+- Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit, assisted conversions, survey-based influence data).
 - Update analytics referral rules to capture Gemini's new UTM parameters and segment Gemini traffic value against standard organic and other AI referral sources.
 - Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, not raw citation/visibility counts alone.
+- Prepare budget/planning narratives (e.g. 2027 planning) that separate AI-influence/visibility metrics from broken click attribution to justify continued investment despite traffic declines.
 
 ## AI-Era Content Validation Workflow
 
@@ -108,8 +109,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Google Algorithm Update
 
 - Treat unconfirmed ranking volatility spikes with skepticism — some past swings have been linked to bot-blocking crackdowns rather than core updates.
-- For the confirmed September 2026 spam update, check GSC clicks/impressions and only attribute drops to it if policy-violating practices (including AI content spam) are present.
-- Proactively re-audit AI-assisted content for thin/unoriginal patterns given Google's confirmed escalation of AI-powered AI-spam detection and hints this will intensify in the next core update.
+- For the September 2026 spam update (final phase believed complete as of Oct 4-6), check GSC clicks/impressions and only attribute drops to it if policy-violating practices (including AI content spam) are present.
+- Proactively re-audit AI-assisted content for thin/unoriginal patterns given Google's confirmed escalation of AI-powered spam detection targeting AI-generated content.
 - Use Google's published crawling/indexing/serving/recovery timeframes as a baseline before escalating indexing or recovery concerns post-update.
 
 ## Google Indexing API Delays
@@ -125,24 +126,30 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## GSC Reporting
 
 - Flag anomalous indexing count drops as likely reporting bugs before launching technical audits, but keep monitoring given elevated indexing complaints.
+- Use the new multi-select country filter in Performance reports to build grouped regional views instead of checking countries one at a time.
 - Use the new Multimodal vs Text-based filter in the Web search Performance report to baseline image-search contribution on listing-photo and infographic-heavy pages.
-- Re-baseline desktop vs. mobile CTR trends now that the prior Search Console logging error has been resolved, and segment CTR analysis by device going forward.
-- Discount any GA anomalies during known outage windows before drawing performance conclusions.
-- Enable app conversion tracking in GA cross-channel reports if a companion app exists, for unified attribution.
+- Track Preferred Source subscriber-count emails as a new baseline KPI, and re-baseline desktop vs. mobile CTR trends now that the prior logging error has been resolved.
+- Don't over-react to 'Couldn't fetch' sitemap errors alone; verify via URL inspection/live test since the error may not reflect Google's actual fetch ability.
 
 ## Helpful Content Guidelines — Main Content & Fake Authors
 
-- Audit key templates to ensure Main Content (not boilerplate, ads, or navigation) is substantive, original, and clearly the primary focus, per Google's rater-aligned definition.
-- Verify all published author bios/profiles are real, accurate, and not fabricated or templated placeholders.
+- Audit key templates against Google's newly clarified Main Content definition to ensure substantive, original content (not boilerplate/ads/nav) is the clear primary focus.
+- Verify all published author bios/profiles are real, accurate, and not fabricated or templated placeholders, per Google's explicit new warning against deceptive authorship information.
 - Tie this audit into existing E-E-A-T and author schema initiatives given Google's increased scrutiny on both fronts.
+
+## Large Site Indexing / Aggregator Pages
+
+- If any brand property functions as a large listing/directory/aggregator site, audit the ratio of crawled-to-indexed pages rather than assuming crawl volume signals health.
+- Consolidate, de-duplicate, or add unique value to thin aggregator-style pages to improve indexation rates.
+- Confirm homepage and key hub pages carry sufficiently unique, substantive content to avoid aggregator-style indexing suppression.
 
 ## Local SEO / GBP
 
 - Use new GBP post view counts (Search + Maps, 18-month lookback) to benchmark and optimize post content types on local/regional pages.
+- Review all GBP post and listing content against the updated advertising/solicitation prohibited-content policy to avoid suspension risk.
 - Apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations.
-- Monitor automated spam-review-removal alerts as an early signal of review manipulation, and verify legitimate negative reviews weren't wrongly removed.
-- Implement near-daily monitoring of GBP suggested edits — Google may auto-apply unrejected edits after 4 days.
-- If running Local Service Ads, audit served locations against configured service areas (confirmed targeting bug) and verify the new default-hidden phone number display isn't suppressing call conversions.
+- Monitor automated spam-review-removal alerts and near-daily suggested-edit queues (auto-applied after 4 days if unrejected).
+- If running Local Service Ads, audit served locations against configured service areas and verify default-hidden phone number display isn't suppressing call conversions.
 
 ## Product Page Copy for AI Agents
 
