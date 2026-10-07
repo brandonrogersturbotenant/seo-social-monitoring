@@ -20,15 +20,15 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Use Lighthouse 13.5's ARD audit as an early diagnostic, not a compliance signal — its checks diverge from the emerging community ARD standard.
 - Re-audit sites once the ARD standard finalizes rather than relying on current Lighthouse scores.
-- Track NLWeb/ASK protocol and WebMCP adoption as complementary agentic-web discovery/commerce mechanisms; assess whether checkout/lead-gen forms are agent-accessible.
+- Track NLWeb/ASK protocol, WebMCP, and WordPress's new canonical MCP Adapter as complementary agentic-web discovery/commerce mechanisms; pilot the MCP Adapter on a WordPress property and assess whether checkout/lead-gen forms are agent-accessible.
 - Evaluate llms.txt as a low-cost experiment, but confirm actual crawler adoption before investing significant effort.
 
 ## AI Agent SEO Tooling (MCP / Claude Code)
 
 - Pilot MCP-based/agentic SEO tools and Claude Code workflows on one brand site to automate detection and fixing of schema mismatches, stale links, and content briefs.
-- Prioritize highest-value use cases (GSC analysis, internal linking audits, technical fixes) before scaling to all domains.
-- Evaluate agentic workflow tooling against manual process time savings before broad adoption.
+- Split audit work into deterministic automated checks, a local LLM for explanation, and human judgment for final calls rather than full automation.
 - Test low-stakes, high-volume tasks against local/on-device models (e.g., Gemini Nano) to cut API costs before defaulting to frontier-model tooling.
+- Evaluate agentic workflow tooling against manual process time savings before broad adoption.
 
 ## AI Citations
 
@@ -36,7 +36,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness, correct schema) rather than a separate discipline — fix foundational issues first.
 - Mine first-party customer support/FAQ queries to surface exact phrasing that earns citations, and build content blocks around it.
 - Pursue third-party trust signals (Wikipedia presence, podcast appearances, Reddit engagement) via PR as a deliberate AI-citation-building tactic.
-- Use a diagnostic framework (missing from conversations / losing recommendations / wrong topic associations / outdated info / inaccessible content) to triage visibility gaps and assign the correct fix (content, PR, or technical) before picking tactics.
+- Run citation gap-analysis (e.g., via Semrush) to identify which third parties get cited when the brand is missing, and target content/outreach at closing those gaps.
 
 ## AI Content Quality Control
 
@@ -51,7 +51,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Ensure sitemaps use discoverable default naming and maintain active RSS feeds, since AI training crawlers typically can't be directly submitted to but do access sitemaps/RSS per Google's own logs.
 - Verify CDN and per-engine settings directly: Cloudflare governs bots by broad category, its 'Disallow AI Training' toggle exempts Googlebot, and Bing won't honor these signals until early 2027.
 - Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot, Cloudflare's Monetization Gateway/Pay Per Use, and Microsoft's framework are immature, incompatible programs.
-- Audit parent/child property Search generative AI control settings in GSC for any multi-property setups to confirm intended inheritance behavior.
+- Document Google's Retry-After HTTP header support for emergency crawl-rate reduction in incident runbooks, and audit parent/child property Search generative AI control settings in GSC for any multi-property setups.
 
 ## AI Localization/Translation Quality
 
@@ -61,7 +61,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## AI Overviews / AI Search Measurement Strategy
 
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank.
-- Re-audit branded query AIOs weekly given they now appear on over 80% of tracked branded queries (up sharply from ~26% a month prior); strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
+- Re-audit branded query AIOs weekly given they now appear on over 80% of tracked branded queries; strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic.
 - Diversify rank-tracking tooling as a contingency given Google's active pushback on SERP scraping, which AI agent traffic growth may accelerate.
@@ -71,7 +71,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit, assisted conversions, survey-based influence data).
 - Update analytics referral rules to capture Gemini's new UTM parameters and segment Gemini traffic value against standard organic and other AI referral sources.
 - Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, not raw citation/visibility counts alone.
-- Prepare budget/planning narratives (e.g. 2027 planning) that separate AI-influence/visibility metrics from broken click attribution to justify continued investment despite traffic declines.
+- Build budget narratives around revenue, risk reduction, and infrastructure value (not clicks/rankings) to justify continued SEO/AEO investment despite traffic declines.
 
 ## AI-Era Content Validation Workflow
 
@@ -108,8 +108,9 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Algorithm Update
 
+- Checkpoint current rankings/traffic now as a pre-update baseline given signals (documentation changes, spam-update cadence, Google statements) point to another major update approaching.
 - Treat unconfirmed ranking volatility spikes with skepticism — some past swings have been linked to bot-blocking crackdowns rather than core updates.
-- For the September 2026 spam update (final phase believed complete as of Oct 4-6), check GSC clicks/impressions and only attribute drops to it if policy-violating practices (including AI content spam) are present.
+- For the September 2026 spam update (final phase believed complete), check GSC clicks/impressions and only attribute drops to it if policy-violating practices (including AI content spam) are present.
 - Proactively re-audit AI-assisted content for thin/unoriginal patterns given Google's confirmed escalation of AI-powered spam detection targeting AI-generated content.
 - Use Google's published crawling/indexing/serving/recovery timeframes as a baseline before escalating indexing or recovery concerns post-update.
 
@@ -149,7 +150,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Review all GBP post and listing content against the updated advertising/solicitation prohibited-content policy to avoid suspension risk.
 - Apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations.
 - Monitor automated spam-review-removal alerts and near-daily suggested-edit queues (auto-applied after 4 days if unrejected).
-- If running Local Service Ads, audit served locations against configured service areas and verify default-hidden phone number display isn't suppressing call conversions.
+- Confirm WhatsApp messaging is connected on listings where it supports lead flow, and audit multi-location pages against a single-source-of-truth record model feeding page, GBP, schema, and directory listings.
 
 ## Product Page Copy for AI Agents
 
@@ -165,6 +166,11 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Audit schema across key templates for completeness and content-match accuracy (not just validator pass/fail), since mismatches actively hurt AI visibility.
 - Prioritize fixing missing/outdated/mismatched structured data on pages targeted for AEO/AI citation.
 
+## Schema — Review Snippets
+
+- Check whether any health/safety-adjacent brand content falls into categories where Google may be suppressing review rich snippets despite valid markup.
+- Avoid over-investing in review schema for affected content verticals until Google clarifies scope of the change.
+
 ## Schema — Video Structured Data
 
 - Add creator/author properties to VideoObject schema on any video content to strengthen E-E-A-T signals.
@@ -178,3 +184,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Review internal technical SEO audit workflows for prioritization and follow-through gaps, not just checklist/tooling coverage.
 - Assign clear ownership and remediation SLAs for recurring audit findings across brand sites.
+
+## WordPress Platform Maintenance
+
+- Confirm all WordPress-based brand properties are updated to the latest patched core version promptly after security releases.
+- Verify critical workflows (e.g., image uploads) post-update to catch regressions before they affect content publishing.
