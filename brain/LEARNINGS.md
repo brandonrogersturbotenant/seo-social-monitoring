@@ -53,6 +53,11 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot, Cloudflare's Monetization Gateway/Pay Per Use, and Microsoft's framework are immature, incompatible programs.
 - Document Google's Retry-After HTTP header support for emergency crawl-rate reduction in incident runbooks, and audit parent/child property Search generative AI control settings in GSC for any multi-property setups.
 
+## AI Diagnostic Reliability
+
+- Treat AI-generated SEO root-cause diagnoses (e.g., for traffic drops) as hypotheses requiring human verification against GSC/analytics, not conclusions.
+- Maintain an internal triage checklist (crawling, tracking, algorithm, manual action) so teams don't over-rely on confident-sounding but unverified AI answers.
+
 ## AI Localization/Translation Quality
 
 - Benchmark leading LLMs directly against human translators for any planned multilingual content expansion.
@@ -99,6 +104,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Audit live listing/product SERP presentation (prices, sale badges, images) against current source feed data to catch Google's cached/derived data mismatches.
 - Set a recurring spot-check process for high-value listing pages comparing rendered search results to the actual feed.
+- Throttle high-churn feed fields (price, availability) to avoid more-than-daily changes now that Merchant Center may disapprove (not just update) frequently-changing products on mismatch detection.
 
 ## Google AI Contribution Pilot
 
@@ -108,15 +114,20 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Algorithm Update
 
-- Checkpoint current rankings/traffic now as a pre-update baseline given signals (documentation changes, spam-update cadence, Google statements) point to another major update approaching.
+- Check GSC clicks/impressions around the Sep 28–Oct 8 window; only attribute drops to the (now-complete) September spam update if policy-violating practices (including AI content spam) are present.
 - Treat unconfirmed ranking volatility spikes with skepticism — some past swings have been linked to bot-blocking crackdowns rather than core updates.
-- For the September 2026 spam update (final phase believed complete), check GSC clicks/impressions and only attribute drops to it if policy-violating practices (including AI content spam) are present.
-- Proactively re-audit AI-assisted content for thin/unoriginal patterns given Google's confirmed escalation of AI-powered spam detection targeting AI-generated content.
+- Set clear milestones before reacting to future update rollouts — separate early volatility from lasting losses rather than making reactive site changes mid-rollout.
+- Proactively re-audit AI-assisted content for thin/unoriginal patterns given Google's confirmed escalation of AI-powered spam detection.
 - Use Google's published crawling/indexing/serving/recovery timeframes as a baseline before escalating indexing or recovery concerns post-update.
 
 ## Google Indexing API Delays
 
 - Do not build listing-freshness strategy dependent on timely Indexing API approval — precedent shows months-long, undocumented review waits.
+
+## Google Manual Actions
+
+- Check the GSC Manual Actions report across all brand properties given a reported recent uptick in enforcement.
+- Audit syndicated, partner, affiliate, and UGC content for policy compliance as a precaution.
 
 ## Google Search Profile Badges
 
@@ -152,6 +163,11 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Monitor automated spam-review-removal alerts and near-daily suggested-edit queues (auto-applied after 4 days if unrejected).
 - Confirm WhatsApp messaging is connected on listings where it supports lead flow, and audit multi-location pages against a single-source-of-truth record model feeding page, GBP, schema, and directory listings.
 
+## Local Service Ads Lead Reporting
+
+- Review updated LSA 'how leads work' documentation against current billing/dispute practices for any brand running Local Service Ads.
+- Re-train local ops/support staff on what now qualifies as a billable phone lead and how lead-quality credits are handled.
+
 ## Product Page Copy for AI Agents
 
 - Audit pricing/feature pages to ensure differentiator messaging exists in prose, not just schema/feed data, so AI shopping agents don't default to generic summaries.
@@ -179,6 +195,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Static Site SEO Gaps
 
 - Audit any static-site-generator-based brand property or microsite for manually-required canonicals, sitemaps, redirects, metadata, schema, and 404 handling that CMS plugins normally automate.
+- Weigh Astro-style islands architecture for any new lightweight/microsite builds where CWV performance is a priority.
 
 ## Technical SEO Process
 
