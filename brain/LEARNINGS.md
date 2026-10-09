@@ -20,7 +20,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Use Lighthouse 13.5's ARD audit as an early diagnostic, not a compliance signal — its checks diverge from the emerging community ARD standard.
 - Re-audit sites once the ARD standard finalizes rather than relying on current Lighthouse scores.
-- Track NLWeb/ASK protocol, WebMCP, and WordPress's new canonical MCP Adapter as complementary agentic-web discovery/commerce mechanisms; pilot the MCP Adapter on a WordPress property and assess whether checkout/lead-gen forms are agent-accessible.
+- Track NLWeb/ASK protocol, WebMCP, and WordPress's canonical MCP Adapter as complementary agentic-web discovery/commerce mechanisms; pilot the MCP Adapter on a WordPress property and assess whether checkout/lead-gen forms are agent-accessible.
 - Evaluate llms.txt as a low-cost experiment, but confirm actual crawler adoption before investing significant effort.
 
 ## AI Agent SEO Tooling (MCP / Claude Code)
@@ -43,7 +43,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers, extended to titles, alt text, and other metadata per Google's updated guidance.
 - Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's active, AI-powered spam detection targeting AI-generated content specifically.
 - Document a formal fact-check sign-off step in the editorial workflow before publishing any AI-assisted content.
-- Verify no author bios or bylines use fabricated/deceptive authorship information per Google's explicit new warning.
+- Verify no author bios or bylines use fabricated/deceptive authorship information per Google's explicit warning.
+- Ensure no content or outreach practices resemble 'seeding' misleading sources to influence AI answers, per Anthropic's updated Claude usage policy targeting this behavior.
 
 ## AI Crawler Access & Traffic Measurement
 
@@ -66,10 +67,15 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## AI Overviews / AI Search Measurement Strategy
 
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank.
-- Re-audit branded query AIOs weekly given they now appear on over 80% of tracked branded queries; strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
+- Re-audit branded query AIOs weekly given they now appear on most big-brand searches tracked; strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic.
 - Diversify rank-tracking tooling as a contingency given Google's active pushback on SERP scraping, which AI agent traffic growth may accelerate.
+
+## AI Paid Media Compliance
+
+- Audit default AI automation settings in Google/Meta ad accounts for compliance risk given fair housing/financial-services ad regulations relevant to rental and property management advertising.
+- Document organizational AI usage policies for paid media teams to avoid platform-default settings creating unreviewed compliance exposure.
 
 ## AI Search Attribution
 
@@ -114,8 +120,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Algorithm Update
 
-- Check GSC clicks/impressions around the Sep 28–Oct 8 window; only attribute drops to the (now-complete) September spam update if policy-violating practices (including AI content spam) are present.
-- Treat unconfirmed ranking volatility spikes with skepticism — some past swings have been linked to bot-blocking crackdowns rather than core updates.
+- Check GSC Manual Actions report across all brand properties given reported enforcement uptick now that the September 2026 spam update has fully completed its third and final phase.
+- Only attribute ranking drops to the spam update if policy-violating practices (including AI content spam) are present; treat unconfirmed volatility spikes with skepticism.
 - Set clear milestones before reacting to future update rollouts — separate early volatility from lasting losses rather than making reactive site changes mid-rollout.
 - Proactively re-audit AI-assisted content for thin/unoriginal patterns given Google's confirmed escalation of AI-powered spam detection.
 - Use Google's published crawling/indexing/serving/recovery timeframes as a baseline before escalating indexing or recovery concerns post-update.
@@ -126,7 +132,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Manual Actions
 
-- Check the GSC Manual Actions report across all brand properties given a reported recent uptick in enforcement.
+- Check the GSC Manual Actions report across all brand properties given reported recent uptick in enforcement following the completed September spam update.
 - Audit syndicated, partner, affiliate, and UGC content for policy compliance as a precaution.
 
 ## Google Search Profile Badges
@@ -146,7 +152,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Helpful Content Guidelines — Main Content & Fake Authors
 
 - Audit key templates against Google's newly clarified Main Content definition to ensure substantive, original content (not boilerplate/ads/nav) is the clear primary focus.
-- Verify all published author bios/profiles are real, accurate, and not fabricated or templated placeholders, per Google's explicit new warning against deceptive authorship information.
+- Verify all published author bios/profiles are real, accurate, and not fabricated or templated placeholders, per Google's explicit warning against deceptive authorship information.
 - Tie this audit into existing E-E-A-T and author schema initiatives given Google's increased scrutiny on both fronts.
 
 ## Large Site Indexing / Aggregator Pages
@@ -202,7 +208,13 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Review internal technical SEO audit workflows for prioritization and follow-through gaps, not just checklist/tooling coverage.
 - Assign clear ownership and remediation SLAs for recurring audit findings across brand sites.
 
+## UGC Fresh Data Program
+
+- Review Google's new documentation on UGC fresh-data partnerships to determine eligibility criteria for any brand forum, reviews, or community content.
+- Audit UGC sections for freshness, structure, and update cadence to position for potential inclusion in similar data-sharing arrangements.
+
 ## WordPress Platform Maintenance
 
-- Confirm all WordPress-based brand properties are updated to the latest patched core version promptly after security releases.
+- Confirm all WordPress-based brand properties are updated to the latest patched core version promptly after security releases, including Jetpack 16.3's accessibility/security update.
 - Verify critical workflows (e.g., image uploads) post-update to catch regressions before they affect content publishing.
+- Evaluate newly added Jetpack blocks (Latest Videos Playlist, video discovery, appointment scheduling) for applicability to relevant brand pages.
