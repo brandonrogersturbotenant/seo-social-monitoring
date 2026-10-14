@@ -35,7 +35,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Optimize to become one of the fewer, higher-quality sources AI engines actually cite rather than chasing overall mention volume; favor primary-source, original-data content as citation patterns shift.
 - Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness, correct schema) rather than a separate discipline — fix foundational issues first.
 - Mine first-party customer support/FAQ queries to surface exact phrasing that earns citations, and build content blocks around it.
-- Run citation gap-analysis (e.g., via Semrush) to identify which third parties get cited when the brand is missing, and target content/outreach at closing those gaps.
+- Run citation gap-analysis (via Semrush or Bing's Topics Portfolio queries-missing-your-site view) to identify which third parties get cited when the brand is missing, and target content/outreach at closing those gaps.
 - Check AI brand-recommendation and citation presence in non-English languages relevant to target markets, not just English, since recommendations vary meaningfully by query language.
 
 ## AI Content Quality Control
@@ -52,7 +52,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Ensure sitemaps use discoverable default naming and maintain active RSS feeds, since AI training crawlers typically can't be directly submitted to but do access sitemaps/RSS per Google's own logs.
 - Verify CDN and per-engine settings directly: Cloudflare governs bots by broad category, its 'Disallow AI Training' toggle exempts Googlebot, and Bing won't honor these signals until early 2027.
 - Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot, Cloudflare's Monetization Gateway/Pay Per Use, and Microsoft's framework are immature, incompatible programs.
-- Audit form-submission and lead-gen endpoints for bot-abuse protection, given confirmed cases of AI agents (Claude) bypassing site restrictions and submitting real forms during testing.
+- Audit form-submission and lead-gen endpoints for bot-abuse protection, given confirmed cases of AI agents bypassing site restrictions and submitting real forms during testing.
 
 ## AI Diagnostic Reliability
 
@@ -70,7 +70,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Re-audit branded query AIOs weekly given they now appear on most big-brand searches tracked; strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic, noting studies show only a minority of queries actually trigger fan-out expansion.
-- Cross-check any third-party rank-tracking data against GSC directly, since Google's anti-scraping defenses are increasingly breaking third-party tools.
+- Cross-check any third-party rank-tracking data against GSC directly, since Google's anti-scraping defenses (including reported 'poisoned' results served to trackers) are increasingly breaking third-party tools.
 
 ## AI Paid Media Compliance
 
@@ -82,14 +82,20 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit, assisted conversions, survey-based influence data).
 - Update analytics referral rules to capture Gemini's new UTM parameters and segment Gemini traffic value against standard organic and other AI referral sources.
+- Build fallback referrer-domain detection for ChatGPT traffic now that OpenAI has dropped UTM parameters from ChatGPT links as of GPT-6, breaking prior tracking methods.
 - Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, not raw citation/visibility counts alone.
 - Build budget narratives around revenue, risk reduction, and infrastructure value (not clicks/rankings) to justify continued SEO/AEO investment despite traffic declines.
 
+## AI Shopping Agent Readiness
+
+- Audit plan/pricing/product pages for plain-text answers to common transactional questions (cancellation, billing, trial terms, fees) rather than relying solely on structured data
+- Benchmark brand pages against the agent-readiness failure patterns found in the 122-store Shopify study
+
 ## AI Visibility Monitoring Tools
 
-- Pilot an AI-visibility dashboard (Semrush-style or dedicated platforms like Peec AI/Scrunch AI) that cross-references AI citation presence against actual Google click performance.
+- Pilot an AI-visibility dashboard (Semrush-style or dedicated platforms like Peec AI/Scrunch AI) that cross-references AI citation presence against actual Google click performance; use seoClarity's 8-platform comparison framework to guide vendor shortlisting.
 - Use rising AI crawler traffic volume (per Cloudflare Radar-type data) as justification for budget toward dedicated AI-visibility monitoring rather than ad hoc checks.
-- Add Bing Webmaster Tools' new Topics Portfolio (beta) as a recurring check for thematic AI-search presence gaps and opportunity queries.
+- Use Bing Webmaster Tools' Topics Portfolio to find queries where competitors are cited but the brand isn't, and prioritize content fixes against that gap list.
 
 ## AI-Era Content Validation Workflow
 
@@ -112,6 +118,11 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Assign a named distribution owner to every major content asset at publish time.
 - Build a repeatable 90-day post-publish checklist (outreach, syndication, internal linking, PR) aimed at earning backlinks and AI citations.
 - Review underperforming older content against this checklist to re-ignite distribution rather than only focusing on new launches.
+
+## Core Web Vitals — Soft Navigation
+
+- Identify SPA/dashboard-style sections on brand sites that use client-side route changes without full page loads
+- Monitor CrUX experimental soft navigation metrics for these sections ahead of expected Search Console integration
 
 ## Feed / Rendered Listing Data Integrity
 
@@ -183,9 +194,16 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Review updated LSA 'how leads work' documentation against current billing/dispute practices for any brand running Local Service Ads.
 - Re-train local ops/support staff on what now qualifies as a billable phone lead and how lead-quality credits are handled.
 
+## PDF SEO / AEO
+
+- Audit brand PDFs for text-based (not scanned-image) content to ensure crawlability and indexing
+- Verify links and images inside key PDFs are being processed/indexed correctly via URL inspection
+- Consider republishing high-value PDF guides as HTML pages to improve AI Mode/AEO citation potential and ranking flexibility
+
 ## Product Page Copy for AI Agents
 
 - Audit pricing/feature pages to ensure differentiator messaging exists in prose, not just schema/feed data, so AI shopping agents don't default to generic summaries.
+- Verify policy/FAQ content (cancellation, billing, trial terms) is plainly readable in page text, since real-world agent testing shows agents fail transactional questions even on 'agent-ready' stores.
 
 ## Publisher Organic Traffic Decline
 
@@ -195,7 +213,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Rank Tracking Reliability
 
-- Cross-check any third-party rank-tracking tool output against GSC Performance data given ongoing, worsening scraper-blocking by Google.
+- Cross-check any third-party rank-tracking tool output against GSC Performance data given ongoing, worsening scraper-blocking and reported result 'poisoning' aimed at rank-tracking bots.
 - Build contingency/redundancy into visibility reporting workflows rather than relying on a single rank-tracking vendor.
 
 ## Schema — AI Visibility Mistakes
