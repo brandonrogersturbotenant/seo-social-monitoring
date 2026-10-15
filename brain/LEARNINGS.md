@@ -21,11 +21,11 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Use Lighthouse 13.5's ARD audit as an early diagnostic, not a compliance signal — its checks diverge from the emerging community ARD standard.
 - Re-audit sites once the ARD standard finalizes rather than relying on current Lighthouse scores.
 - Track NLWeb/ASK protocol, WebMCP, and WordPress's canonical MCP Adapter as complementary agentic-web discovery/commerce mechanisms; pilot the MCP Adapter on a WordPress property and assess whether checkout/lead-gen forms are agent-accessible.
-- Evaluate llms.txt as a low-cost experiment, but confirm actual crawler adoption before investing significant effort.
+- Deprioritize llms.txt investment — a 300K-domain study found no measurable impact on AI visibility or citations; don't build strategy around it.
 
 ## AI Agent SEO Tooling (MCP / Claude Code)
 
-- Pilot MCP-based/agentic SEO tools and Claude Code workflows on one brand site to automate detection and fixing of schema mismatches, stale links, and content briefs.
+- Pilot MCP-based/agentic SEO tools (e.g., Semrush MCP + Claude for site-audit analysis) and Claude Code workflows on one brand site to automate detection and fixing of schema mismatches, stale links, and content briefs.
 - Split audit work into deterministic automated checks, a local LLM for explanation, and human judgment for final calls rather than full automation.
 - Test low-stakes, high-volume tasks against local/on-device models (e.g., Gemini Nano) to cut API costs before defaulting to frontier-model tooling.
 - Evaluate agentic workflow tooling against manual process time savings before broad adoption.
@@ -36,12 +36,12 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness, correct schema) rather than a separate discipline — fix foundational issues first.
 - Mine first-party customer support/FAQ queries to surface exact phrasing that earns citations, and build content blocks around it.
 - Run citation gap-analysis (via Semrush or Bing's Topics Portfolio queries-missing-your-site view) to identify which third parties get cited when the brand is missing, and target content/outreach at closing those gaps.
-- Check AI brand-recommendation and citation presence in non-English languages relevant to target markets, not just English, since recommendations vary meaningfully by query language.
+- Check AI brand-recommendation and citation presence in non-English languages relevant to target markets, not just English.
 
 ## AI Content Quality Control
 
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers, extended to titles, alt text, and other metadata per Google's updated guidance.
-- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's active, AI-powered spam detection targeting AI-generated content specifically.
+- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) and accelerate this given a predictive model now flagging a ~97% chance of a Panda-style update targeting exactly this within a month.
 - Document a formal fact-check sign-off step in the editorial workflow before publishing any AI-assisted content.
 - Verify no author bios or bylines use fabricated/deceptive authorship information per Google's explicit warning.
 - Review outreach/PR/citation-building tactics against Anthropic's updated Claude usage policy explicitly targeting manipulative 'seeding' of sources to influence AI answers.
@@ -51,7 +51,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Hold off on blocking AI bots (GPTBot, ClaudeBot, PerplexityBot, etc.) — commonly cited AI-referral metrics have unknown/incomplete denominators; wait for first-party log data.
 - Ensure sitemaps use discoverable default naming and maintain active RSS feeds, since AI training crawlers typically can't be directly submitted to but do access sitemaps/RSS per Google's own logs.
 - Verify CDN and per-engine settings directly: Cloudflare governs bots by broad category, its 'Disallow AI Training' toggle exempts Googlebot, and Bing won't honor these signals until early 2027.
-- Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot, Cloudflare's Monetization Gateway/Pay Per Use, and Microsoft's framework are immature, incompatible programs.
+- Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot (now at 400 partner publications), Cloudflare's Monetization Gateway/Pay Per Use, and Microsoft's framework are immature, incompatible programs.
 - Audit form-submission and lead-gen endpoints for bot-abuse protection, given confirmed cases of AI agents bypassing site restrictions and submitting real forms during testing.
 
 ## AI Diagnostic Reliability
@@ -67,7 +67,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## AI Overviews / AI Search Measurement Strategy
 
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank; note AIOs can trigger even on typo/no-match queries.
-- Re-audit branded query AIOs weekly given they now appear on most big-brand searches tracked; strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
+- Re-audit branded query AIOs weekly, factoring in Google's latest link-placement changes (inline links moved higher, expanded Preferred Source carousels); strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic, noting studies show only a minority of queries actually trigger fan-out expansion.
 - Cross-check any third-party rank-tracking data against GSC directly, since Google's anti-scraping defenses (including reported 'poisoned' results served to trackers) are increasingly breaking third-party tools.
@@ -88,14 +88,16 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Shopping Agent Readiness
 
-- Audit plan/pricing/product pages for plain-text answers to common transactional questions (cancellation, billing, trial terms, fees) rather than relying solely on structured data
-- Benchmark brand pages against the agent-readiness failure patterns found in the 122-store Shopify study
+- Audit plan/pricing/product pages for plain-text answers to common transactional questions (cancellation, billing, trial terms, fees) rather than relying solely on structured data.
+- Benchmark brand pages against the agent-readiness failure patterns found in the 122-store Shopify study.
+- Monitor Google's new Universal Cart/Universal Commerce Protocol for future relevance to transactional rental/application flows, even though not yet directly applicable.
 
 ## AI Visibility Monitoring Tools
 
 - Pilot an AI-visibility dashboard (Semrush-style or dedicated platforms like Peec AI/Scrunch AI) that cross-references AI citation presence against actual Google click performance; use seoClarity's 8-platform comparison framework to guide vendor shortlisting.
 - Use rising AI crawler traffic volume (per Cloudflare Radar-type data) as justification for budget toward dedicated AI-visibility monitoring rather than ad hoc checks.
 - Use Bing Webmaster Tools' Topics Portfolio to find queries where competitors are cited but the brand isn't, and prioritize content fixes against that gap list.
+- Consider earmarking Q4 budget specifically for AI-visibility/citation-gap initiatives with a defined Feb proof-of-impact checkpoint.
 
 ## AI-Era Content Validation Workflow
 
@@ -121,8 +123,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Core Web Vitals — Soft Navigation
 
-- Identify SPA/dashboard-style sections on brand sites that use client-side route changes without full page loads
-- Monitor CrUX experimental soft navigation metrics for these sections ahead of expected Search Console integration
+- Identify SPA/dashboard-style sections on brand sites that use client-side route changes without full page loads.
+- Monitor CrUX experimental soft navigation metrics for these sections ahead of expected Search Console integration.
 
 ## Feed / Rendered Listing Data Integrity
 
@@ -134,16 +136,16 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google AI Contribution Pilot
 
-- Watch Search Console for pilot access, but keep expectations minimal — confirmed payouts are under 0.1% of ad revenue with unclear/inconsistent calculation methods across participants.
+- Watch Search Console for pilot access, but keep expectations minimal — confirmed payouts are under 0.1% of ad revenue with unclear/inconsistent calculation methods across the now-400 participating publications.
 - Note it pays only for direct content contribution to AI answers, not standard citations/links — temper monetization expectations from rising citation volume alone.
 - Treat this pilot as a reason to avoid blocking AI crawlers until its impact and eligibility are better understood, not as a revenue strategy.
 
 ## Google Algorithm Update
 
 - Check GSC Manual Actions report across all brand properties given reported enforcement uptick now that the September 2026 spam update has fully completed.
-- Only attribute ranking drops to the spam update if policy-violating practices (including AI content spam) are present; treat unconfirmed volatility spikes with skepticism.
+- Treat a prediction model's ~97% signal of an imminent Panda-style update as a trigger to accelerate (not wait on) AI-content spam-pattern and fake-author audits.
+- Only attribute ranking drops to a spam update if policy-violating practices (including AI content spam) are present; treat unconfirmed volatility spikes with skepticism.
 - Set clear milestones before reacting to future update rollouts — separate early volatility from lasting losses rather than making reactive site changes mid-rollout.
-- Proactively re-audit AI-assisted content for thin/unoriginal patterns given Google's confirmed escalation of AI-powered spam detection.
 - When post-migration indexing stalls or old URLs reappear, evaluate underlying site quality (not just redirects/canonicals) and expect migration processing to legitimately take 4+ months before escalating.
 
 ## Google Indexing API Delays
@@ -173,7 +175,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Audit key templates against Google's newly clarified Main Content definition to ensure substantive, original content (not boilerplate/ads/nav) is the clear primary focus.
 - Verify all published author bios/profiles are real, accurate, and not fabricated or templated placeholders, per Google's explicit warning against deceptive authorship information.
-- Tie this audit into existing E-E-A-T and author schema initiatives given Google's increased scrutiny on both fronts.
+- Tie this audit into existing E-E-A-T and author schema initiatives given Google's increased scrutiny and a predictive model flagging a likely Panda-style update within a month.
 
 ## Large Site Indexing / Aggregator Pages
 
@@ -196,9 +198,9 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## PDF SEO / AEO
 
-- Audit brand PDFs for text-based (not scanned-image) content to ensure crawlability and indexing
-- Verify links and images inside key PDFs are being processed/indexed correctly via URL inspection
-- Consider republishing high-value PDF guides as HTML pages to improve AI Mode/AEO citation potential and ranking flexibility
+- Audit brand PDFs for text-based (not scanned-image) content to ensure crawlability and indexing.
+- Verify links and images inside key PDFs are being processed/indexed correctly via URL inspection.
+- Consider republishing high-value PDF guides as HTML pages to improve AI Mode/AEO citation potential and ranking flexibility.
 
 ## Product Page Copy for AI Agents
 
