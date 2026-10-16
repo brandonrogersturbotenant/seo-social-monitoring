@@ -70,27 +70,28 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Re-audit branded query AIOs weekly, factoring in Google's latest link-placement changes (inline links moved higher, expanded Preferred Source carousels); strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic, noting studies show only a minority of queries actually trigger fan-out expansion.
-- Cross-check any third-party rank-tracking data against GSC directly, since Google's anti-scraping defenses (including reported 'poisoned' results served to trackers) are increasingly breaking third-party tools.
+- Cross-check any third-party rank-tracking data against GSC directly, since Google's anti-scraping defenses (including reported 'poisoned'/paywalled fake data served to trackers) are increasingly breaking third-party tools.
 
 ## AI Paid Media Compliance
 
 - Audit default AI automation settings in Google/Meta ad accounts for compliance risk given fair housing/financial-services ad regulations relevant to rental and property management advertising.
 - Document organizational AI usage policies for paid media teams to avoid platform-default settings creating unreviewed compliance exposure.
 - Review updated Google Ads Data Strength best practices (first-party data, Data Manager, AI-powered campaigns) and align account setups accordingly.
+- Move beyond click-only PPC measurement by layering conversion tracking, impression signals, and business-record validation as buying journeys shift toward AI research.
 
 ## AI Search Attribution
 
 - Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit, assisted conversions, survey-based influence data).
 - Update analytics referral rules to capture Gemini's new UTM parameters and segment Gemini traffic value against standard organic and other AI referral sources.
-- Build fallback referrer-domain detection for ChatGPT traffic now that OpenAI has dropped UTM parameters from ChatGPT links as of GPT-6, breaking prior tracking methods.
+- Build fallback referrer-domain detection for ChatGPT traffic since OpenAI has dropped UTM parameters from ChatGPT links as of GPT-6, breaking prior tracking — note the much-reported 'ChatGPT traffic drop' is largely this tracking gap, not a real decline.
 - Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, not raw citation/visibility counts alone.
 - Build budget narratives around revenue, risk reduction, and infrastructure value (not clicks/rankings) to justify continued SEO/AEO investment despite traffic declines.
 
 ## AI Shopping Agent Readiness
 
 - Audit plan/pricing/product pages for plain-text answers to common transactional questions (cancellation, billing, trial terms, fees) rather than relying solely on structured data.
-- Benchmark brand pages against the agent-readiness failure patterns found in the 122-store Shopify study.
-- Monitor Google's new Universal Cart/Universal Commerce Protocol for future relevance to transactional rental/application flows, even though not yet directly applicable.
+- Benchmark brand pages against the agent-readiness failure patterns found in the 122-store Shopify study and current best-practice guidance for AI shopping agent visibility.
+- Monitor Google's now-live Universal Cart/Universal Commerce Protocol (checkout-in-cart or store handoff) for future relevance to transactional rental/application flows.
 
 ## AI Visibility Monitoring Tools
 
@@ -142,19 +143,19 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Algorithm Update
 
-- Check GSC Manual Actions report across all brand properties given reported enforcement uptick now that the September 2026 spam update has fully completed.
+- Check GSC Performance and Manual Actions reports across all brand properties given confirmed ranking/referral volatility spikes and chatter in recent days.
 - Treat a prediction model's ~97% signal of an imminent Panda-style update as a trigger to accelerate (not wait on) AI-content spam-pattern and fake-author audits.
-- Only attribute ranking drops to a spam update if policy-violating practices (including AI content spam) are present; treat unconfirmed volatility spikes with skepticism.
-- Set clear milestones before reacting to future update rollouts — separate early volatility from lasting losses rather than making reactive site changes mid-rollout.
-- When post-migration indexing stalls or old URLs reappear, evaluate underlying site quality (not just redirects/canonicals) and expect migration processing to legitimately take 4+ months before escalating.
+- Only attribute ranking drops to a spam update or volatility event if policy-violating practices or confirmed lasting loss are present; treat unconfirmed spikes with skepticism and wait for clear milestones before reacting.
+- When post-migration indexing stalls or old URLs reappear, evaluate underlying site quality/originality (not just redirects/canonicals) and expect migration processing to legitimately take 4+ months before escalating.
 
-## Google Indexing API Delays
+## Google Indexing API
 
-- Do not build listing-freshness strategy dependent on timely Indexing API approval — precedent shows months-long, undocumented review waits.
+- Re-review Google's recently updated Indexing API documentation (approval process, sitemap guidance, and quota details were all revised/removed) before planning any dependent listing-freshness workflows.
+- Do not build listing-freshness strategy dependent on timely or predictable Indexing API behavior given the documentation churn and historical approval delays.
 
 ## Google Manual Actions
 
-- Check the GSC Manual Actions report across all brand properties given reported recent uptick in enforcement following the completed September spam update.
+- Check the GSC Manual Actions report across all brand properties given reported recent enforcement uptick and ranking volatility.
 - Audit syndicated, partner, affiliate, and UGC content for policy compliance as a precaution.
 
 ## Google Search Profile Badges
@@ -215,7 +216,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Rank Tracking Reliability
 
-- Cross-check any third-party rank-tracking tool output against GSC Performance data given ongoing, worsening scraper-blocking and reported result 'poisoning' aimed at rank-tracking bots.
+- Cross-check any third-party rank-tracking tool output against GSC Performance data given ongoing, worsening scraper-blocking and reported result 'poisoning'/fake paywalled data aimed at rank-tracking bots.
 - Build contingency/redundancy into visibility reporting workflows rather than relying on a single rank-tracking vendor.
 
 ## Schema — AI Visibility Mistakes
@@ -246,8 +247,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## UGC Fresh Data Program
 
-- Review Google's new documentation on UGC fresh-data partnerships to determine eligibility criteria for any brand forum, reviews, or community content.
-- Audit UGC sections for freshness, structure, and update cadence to position for potential inclusion in similar data-sharing arrangements.
+- Google is now accepting applications for its UGC data pipeline (separate from crawling) for forums/social platforms — review eligibility criteria and apply if any brand forum, reviews, or community section qualifies.
+- Audit UGC sections for freshness, structure, and update cadence to strengthen eligibility for this or similar data-sharing arrangements.
 
 ## WordPress Platform Maintenance
 
