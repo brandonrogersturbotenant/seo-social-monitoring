@@ -35,23 +35,23 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Optimize to become one of the fewer, higher-quality sources AI engines actually cite rather than chasing overall mention volume; favor primary-source, original-data content as citation patterns shift.
 - Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness, correct schema) rather than a separate discipline — fix foundational issues first.
 - Mine first-party customer support/FAQ queries to surface exact phrasing that earns citations, and build content blocks around it.
-- Run citation gap-analysis (via Semrush or Bing's Topics Portfolio queries-missing-your-site view) to identify which third parties get cited when the brand is missing, and target content/outreach at closing those gaps.
-- Check AI brand-recommendation and citation presence in non-English languages relevant to target markets, not just English.
+- Run citation gap-analysis (via Semrush, Bing's Topics Portfolio, or seoClarity-style AEO test frameworks like prompt-variation and fragment-level testing) to find where competitors get cited instead of the brand, and target content fixes at closing those gaps.
+- Monitor for fabricated/competitor-seeded claims gaining fast AI citation uptake, since research shows some AI tools can cite new/unverified claims within a week; reinforce originality and fact-checking to compete on accuracy.
 
 ## AI Content Quality Control
 
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers, extended to titles, alt text, and other metadata per Google's updated guidance.
-- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) and accelerate this given a predictive model now flagging a ~97% chance of a Panda-style update targeting exactly this within a month.
+- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) and accelerate this given a predictive model flagging a ~97% chance of a Panda-style update targeting exactly this.
 - Document a formal fact-check sign-off step in the editorial workflow before publishing any AI-assisted content.
 - Verify no author bios or bylines use fabricated/deceptive authorship information per Google's explicit warning.
-- Review outreach/PR/citation-building tactics against Anthropic's updated Claude usage policy explicitly targeting manipulative 'seeding' of sources to influence AI answers.
+- Audit commercial/decision pages for whether they actually answer buyer questions (not just recite brand descriptions), since models can 'know' content verbatim yet still fail to resolve real user questions.
 
-## AI Crawler Access & Traffic Measurement
+## AI Crawler Access
 
 - Hold off on blocking AI bots (GPTBot, ClaudeBot, PerplexityBot, etc.) — commonly cited AI-referral metrics have unknown/incomplete denominators; wait for first-party log data.
+- Audit key templates for server-side rendering or static HTML fallbacks: 14+ months of repeated testing confirms ChatGPT, Claude, and Perplexity still largely fail to render JavaScript, so JS-dependent content remains invisible to them.
 - Ensure sitemaps use discoverable default naming and maintain active RSS feeds, since AI training crawlers typically can't be directly submitted to but do access sitemaps/RSS per Google's own logs.
 - Verify CDN and per-engine settings directly: Cloudflare governs bots by broad category, its 'Disallow AI Training' toggle exempts Googlebot, and Bing won't honor these signals until early 2027.
-- Manage publisher AI-payment models separately and temper expectations: Google's AI Contribution Pilot (now at 400 partner publications), Cloudflare's Monetization Gateway/Pay Per Use, and Microsoft's framework are immature, incompatible programs.
 - Audit form-submission and lead-gen endpoints for bot-abuse protection, given confirmed cases of AI agents bypassing site restrictions and submitting real forms during testing.
 
 ## AI Diagnostic Reliability
@@ -64,10 +64,10 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Benchmark leading LLMs directly against human translators for any planned multilingual content expansion.
 - Select translation workflow (model vs. human vs. hybrid) per content type based on task-specific performance rather than defaulting to human-only.
 
-## AI Overviews / AI Search Measurement Strategy
+## AI Overviews
 
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank; note AIOs can trigger even on typo/no-match queries.
-- Re-audit branded query AIOs weekly, factoring in Google's latest link-placement changes (inline links moved higher, expanded Preferred Source carousels); strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
+- Re-audit branded query AIOs weekly, factoring in Google's latest link-placement changes and Preferred Source carousel behavior; strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic, noting studies show only a minority of queries actually trigger fan-out expansion.
 - Cross-check any third-party rank-tracking data against GSC directly, since Google's anti-scraping defenses (including reported 'poisoned'/paywalled fake data served to trackers) are increasingly breaking third-party tools.
@@ -84,8 +84,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit, assisted conversions, survey-based influence data).
 - Update analytics referral rules to capture Gemini's new UTM parameters and segment Gemini traffic value against standard organic and other AI referral sources.
 - Build fallback referrer-domain detection for ChatGPT traffic since OpenAI has dropped UTM parameters from ChatGPT links as of GPT-6, breaking prior tracking — note the much-reported 'ChatGPT traffic drop' is largely this tracking gap, not a real decline.
+- Avoid treating Direct-traffic increases as proof of AI-driven visibility; apply bot-filtering and server-log cross-checks before attributing any Direct lift to AI assistants.
 - Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, not raw citation/visibility counts alone.
-- Build budget narratives around revenue, risk reduction, and infrastructure value (not clicks/rankings) to justify continued SEO/AEO investment despite traffic declines.
 
 ## AI Shopping Agent Readiness
 
@@ -95,7 +95,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Visibility Monitoring Tools
 
-- Pilot an AI-visibility dashboard (Semrush-style or dedicated platforms like Peec AI/Scrunch AI) that cross-references AI citation presence against actual Google click performance; use seoClarity's 8-platform comparison framework to guide vendor shortlisting.
+- Pilot an AI-visibility dashboard (Semrush-style or dedicated platforms like Peec AI/Scrunch AI) that cross-references AI citation presence against actual Google click performance; use seoClarity's 8-platform comparison framework and AEO testing-idea checklist to guide vendor shortlisting and test design.
 - Use rising AI crawler traffic volume (per Cloudflare Radar-type data) as justification for budget toward dedicated AI-visibility monitoring rather than ad hoc checks.
 - Use Bing Webmaster Tools' Topics Portfolio to find queries where competitors are cited but the brand isn't, and prioritize content fixes against that gap list.
 - Consider earmarking Q4 budget specifically for AI-visibility/citation-gap initiatives with a defined Feb proof-of-impact checkpoint.
@@ -121,6 +121,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Assign a named distribution owner to every major content asset at publish time.
 - Build a repeatable 90-day post-publish checklist (outreach, syndication, internal linking, PR) aimed at earning backlinks and AI citations.
 - Review underperforming older content against this checklist to re-ignite distribution rather than only focusing on new launches.
+- Apply updated journalist outreach best practices (targeted relevance, authenticated sending domains, concrete subject lines, clear openings) to improve pitch pickup, especially since AI tools now summarize inbox pitches for journalists.
 
 ## Core Web Vitals — Soft Navigation
 
@@ -186,7 +187,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Local SEO / GBP
 
-- Use new GBP post view counts (Search + Maps, 18-month lookback) to benchmark and optimize post content types on local/regional pages.
+- Use new GBP post view counts (Search + Maps, 18-month lookback) to benchmark and optimize post content types, and increase posting cadence now that Google Posts appear to have moved back higher on the local knowledge panel.
 - Review all GBP post and listing content against the updated advertising/solicitation prohibited-content policy to avoid suspension risk.
 - Apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations.
 - Monitor automated spam-review-removal alerts and near-daily suggested-edit queues (auto-applied after 4 days if unrejected).
@@ -196,6 +197,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Review updated LSA 'how leads work' documentation against current billing/dispute practices for any brand running Local Service Ads.
 - Re-train local ops/support staff on what now qualifies as a billable phone lead and how lead-quality credits are handled.
+- Update LSA creative/profile checklists now that Featured Professionals badges are being removed and headshots are optional with no serving impact.
 
 ## PDF SEO / AEO
 
