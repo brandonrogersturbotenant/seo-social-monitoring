@@ -33,24 +33,24 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## AI Citations
 
 - Optimize to become one of the fewer, higher-quality sources AI engines actually cite rather than chasing overall mention volume; favor primary-source, original-data content.
-- Treat AEO as an extension of core technical SEO (crawlability, indexability, usefulness, correct schema) rather than a separate discipline.
-- Mine first-party query sources — support/FAQ tickets, call transcripts, and chat logs — to surface exact phrasing that earns citations, and build content blocks around it.
-- Run citation gap-analysis (via Semrush, Bing's Topics Portfolio, or seoClarity-style AEO test frameworks like prompt-variation and fragment-level testing) to find where competitors get cited instead of the brand, and target content fixes at closing those gaps.
+- Build a rapid-response process to detect and correct factually wrong brand claims in AI Overviews/answers using clear, direct Q&A-style corrections on owned pages.
+- Mine first-party query sources (support tickets, call transcripts, chat logs) to surface exact phrasing that earns citations, and build content blocks around it.
+- Run citation gap-analysis (Semrush, Bing Topics Portfolio, seoClarity-style AEO test frameworks) to find where competitors get cited instead of the brand, and target content fixes at closing those gaps.
 - Monitor for fabricated/competitor-seeded claims gaining fast AI citation uptake; reinforce originality and fact-checking to compete on accuracy.
 
 ## AI Content Quality Control
 
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers, extended to titles, alt text, and other metadata per Google's updated guidance.
 - Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) and accelerate this given a predictive model flagging a ~97% chance of a Panda-style update targeting exactly this.
-- Document a formal fact-check sign-off step in the editorial workflow before publishing any AI-assisted content.
+- Document a formal fact-check sign-off step before publishing any AI-assisted content, and add visible sourcing plus honest product-limitation statements to build trust with AI-savvy-but-skeptical audiences.
 - Verify no author bios or bylines use fabricated/deceptive authorship information per Google's explicit warning.
 - Audit commercial/decision pages for whether they actually answer buyer questions (not just recite brand descriptions).
 
 ## AI Crawler Access
 
 - Hold off on blocking AI bots (GPTBot, ClaudeBot, PerplexityBot, etc.) — commonly cited AI-referral metrics have unknown/incomplete denominators; wait for first-party log data.
-- Audit key templates for server-side rendering or static HTML fallbacks: ChatGPT, Claude, and Perplexity still largely fail to render JavaScript, so JS-dependent content remains invisible to them.
-- Ensure sitemaps use discoverable default naming and maintain active RSS feeds, since AI training crawlers access sitemaps/RSS rather than accepting direct submission; note Cloudflare's OpenAI pilot indexed hundreds of millions of new pages via network signals — review Cloudflare bot settings to avoid blocking this discovery path.
+- Audit key templates for server-side rendering or static HTML fallbacks: ChatGPT, Claude, and Perplexity still largely fail to render JavaScript (confirmed again via Vercel research), so JS-dependent content remains invisible to them; prioritize SSR/pre-rendering on high-value pricing/FAQ/guide pages.
+- Ensure sitemaps use discoverable default naming and maintain active RSS feeds, since AI training crawlers access sitemaps/RSS rather than accepting direct submission; review Cloudflare bot settings to avoid blocking this discovery path.
 - Verify CDN and per-engine settings directly: Cloudflare governs bots by broad category, its 'Disallow AI Training' toggle exempts Googlebot, and Bing won't honor these signals until early 2027.
 - Ensure key pages carry visible publish/update dates, since DeepSeek's Search API date filters have been found to drop undated pages (11% of results in testing).
 
@@ -66,39 +66,38 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Overviews
 
-- Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank; note AIOs can trigger even on typo/no-match queries and may no longer carry a visible label on all platforms.
-- Re-audit branded query AIOs weekly, factoring in Google's latest link-placement changes and Preferred Source carousel behavior; strengthen presence on commonly-cited third parties (Wikipedia, YouTube, review sites) where displacement occurs.
+- Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank; note AIOs can trigger on typo/no-match queries and may no longer carry a visible label on all platforms.
+- Re-audit commercial query AIOs weekly given AIOs now appear on 88% of tracked commercial keywords (up from 46%), with sharp growth on reviews, pricing, and comparison queries — prioritize these page types.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic, noting studies show only a minority of queries actually trigger fan-out expansion.
 - Cross-check any third-party rank-tracking data against GSC directly, since Google's anti-scraping defenses are increasingly breaking third-party tools.
 
 ## AI Paid Media Compliance
 
-- Audit default AI automation settings in Google/Meta ad accounts for compliance risk given fair housing/financial-services ad regulations relevant to rental and property management advertising.
+- Audit default AI automation settings in Google/Meta/OpenAI ad accounts (e.g., ChatGPT Ads auto-enabling creative enhancements) for compliance risk given fair housing/financial-services ad regulations relevant to rental and property management advertising.
 - Document organizational AI usage policies for paid media teams to avoid platform-default settings creating unreviewed compliance exposure.
-- Review updated Google Ads Data Strength best practices (first-party data, Data Manager, AI-powered campaigns) and align account setups accordingly.
+- Review updated Google Ads Data Strength and Smart Bidding learning-period best practices (first-party data, Data Manager, new 7-day limit) and align account setups accordingly.
 - Move beyond click-only PPC measurement by layering conversion tracking, impression signals, and business-record validation as buying journeys shift toward AI research.
 
 ## AI Search Attribution
 
-- Move away from pure click-based attribution for AI-driven traffic; build value-based measurement (conversion value per AI-referred visit, assisted conversions, survey-based influence data).
-- Update analytics referral rules to capture Gemini's new UTM parameters and segment Gemini traffic value against standard organic and other AI referral sources.
-- Build fallback referrer-domain detection for ChatGPT traffic since OpenAI has dropped UTM parameters from ChatGPT links as of GPT-6, breaking prior tracking.
+- Pull 12-month GA4 LLM-referral traffic data per brand before allocating significant new budget to GEO/AEO tactics; weigh AI-citation investment against confirmed traffic/revenue impact, not visibility counts alone.
+- Update analytics referral rules to capture Gemini's new UTM parameters and build fallback referrer-domain detection for ChatGPT traffic since OpenAI has dropped UTM parameters as of GPT-6.
 - Avoid treating Direct-traffic increases as proof of AI-driven visibility; apply bot-filtering and server-log cross-checks before attributing any Direct lift to AI assistants.
 - Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, not raw citation/visibility counts alone.
 
 ## AI Shopping Agent Readiness
 
 - Audit plan/pricing/product pages for plain-text answers to common transactional questions (cancellation, billing, trial terms, fees) rather than relying solely on structured data.
-- Benchmark brand pages against the agent-readiness failure patterns found in the 122-store Shopify study and current best-practice guidance for AI shopping agent visibility.
-- Monitor Google's now-live Universal Cart/Universal Commerce Protocol (checkout-in-cart or store handoff) for future relevance to transactional rental/application flows.
+- Benchmark brand pages against agent-readiness failure patterns and current best-practice guidance for AI shopping agent visibility.
+- Monitor Google's Universal Cart/Universal Commerce Protocol for future relevance to transactional rental/application flows.
 
 ## AI Visibility Monitoring Tools
 
-- Pilot an AI-visibility dashboard (Semrush-style or dedicated platforms like Peec AI/Scrunch AI) that cross-references AI citation presence against actual Google click performance; use seoClarity's comparison frameworks for both AI content optimization and SEO/AI split-testing tools to guide vendor shortlisting and test design.
+- Pilot an AI-visibility dashboard (Semrush-style or dedicated platforms like Peec AI/Scrunch AI) that cross-references AI citation presence against actual Google click performance.
 - Use rising AI crawler traffic volume (per Cloudflare Radar-type data) as justification for budget toward dedicated AI-visibility monitoring rather than ad hoc checks.
 - Use Bing Webmaster Tools' Topics Portfolio to find queries where competitors are cited but the brand isn't, and prioritize content fixes against that gap list.
-- Consider earmarking Q4 budget specifically for AI-visibility/citation-gap initiatives with a defined Feb proof-of-impact checkpoint.
+- Consider earmarking Q4 budget specifically for AI-visibility/citation-gap initiatives with a defined Feb proof-of-impact checkpoint, balanced against evidence that direct LLM-referral traffic remains small for most sites.
 
 ## AI-Era Content Validation Workflow
 
@@ -132,19 +131,12 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Audit live listing/product SERP presentation (prices, sale badges, images) against current source feed data to catch Google's cached/derived data mismatches.
 - Set a recurring spot-check process for high-value listing pages comparing rendered search results to the actual feed.
-- Throttle high-churn feed fields (price, availability) to avoid more-than-daily changes now that Merchant Center may disapprove (not just update) frequently-changing products on mismatch detection.
+- Throttle high-churn feed fields (price, availability) to avoid more-than-daily changes now that Merchant Center may disapprove (not just update) frequently-changing products on mismatch detection; also confirm fast-shipping-days claims match the new per-country thresholds (AU, CA, IN, JP, GB, US).
 - Deprioritize emergency fixes for low-quality listing images since Google confirmed poor image quality alone no longer blocks Search/Ads inclusion.
-- If using Merchant Center video uploads, watch for the current 'stuck in preview processing' bug and avoid repeated re-uploads until Google resolves it.
-
-## Google AI Contribution Pilot
-
-- Watch Search Console for pilot access, but keep expectations minimal — confirmed payouts are under 0.1% of ad revenue with unclear/inconsistent calculation methods across the now-400 participating publications.
-- Note it pays only for direct content contribution to AI answers, not standard citations/links — temper monetization expectations from rising citation volume alone.
-- Treat this pilot as a reason to avoid blocking AI crawlers until its impact and eligibility are better understood, not as a revenue strategy.
 
 ## Google Algorithm Update
 
-- Check GSC Performance and Manual Actions reports across all brand properties given confirmed ranking/referral volatility spikes and chatter in recent days.
+- Check GSC Performance and Manual Actions reports across all brand properties given a confirmed spike in ranking volatility and industry chatter over the past 24-48 hours.
 - Treat a prediction model's ~97% signal of an imminent Panda-style update as a trigger to accelerate (not wait on) AI-content spam-pattern and fake-author audits.
 - Only attribute ranking drops to a spam update or volatility event if policy-violating practices or confirmed lasting loss are present; treat unconfirmed spikes with skepticism and wait for clear milestones before reacting.
 - When post-migration indexing stalls or old URLs reappear, evaluate underlying site quality/originality (not just redirects/canonicals) and expect migration processing to legitimately take 4+ months before escalating.
@@ -167,17 +159,22 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## GSC Reporting
 
-- Flag anomalous indexing count drops and broken date-picker behavior (e.g., stuck end-date bugs) as likely reporting bugs before launching technical audits, but keep monitoring given elevated indexing complaints.
-- Use the new multi-select country filter in Performance reports to build grouped regional views instead of checking countries one at a time.
-- Use the new Multimodal vs Text-based filter in the Web search Performance report to baseline image-search contribution on listing-photo and infographic-heavy pages.
+- Flag anomalous indexing count drops and broken date-picker behavior as likely reporting bugs before launching technical audits, but keep monitoring given elevated indexing complaints.
+- Use the new multi-select country filter and Multimodal vs Text-based filter in Performance reports to build grouped regional views and baseline image-search contribution on listing-photo/infographic-heavy pages.
 - Track Preferred Source subscriber-count emails as a new baseline KPI, and re-baseline desktop vs. mobile CTR trends now that the prior logging error has been resolved.
 - Don't over-react to 'Couldn't fetch' sitemap errors alone; verify via URL inspection/live test since the error may not reflect Google's actual fetch ability.
+- Review the updated 'Control what you share with Google Search' doc and apply data-nosnippet, X-Robots-Tag, or the Search generative AI control tag on pages needing AI-reuse restrictions.
 
 ## Helpful Content Guidelines — Main Content & Fake Authors
 
 - Audit key templates against Google's newly clarified Main Content definition to ensure substantive, original content (not boilerplate/ads/nav) is the clear primary focus.
 - Verify all published author bios/profiles are real, accurate, and not fabricated or templated placeholders, per Google's explicit warning against deceptive authorship information.
 - Tie this audit into existing E-E-A-T and author schema initiatives given Google's increased scrutiny and a predictive model flagging a likely Panda-style update within a month.
+
+## Image Formats / JPEG XL
+
+- Avoid switching primary listing/blog/hero images to JPEG XL until Google Images and Discover previews support the format.
+- Audit any already-adopted JPEG XL images for broken previews in Google Images/Discover and fall back to supported formats (JPEG, WebP, AVIF) where needed.
 
 ## Large Site Indexing / Aggregator Pages
 
@@ -218,8 +215,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Publisher Organic Traffic Decline
 
 - Prioritize investment in direct channels (email, app, community) to hedge against accelerating YoY organic search/Discover referral decline.
-- Benchmark visibility trend against vertical-wide SaaS decline (~1/3 YoY loss reported) and Chartbeat's Q3 2026 finding that search fell to 12% of North American publisher pageviews; distinguish share decline from absolute volume decline before messaging stakeholders.
-- Prepare for further Discover volatility as Google rebuilds it into an AI-driven 'Concierge' experience with tighter YouTube integration.
+- Benchmark visibility trend against vertical-wide SaaS decline and Chartbeat's finding that search fell to 12% of North American publisher pageviews; distinguish share decline from absolute volume decline before messaging stakeholders.
+- Review content cadence and freshness mix against newly detailed Discover SDF freshness-algorithm factors and prepare for further Discover volatility as Google rebuilds it into an AI-driven experience.
 
 ## Rank Tracking Reliability
 
@@ -259,13 +256,14 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## URL Syntax Handling
 
-- Audit any brand URLs containing square brackets (e.g., faceted/filter parameters) for indexing anomalies given Google's confirmed internal issues handling this character in URLs.
-- Avoid introducing square brackets into new URL structures until Google resolves the issue.
+- Standardize on one form (raw vs. percent-encoded) for bracket characters in URLs across links, canonical tags, and sitemaps, since Google confirmed it now crawls the two forms as separate URLs.
+- Audit any brand URLs containing square brackets (e.g., faceted/filter parameters) for indexing anomalies and duplicate-URL issues stemming from mixed encoding.
+- Avoid introducing square brackets into new URL structures until consistent handling is verified.
 
 ## WordPress Platform Maintenance
 
+- Confirm all WordPress-based brand properties (and hosts) have applied the emergency PHP Core security patch released today as top priority, given unauthenticated-attacker risk.
 - Confirm all WordPress-based brand properties are updated to the latest patched core version promptly after security releases, including Jetpack 16.3's accessibility/security update.
 - Verify critical workflows (e.g., image uploads) post-update to catch regressions before they affect content publishing.
-- Evaluate newly added Jetpack blocks (Latest Videos Playlist, video discovery, appointment scheduling) for applicability to relevant brand pages.
 - Immediately audit for and patch the All In One SEO (AIOSEO) plugin if in use, given two medium-severity unauthenticated-attacker vulnerabilities.
 - Update to Yoast SEO 28.7 where used and test post-update for regressions from its deprecated-code cleanup; evaluate new AI-assisted title/meta/social-preview editing features.
