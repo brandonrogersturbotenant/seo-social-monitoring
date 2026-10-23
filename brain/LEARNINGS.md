@@ -70,7 +70,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Re-audit commercial query AIOs regularly given high and growing AIO coverage on reviews, pricing, and comparison queries — prioritize these page types.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic.
-- Cross-check any third-party rank-tracking data against GSC directly, since scraping defenses and outages are increasingly breaking third-party tools.
+- Monitor AI Overview citation cards for AI-generated summary text that may misrepresent brand/page content, and cross-check any third-party rank-tracking data against GSC directly.
 
 ## AI Paid Media Compliance
 
@@ -81,17 +81,22 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Search Attribution
 
-- Pull 12-month GA4 LLM-referral traffic data per brand before allocating significant new budget to GEO/AEO tactics; weigh AI-citation investment against confirmed traffic/revenue impact, not visibility counts alone.
+- Pull 12-month GA4 LLM-referral traffic data per brand before allocating significant new budget to GEO/AEO tactics; multiple independent studies (GA4 cohort analyses, agency benchmarks) now confirm AI assistants drive only a tiny fraction of traffic/conversions vs. Google organic — use as a hard budget-allocation reality check.
 - Update analytics referral rules to capture Gemini's new UTM parameters and build fallback referrer-domain detection for ChatGPT traffic since OpenAI has dropped UTM parameters.
 - Avoid treating Direct-traffic increases as proof of AI-driven visibility; apply bot-filtering and server-log cross-checks before attributing any Direct lift to AI assistants.
-- Use multiple independent studies confirming AI search still drives a tiny fraction of traffic/conversions vs. Google Search as a budget-allocation reality check.
-- Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, not raw citation/visibility counts alone.
+- Stop relying on single-prompt AI visibility checks — underlying retrieval/search data structures change run-to-run; require multi-run sampling before drawing citation-presence conclusions.
+- Report exposure to stakeholders as visibility + commercial/traffic-dependency data combined, framed as a branding/awareness channel rather than a traffic-replacement channel.
+
+## AI Search Strategy Diagnostics
+
+- Run a layered diagnostic (crawlability/access, content accuracy, structured data, citation performance) before investing in AI-visibility content rewrites.
+- Fix the weakest layer first — content rewrites won't help if AI systems can't reach the site or are citing wrong information.
 
 ## AI Shopping Agent Readiness
 
 - Audit plan/pricing/product pages for plain-text answers to common transactional questions (cancellation, billing, trial terms, fees) rather than relying solely on structured data.
 - Benchmark brand pages against agent-readiness failure patterns and current best-practice guidance for AI shopping agent visibility.
-- Monitor Google's Universal Cart/Universal Commerce Protocol and emerging agent-browsing/protocol standards for future relevance to transactional rental/application flows.
+- Monitor Google's live Universal Cart and expanding information-agent capabilities in Search/Gemini for future relevance to transactional rental/application flows.
 
 ## AI Visibility Monitoring Tools
 
@@ -124,6 +129,11 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Review underperforming older content against this checklist to re-ignite distribution rather than only focusing on new launches.
 - Apply updated journalist outreach best practices, and extend outreach/monitoring to Reddit given its growing role as a PR and AI-citation source.
 
+## Content Strategy — Listicles & Comparisons
+
+- Audit existing comparison/listicle content for genuine reader utility (clear criteria, honest tradeoffs, real recommendations) rather than keyword-driven structure alone.
+- Prioritize trust-building elements (methodology transparency, first-hand testing notes) on comparison pages targeted at commercial/buyer-intent queries.
+
 ## Core Web Vitals — Soft Navigation
 
 - Identify SPA/dashboard-style sections on brand sites that use client-side route changes without full page loads.
@@ -138,7 +148,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Algorithm Update
 
-- Check GSC Performance and Manual Actions reports across all brand properties periodically given continued industry chatter over ranking volatility.
+- Check GSC Performance and Manual Actions reports across all brand properties periodically given continued industry chatter over ranking volatility with still no confirmed official core update.
 - Note that Google's recent spam update is showing minimal measurable ranking impact per independent tracking — avoid overreacting to volatility without confirmed cause.
 - Only attribute ranking drops to a spam update or volatility event if policy-violating practices or confirmed lasting loss are present; treat unconfirmed spikes with skepticism.
 - When post-migration indexing stalls or old URLs reappear, evaluate underlying site quality/originality (not just redirects/canonicals) and expect migration processing to legitimately take 4+ months before escalating.
@@ -175,7 +185,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Image Formats / JPEG XL
 
-- Avoid switching primary listing/blog/hero images to JPEG XL until Google Images and Discover previews support the format.
+- Avoid switching primary listing/blog/hero images to JPEG XL — Google reconfirmed (via John Mueller) that Images and Discover previews still don't support the format.
 - Audit any already-adopted JPEG XL images for broken previews in Google Images/Discover and fall back to supported formats (JPEG, WebP, AVIF) where needed.
 
 ## Large Site Indexing / Aggregator Pages
@@ -189,7 +199,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Use GBP post view counts (Search + Maps, 18-month lookback) to benchmark and optimize post content types, and increase posting cadence given Google Posts' higher placement in the local knowledge panel.
 - Review all GBP post and listing content against the updated advertising/solicitation prohibited-content policy to avoid suspension risk.
-- Request/monitor access to the new Google Business Home beta hub and evaluate workflow changes before full rollout.
+- Request/monitor access to the new Google Business Home beta hub and the newly-tested revamped Performance report (engagement, reviews, search trends, audience, recommendations) before full rollout.
 - Audit GBP photo prominence and description copy against the tested local knowledge panel layout change (photos vs. text position swap).
 - Apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations.
 
@@ -224,8 +234,9 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Rank Tracking Reliability
 
 - Cross-check any third-party rank-tracking tool output against GSC Performance data given ongoing scraper-blocking and reported result 'poisoning'/fake data aimed at rank-tracking bots.
+- Request vendor documentation on how they detect and handle suspect/flagged results, what reprocessing looks like, and what's surfaced to customers during a flag.
 - Build contingency/redundancy into visibility reporting workflows rather than relying on a single rank-tracking vendor.
-- Shift core reporting toward brand visibility, AI citations, and revenue metrics given confirmed September rank-tracking outages exposed single-metric reporting risk.
+- Shift core reporting toward brand visibility, AI citations, and revenue metrics given confirmed rank-tracking outages exposed single-metric reporting risk.
 
 ## Schema — AI Visibility Mistakes
 
