@@ -69,14 +69,14 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank; indexing/ranking now only buys answer-layer eligibility, not a guaranteed visit.
 - Re-audit commercial query AIOs regularly given AIO coverage now exceeding 80% of searches, up from ~50% a year ago — prioritize reviews, pricing, and comparison page types.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
-- Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic.
+- Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic, accounting for growing information-seeking share of AI assistant usage.
 - Monitor AI Overview citation cards for AI-generated summary text that may misrepresent brand/page content, and cross-check any third-party rank-tracking data against GSC directly.
 
 ## AI Paid Media Compliance
 
 - Audit default AI automation settings in Google/Meta/OpenAI ad accounts for compliance risk given fair housing/financial-services ad regulations relevant to rental and property management advertising.
 - Review AI-generated 'review summaries' now appearing directly in Google Search ads for accuracy against actual brand reviews; flag inaccuracies via support.
-- Review updated Google Ads Data Strength, Smart Bidding learning-period, and 1-click AI Max experiment guidance before accepting account recommendations.
+- Review updated Google Ads Data Strength, Smart Bidding learning-period, Customer Lifecycle Goals, and 1-click AI Max experiment guidance before accepting account recommendations.
 - Move beyond click-only PPC measurement by layering conversion tracking, impression signals, and business-record validation as buying journeys shift toward AI research.
 
 ## AI Search Attribution
@@ -91,12 +91,14 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Run a layered diagnostic (crawlability/access, content accuracy, structured data, citation performance) before investing in AI-visibility content rewrites.
 - Fix the weakest layer first — content rewrites won't help if AI systems can't reach the site or are citing wrong information.
+- Benchmark maturity against a phased foundation-to-authority framework (access/structure first, then citations) rather than defaulting to more content volume.
 
 ## AI Shopping Agent Readiness
 
 - Audit plan/pricing/product pages for plain-text answers to common transactional questions (cancellation, billing, trial terms, fees) rather than relying solely on structured data.
 - Benchmark brand pages against agent-readiness failure patterns and current best-practice guidance for AI shopping agent visibility.
-- Monitor Google's live Universal Cart and expanding information-agent capabilities in Search/Gemini for future relevance to transactional rental/application flows.
+- Monitor Google's live Universal Cart, generative UI/booking-intermediary ambitions, and expanding information-agent capabilities in Search/Gemini for future relevance to transactional rental/application flows.
+- Prioritize owned-channel (direct site, app, email) booking/application paths as a hedge against Google-mediated transaction capture.
 
 ## AI Visibility Monitoring Tools
 
@@ -139,6 +141,12 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Identify SPA/dashboard-style sections on brand sites that use client-side route changes without full page loads.
 - Monitor CrUX experimental soft navigation metrics for these sections ahead of expected Search Console integration.
 
+## Enterprise SEO Process Silos
+
+- Audit cross-team ownership gaps for technical SEO changes spanning multiple brand sites/subdomains to catch silo-driven inconsistencies.
+- Standardize implementation checklists (schema, redirects, metadata) across brand properties so fixes on one site don't get missed on others.
+- Build a scale-safe rollout process (templated changes, staged QA) before pushing SEO fixes across large or multi-brand site portfolios.
+
 ## Feed / Rendered Listing Data Integrity
 
 - Audit live listing/product SERP presentation (prices, sale badges, images) against current source feed data to catch Google's cached/derived data mismatches.
@@ -148,8 +156,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Algorithm Update
 
-- Check GSC Performance and Manual Actions reports across all brand properties periodically given continued industry chatter over ranking volatility with still no confirmed official core update.
-- Note that Google's recent spam update is showing minimal measurable ranking impact per independent tracking — avoid overreacting to volatility without confirmed cause.
+- Check GSC Performance and Manual Actions reports across all brand properties given a second wave of unconfirmed ranking volatility/chatter within 72 hours; no official core update confirmed.
+- Note Google's recent spam update is showing minimal measurable ranking impact per independent tracking — avoid overreacting to volatility without confirmed cause.
 - Only attribute ranking drops to a spam update or volatility event if policy-violating practices or confirmed lasting loss are present; treat unconfirmed spikes with skepticism.
 - When post-migration indexing stalls or old URLs reappear, evaluate underlying site quality/originality (not just redirects/canonicals) and expect migration processing to legitimately take 4+ months before escalating.
 
@@ -161,7 +169,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Google Manual Actions
 
 - Check the GSC Manual Actions report across all brand properties periodically given reported ranking volatility in the ecosystem.
-- Audit syndicated, partner, affiliate, and UGC content for policy compliance as a precaution.
+- Audit syndicated, partner, affiliate, and UGC content for policy compliance as a precaution, including against the newly expanded shared/generated-pages spam guidance.
 
 ## Google Search Profile Badges
 
@@ -171,7 +179,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## GSC Reporting
 
-- Flag anomalous indexing count drops and broken date-picker behavior as likely reporting bugs before launching technical audits, but keep monitoring given elevated indexing complaints.
+- Flag anomalous indexing count drops and broken date-picker behavior as likely reporting bugs before launching technical audits; Google (John Mueller) has explicitly said not to over-index on indexing-report freshness or slowness.
 - Use the multi-select country filter and Multimodal vs Text-based filter in Performance reports to build grouped regional views and baseline image-search contribution on listing-photo/infographic-heavy pages.
 - Track Preferred Source subscriber-count emails as a new baseline KPI, and re-baseline desktop vs. mobile CTR trends now that the prior logging error has been resolved.
 - Don't over-react to 'Couldn't fetch' sitemap errors alone; verify via URL inspection/live test since the error may not reflect Google's actual fetch ability.
@@ -208,6 +216,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Review updated LSA 'how leads work' documentation against current billing/dispute practices for any brand running Local Service Ads.
 - Re-train local ops/support staff on what now qualifies as a billable phone lead and how lead-quality credits are handled.
 - Update LSA creative/profile checklists now that Featured Professionals badges are being removed and headshots are optional with no serving impact.
+- Audit campaign reporting for ad-unit misattribution given advertiser confusion distinguishing Local Service Ads from other local ad formats.
 
 ## PDF SEO / AEO
 
@@ -234,7 +243,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Rank Tracking Reliability
 
 - Cross-check any third-party rank-tracking tool output against GSC Performance data given ongoing scraper-blocking and reported result 'poisoning'/fake data aimed at rank-tracking bots.
-- Request vendor documentation on how they detect and handle suspect/flagged results, what reprocessing looks like, and what's surfaced to customers during a flag.
+- Request vendor documentation on how they detect and handle suspect/flagged results, what reprocessing looks like, and what's surfaced to customers during a flag — vendors like Semrush are now publishing validation methodology.
 - Build contingency/redundancy into visibility reporting workflows rather than relying on a single rank-tracking vendor.
 - Shift core reporting toward brand visibility, AI citations, and revenue metrics given confirmed rank-tracking outages exposed single-metric reporting risk.
 
@@ -262,6 +271,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Add creator/author properties to VideoObject schema on any video content to strengthen E-E-A-T signals.
 - Coordinate with Search Profile badge rollout for named authors/creators across video and article content.
+- Review emerging AI-search-specific video optimization guidance for applicability to schema and on-page video content strategy.
 
 ## Static Site SEO Gaps
 
@@ -271,7 +281,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Technical SEO Process
 
 - Review internal technical SEO audit workflows for prioritization and follow-through gaps, not just checklist/tooling coverage.
-- Assign clear ownership and remediation SLAs for recurring audit findings across brand sites.
+- Assign clear ownership and remediation SLAs for recurring audit findings across brand sites, and audit for silo/scale failure patterns common in multi-brand/enterprise setups.
 - Apply scientific-method discipline (clear hypothesis, control group, adequate sample size, confounder checks) when designing and interpreting SEO experiments.
 
 ## UGC Fresh Data Program
@@ -291,4 +301,4 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Confirm all WordPress-based brand properties and hosts have applied the PHP Core security patch and are on the latest patched core version, including Jetpack's recent accessibility/security update.
 - Ensure any planned maintenance downtime serves a true 503 (configured outside PHP, e.g., at web server/CDN level) with robots.txt still reachable, to avoid Google dropping URLs after prolonged server errors.
 - Immediately audit for and patch the All In One SEO (AIOSEO) plugin if in use, given unauthenticated-attacker vulnerabilities.
-- Update to Yoast SEO 28.7 where used and test post-update for regressions; evaluate new AI-assisted title/meta/social-preview editing features.
+- Update to Yoast SEO/Premium 28.8 where used (includes AI-assisted alt text for WooCommerce) and test post-update for regressions.
