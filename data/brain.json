@@ -7,7 +7,7 @@
       "action_items": [
         "Prioritize original content/data assets, content quality, and backlink acquisition over marginal technical fixes on already-healthy sites \u2014 these rank as top factors in expert surveys."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "accessibility-seo-overlap",
@@ -15,7 +15,7 @@
       "action_items": [
         "Run an accessibility audit (semantic HTML, alt text, heading structure, ARIA labels, keyboard navigation) on key page templates as a dual-purpose SEO/accessibility improvement."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "affiliate-brand-bidding-leakage",
@@ -25,18 +25,18 @@
         "Capture ad evidence and match violations to specific partner/affiliate accounts.",
         "Run this audit periodically given affiliate/comparison-site prevalence in the PM software niche."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-agent-resource-discovery-standards",
       "title": "AI Agent Resource Discovery (ARD)",
       "action_items": [
-        "Use Lighthouse 13.5's ARD audit as an early diagnostic, not a compliance signal \u2014 its checks diverge from the emerging community ARD standard; re-audit once the standard finalizes.",
+        "Use Lighthouse 13.5's ARD audit and similar vendor AI-discoverability audits (e.g., Ahrefs Site Audit) as early diagnostics, not compliance signals \u2014 re-audit once the community ARD standard finalizes.",
         "Track NLWeb/ASK protocol, WebMCP, and WordPress's canonical MCP Adapter as complementary agentic-web discovery/commerce mechanisms; pilot the MCP Adapter on a WordPress property and assess whether checkout/lead-gen forms are agent-accessible.",
         "Review robots.txt and bot-detection logic for connector/cloud-browser-based personal AI agents that bypass traditional crawler user-agent patterns.",
         "Deprioritize llms.txt investment \u2014 a 300K-domain study found no measurable impact on AI visibility or citations."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "agentic-seo-tooling",
@@ -47,7 +47,7 @@
         "Test low-stakes, high-volume tasks against local/on-device models to cut API costs before defaulting to frontier-model tooling.",
         "Evaluate agentic workflow tooling against manual process time savings before broad adoption."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-citation-behavior",
@@ -59,19 +59,28 @@
         "Mine first-party query sources (support tickets, call transcripts, chat logs) to surface exact phrasing that earns citations, and build content blocks around it.",
         "Run citation gap-analysis to find where competitors get cited instead of the brand, and monitor Reddit/UGC platforms as citation sources with defined response protocols."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
+    },
+    {
+      "id": "shadow-web-ai-content-parity",
+      "title": "AI Content Parity / Shadow Web Risk",
+      "action_items": [
+        "Audit any content served specifically to AI crawlers/feeds (llms.txt, hidden data feeds, AI-only pages) for factual parity with the public-facing site.",
+        "Avoid cloaking-adjacent practices where AI systems see different claims/data than human visitors \u2014 treat as a long-term trust and policy risk, not just a technical shortcut."
+      ],
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-content-quality-control",
       "title": "AI Content Quality Control",
       "action_items": [
         "Mandate human editorial review gates for all AI-assisted content across blogs and help centers, extended to titles, alt text, and other metadata per Google's updated guidance.",
-        "Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given ongoing risk of a Panda-style spam update.",
+        "Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's confirmed expansion of spam enforcement to new UGC-adjacent platforms and tools.",
         "Document a formal fact-check sign-off step before publishing any AI-assisted content, and add visible sourcing plus honest product-limitation statements to build trust.",
         "Verify no author bios or bylines use fabricated/deceptive authorship information per Google's explicit warning.",
         "Audit commercial/decision pages for whether they actually answer buyer questions, not just recite brand descriptions."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-crawler-traffic-measurement",
@@ -81,9 +90,9 @@
         "Audit key templates for server-side rendering or static HTML fallbacks, since ChatGPT, Claude, and Perplexity still largely fail to render JavaScript; prioritize SSR/pre-rendering on high-value pricing/FAQ/guide pages.",
         "Ensure sitemaps use discoverable default naming and maintain active RSS feeds, since AI training crawlers access sitemaps/RSS rather than accepting direct submission; review Cloudflare bot settings to avoid blocking this path.",
         "Verify CDN and per-engine settings directly rather than assuming uniform behavior: Cloudflare governs bots by broad category, and Bing won't honor AI-training signals until early 2027.",
-        "Separate crawling-access decisions (robots.txt) from AI-training-use decisions \u2014 Google confirms robots.txt only governs crawling, not downstream content use; document this distinction in crawler policy, and monitor Meta's delayed business-terms update for any future crawl-permission changes."
+        "Separate crawling-access decisions (robots.txt) from AI-training-use decisions \u2014 Google confirms robots.txt only governs crawling, not downstream content use; document this distinction in crawler policy."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-diagnostic-reliability",
@@ -92,7 +101,7 @@
         "Treat AI-generated SEO root-cause diagnoses as hypotheses requiring human verification against GSC/analytics, not conclusions.",
         "Maintain an internal triage checklist (crawling, tracking, algorithm, manual action, migration/site-quality issues) so teams don't over-rely on confident-sounding but unverified AI answers."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-localization-quality",
@@ -101,19 +110,19 @@
         "Benchmark leading LLMs directly against human translators for any planned multilingual content expansion.",
         "Select translation workflow (model vs. human vs. hybrid) per content type based on task-specific performance rather than defaulting to human-only."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-search-visibility-and-serp-changes",
       "title": "AI Overviews",
       "action_items": [
         "Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries \u2014 focus on outcomes (visits/conversions), not rank; indexing/ranking now only buys answer-layer eligibility, not a guaranteed visit.",
-        "Re-audit commercial query AIOs regularly given AIO coverage now exceeding 80% of searches, up from ~50% a year ago \u2014 prioritize reviews, pricing, and comparison page types.",
+        "Re-audit commercial query AIOs regularly given AIO coverage now exceeding 80% of searches and AI Mode surpassing 1B monthly users \u2014 prioritize reviews, pricing, and comparison page types.",
         "Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.",
         "Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic, accounting for growing information-seeking share of AI assistant usage.",
         "Monitor AI Overview citation cards for AI-generated summary text that may misrepresent brand/page content, and cross-check any third-party rank-tracking data against GSC directly."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-regulated-paid-media-compliance",
@@ -124,7 +133,7 @@
         "Review updated Google Ads Data Strength, Smart Bidding learning-period, Customer Lifecycle Goals, and 1-click AI Max experiment guidance before accepting account recommendations.",
         "Move beyond click-only PPC measurement by layering conversion tracking, impression signals, and business-record validation as buying journeys shift toward AI research."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-search-attribution",
@@ -136,7 +145,7 @@
         "Stop relying on single-prompt AI visibility checks \u2014 underlying retrieval/search data structures change run-to-run; require multi-run sampling before drawing citation-presence conclusions.",
         "Reframe GEO success around influencing what a model learns (training-data presence), not just referral-traffic credit, since referral reports only show who sent the click, not who shaped the decision."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-search-strategy-diagnostic-layers",
@@ -146,7 +155,7 @@
         "Fix the weakest layer first \u2014 content rewrites won't help if AI systems can't reach the site or are citing wrong information.",
         "Benchmark maturity against a phased foundation-to-authority framework (access/structure first, then citations) rather than defaulting to more content volume."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-shopping-agent-readiness",
@@ -154,10 +163,10 @@
       "action_items": [
         "Audit plan/pricing/product pages for plain-text answers to common transactional questions (cancellation, billing, trial terms, fees) rather than relying solely on structured data.",
         "Benchmark brand pages against agent-readiness failure patterns and current best-practice guidance for AI shopping agent visibility.",
-        "Monitor Google's live Universal Cart, generative UI/booking-intermediary ambitions, and expanding information-agent capabilities in Search/Gemini for future relevance to transactional rental/application flows.",
+        "Monitor Google's live Universal Cart, Connected Apps hub, generative UI/booking-intermediary ambitions, and expanding information-agent capabilities in Search/Gemini for future relevance to transactional rental/application flows.",
         "Prioritize owned-channel (direct site, app, email) booking/application paths as a hedge against Google-mediated transaction capture."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-visibility-monitoring-tools",
@@ -168,7 +177,7 @@
         "Use Bing Webmaster Tools' Topics Portfolio to find queries where competitors are cited but the brand isn't, and prioritize content fixes against that gap list.",
         "Earmark budget for AI-visibility/citation-gap initiatives cautiously given multiple independent studies showing minimal traffic/conversion impact to date; set a defined proof-of-impact checkpoint."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ai-content-validation-workflow",
@@ -179,7 +188,7 @@
         "Test writing precise, unambiguous 'technical manual' style passages on key guide/help pages to improve LLM parsing and citation accuracy.",
         "Structure flagship content as modular, self-contained answer blocks that remain accurate and credible when excerpted out of context by AI systems."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "audience-data-quality",
@@ -188,7 +197,7 @@
         "Audit first-party audience/segment data quality feeding any AI-driven personalization, targeting, or agent-facing tools.",
         "Treat audience/data hygiene as a prerequisite for AI visibility strategy, not just an ads/marketing concern."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "technical-indexing-canonical-hygiene",
@@ -197,7 +206,7 @@
         "Run periodic canonical tag audits across all brand domains, especially syndicated content, partner integrations, and shared templates, to catch cross-domain misconfigurations before they cause silent de-indexing.",
         "For any statically-generated site or section, confirm canonicals, sitemaps, redirects, and 404 handling are manually implemented since CMS plugin automation won't apply."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "content-distribution-system",
@@ -208,7 +217,7 @@
         "Review underperforming older content against this checklist to re-ignite distribution rather than only focusing on new launches.",
         "Apply updated journalist outreach best practices, and extend outreach/monitoring to Reddit given its growing role as a PR, community, and AI-citation source \u2014 evaluate standing up a branded subreddit as part of this strategy."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "content-format-value-listicles",
@@ -217,7 +226,7 @@
         "Audit existing comparison/listicle content for genuine reader utility (clear criteria, honest tradeoffs, real recommendations) rather than keyword-driven structure alone.",
         "Prioritize trust-building elements (methodology transparency, first-hand testing notes) on comparison pages targeted at commercial/buyer-intent queries."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "core-web-vitals-soft-navigation",
@@ -226,7 +235,7 @@
         "Identify SPA/dashboard-style sections on brand sites that use client-side route changes without full page loads.",
         "Monitor CrUX experimental soft navigation metrics for these sections ahead of expected Search Console integration."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "enterprise-seo-process-silos",
@@ -236,7 +245,7 @@
         "Standardize implementation checklists (schema, redirects, metadata) across brand properties so fixes on one site don't get missed on others.",
         "Build a scale-safe rollout process (templated changes, staged QA) before pushing SEO fixes across large or multi-brand site portfolios."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "feed-rendered-data-integrity",
@@ -247,18 +256,18 @@
         "Throttle high-churn feed fields (price, availability) to avoid more-than-daily changes now that Merchant Center may disapprove products on mismatch detection.",
         "Deprioritize emergency fixes for low-quality listing images since Google confirmed poor image quality alone no longer blocks Search/Ads inclusion."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "google-ranking-volatility-tracking",
       "title": "Google Algorithm Update",
       "action_items": [
-        "Check GSC Performance and Manual Actions reports across all brand properties given a second wave of unconfirmed ranking volatility/chatter within 72 hours; no official core update confirmed.",
-        "Note Google's recent spam update is showing minimal measurable ranking impact per independent tracking \u2014 avoid overreacting to volatility without confirmed cause.",
+        "Check GSC Performance and Manual Actions reports across all brand properties when unconfirmed ranking volatility/chatter surfaces; don't assume an official core update without confirmation.",
+        "Note Google's spam-enforcement expansion to new UGC-adjacent platforms/tools \u2014 audit syndicated, partner, affiliate, and UGC content for compliance as enforcement scope grows.",
         "Only attribute ranking drops to a spam update or volatility event if policy-violating practices or confirmed lasting loss are present; treat unconfirmed spikes with skepticism.",
         "When post-migration indexing stalls or old URLs reappear, evaluate underlying site quality/originality (not just redirects/canonicals) and expect migration processing to legitimately take 4+ months before escalating."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "google-indexing-api-access-delays",
@@ -267,16 +276,7 @@
         "Re-review Google's recently updated Indexing API documentation (approval process, sitemap guidance, and quota details were all revised/removed) before planning any dependent listing-freshness workflows.",
         "Do not build listing-freshness strategy dependent on timely or predictable Indexing API behavior given the documentation churn and historical approval delays."
       ],
-      "last_updated": "2026-10-27"
-    },
-    {
-      "id": "google-manual-actions",
-      "title": "Google Manual Actions",
-      "action_items": [
-        "Check the GSC Manual Actions report across all brand properties periodically given reported ranking volatility in the ecosystem.",
-        "Audit syndicated, partner, affiliate, and UGC content for policy compliance as a precaution, including against the newly expanded shared/generated-pages spam guidance."
-      ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "google-search-profile-badges",
@@ -286,19 +286,19 @@
         "Delay heavier investment in desktop-specific Search Profile UX until the feature stabilizes.",
         "Pair with the lowered 10K-follower eligibility threshold to capture follow-based visibility as traffic patterns shift."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "search-console-reporting-reliability",
       "title": "GSC Reporting",
       "action_items": [
-        "Flag anomalous indexing count drops and broken date-picker behavior as likely reporting bugs before launching technical audits; Google (John Mueller) has explicitly said not to over-index on indexing-report freshness or slowness.",
+        "Flag anomalous indexing count drops and broken date-picker behavior as likely reporting bugs before launching technical audits; Google has explicitly said not to over-index on indexing-report freshness or slowness.",
         "Use the multi-select country filter and Multimodal vs Text-based filter in Performance reports to build grouped regional views and baseline image-search contribution on listing-photo/infographic-heavy pages.",
         "Track Preferred Source subscriber-count emails as a new baseline KPI, and re-baseline desktop vs. mobile CTR trends now that the prior logging error has been resolved.",
         "Don't over-react to 'Couldn't fetch' sitemap errors alone; verify via URL inspection/live test since the error may not reflect Google's actual fetch ability.",
         "Review the 'Control what you share with Google Search' doc and apply data-nosnippet, X-Robots-Tag, or the Search generative AI control tag on pages needing AI-reuse restrictions."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "helpful-content-main-content-authors",
@@ -306,18 +306,28 @@
       "action_items": [
         "Audit key templates against Google's clarified Main Content definition to ensure substantive, original content (not boilerplate/ads/nav) is the clear primary focus.",
         "Verify all published author bios/profiles are real, accurate, and not fabricated or templated placeholders, per Google's explicit warning against deceptive authorship information.",
-        "Tie this audit into existing E-E-A-T and author schema initiatives given Google's increased scrutiny and ongoing risk of a spam-pattern update."
+        "Tie this audit into existing E-E-A-T and author schema initiatives given Google's increased scrutiny and the confirmed expansion of spam enforcement."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
+    },
+    {
+      "id": "hreflang-market-page-value",
+      "title": "Hreflang & International Pages",
+      "action_items": [
+        "Audit international/market pages for unique local value (pricing, legal terms, regional specifics) rather than relying on hreflang tagging to carry ranking signal.",
+        "Check GSC indexing status of hreflang-alternate URLs since Google may leave referenced market pages unindexed.",
+        "Prioritize localized differentiation on market pages likely to surface in AI Mode/AI Overviews answers."
+      ],
+      "last_updated": "2026-10-28"
     },
     {
       "id": "image-format-compatibility",
       "title": "Image Formats / JPEG XL",
       "action_items": [
-        "Avoid switching primary listing/blog/hero images to JPEG XL \u2014 Google reconfirmed (via John Mueller) that Images and Discover previews still don't support the format.",
+        "Avoid switching primary listing/blog/hero images to JPEG XL \u2014 Google reconfirmed Images and Discover previews still don't support the format.",
         "Audit any already-adopted JPEG XL images for broken previews in Google Images/Discover and fall back to supported formats (JPEG, WebP, AVIF) where needed."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "large-site-indexing-aggregators",
@@ -328,7 +338,7 @@
         "Segment large-site page types by revenue contribution (not just traffic) to prioritize which thin pages to fix, merge, or cut.",
         "Confirm homepage and key hub pages carry sufficiently unique, substantive content to avoid aggregator-style indexing suppression."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "google-business-profile-updates",
@@ -336,11 +346,11 @@
       "action_items": [
         "Use GBP post view counts (Search + Maps, 18-month lookback) to benchmark and optimize post content types, and increase posting cadence given Google Posts' higher placement in the local knowledge panel.",
         "Review all GBP post and listing content against the updated advertising/solicitation prohibited-content policy to avoid suspension risk.",
-        "Request/monitor access to the new Google Business Home beta hub and the newly-tested revamped Performance report (engagement, reviews, search trends, audience, recommendations) before full rollout.",
-        "Audit GBP photo prominence and description copy against the tested local knowledge panel layout change (photos vs. text position swap), and benchmark current setup against current best-practice guides for Q&A seeding and review management.",
-        "Apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations."
+        "Check GBP listings for auto-added Facebook Messenger (m.me) links and verify they route to active, monitored pages.",
+        "Prepare EIN and privacy policy documentation in advance for any GBP listing updates, given Google's newly observed verification requests.",
+        "Audit GBP photo prominence and description copy against the tested local knowledge panel layout change, and apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "local-service-ads-reporting",
@@ -351,7 +361,7 @@
         "Update LSA creative/profile checklists now that Featured Professionals badges are being removed and headshots are optional with no serving impact.",
         "Audit campaign reporting for ad-unit misattribution given advertiser confusion distinguishing Local Service Ads from other local ad formats."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "pdf-seo-aeo",
@@ -361,7 +371,7 @@
         "Verify links and images inside key PDFs are being processed/indexed correctly via URL inspection.",
         "Consider republishing high-value PDF guides as HTML pages to improve AI Mode/AEO citation potential and ranking flexibility."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "platform-visibility-reporting-expansion",
@@ -370,7 +380,7 @@
         "Evaluate whether brand presence on social discovery platforms (including Reddit) should be tracked alongside traditional organic visibility metrics.",
         "Review Search Console's platform property options as they expand to include non-website properties."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "product-page-copy-value-in-ai-era",
@@ -379,7 +389,7 @@
         "Audit pricing/feature pages to ensure differentiator messaging exists in prose, not just schema/feed data, so AI shopping agents don't default to generic summaries.",
         "Verify policy/FAQ content (cancellation, billing, trial terms) is plainly readable in page text, since real-world agent testing shows agents fail transactional questions even on 'agent-ready' stores."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "publisher-organic-traffic-decline",
@@ -387,20 +397,20 @@
       "action_items": [
         "Prioritize investment in direct channels (email, app, community) to hedge against accelerating YoY organic search/Discover referral decline.",
         "Benchmark visibility trend against vertical-wide SaaS/publisher decline using multi-year, multi-market data; distinguish share decline from absolute volume decline and from AI-attributable loss before messaging stakeholders.",
-        "Review content cadence and freshness mix against Discover's freshness-algorithm factors and prepare for further Discover volatility as Google rebuilds it into an AI-driven experience and tests UI changes like disabled sources clicks."
+        "Review content cadence and freshness mix against Discover's freshness-algorithm factors and prepare for further Discover volatility as Google rebuilds it into an AI-driven experience."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "rank-tracking-reliability",
       "title": "Rank Tracking Reliability",
       "action_items": [
         "Cross-check any third-party rank-tracking tool output against GSC Performance data given ongoing scraper-blocking and reported result 'poisoning'/fake data aimed at rank-tracking bots.",
-        "Request vendor documentation on how they detect and handle suspect/flagged results, what reprocessing looks like, and what's surfaced to customers during a flag \u2014 vendors like Semrush are now publishing validation methodology.",
+        "Request vendor documentation on how they detect and handle suspect/flagged results, what reprocessing looks like, and what's surfaced to customers during a flag.",
         "Build contingency/redundancy into visibility reporting workflows rather than relying on a single rank-tracking vendor.",
         "Shift core reporting toward brand visibility, AI citations, and revenue metrics given confirmed rank-tracking outages exposed single-metric reporting risk."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "reddit-brand-communities",
@@ -409,7 +419,7 @@
         "Evaluate standing up a branded subreddit focused on useful, recurring answers (rental/property management Q&A) rather than promotional content.",
         "Coordinate any subreddit strategy with existing Reddit monitoring/outreach workflows under the content distribution program."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "referral-spam-link-toxicity",
@@ -418,7 +428,7 @@
         "Audit backlink profiles for toxic referring domains across all brand properties on a recurring basis, not just at migration/recovery time.",
         "Cross-check GA4 referral traffic for spam/ghost referrer domains and filter them from reporting to avoid skewed channel analysis."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "schema-ai-visibility-mistakes",
@@ -427,7 +437,7 @@
         "Audit schema across key templates for completeness and content-match accuracy (not just validator pass/fail), since mismatches actively hurt AI visibility.",
         "Prioritize fixing missing/outdated/mismatched structured data on pages targeted for AEO/AI citation."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "schema-review-snippets",
@@ -436,7 +446,7 @@
         "Check whether any health/safety-adjacent brand content falls into categories where Google may be suppressing review rich snippets despite valid markup.",
         "Avoid over-investing in review schema for affected content verticals until Google clarifies scope of the change."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "structured-data-video-schema",
@@ -446,7 +456,7 @@
         "Coordinate with Search Profile badge rollout for named authors/creators across video and article content.",
         "Review emerging AI-search-specific video optimization guidance for applicability to schema and on-page video content strategy."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "static-site-seo-gaps",
@@ -455,7 +465,7 @@
         "Audit any static-site-generator-based brand property or microsite for manually-required canonicals, sitemaps, redirects, metadata, schema, and 404 handling that CMS plugins normally automate.",
         "Weigh Astro-style islands architecture for any new lightweight/microsite builds where CWV performance is a priority."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "technical-seo-process-discipline",
@@ -465,7 +475,7 @@
         "Assign clear ownership and remediation SLAs for recurring audit findings across brand sites, and audit for silo/scale failure patterns common in multi-brand/enterprise setups.",
         "Apply scientific-method discipline (clear hypothesis, control group, adequate sample size, confounder checks) when designing and interpreting SEO experiments."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "ugc-fresh-data-program",
@@ -474,7 +484,7 @@
         "Google is accepting applications for its UGC data pipeline (separate from crawling) for forums/social platforms \u2014 review eligibility criteria and apply if any brand forum, reviews, or community section qualifies.",
         "Audit UGC sections for freshness, structure, and update cadence to strengthen eligibility for this or similar data-sharing arrangements."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "url-syntax-handling",
@@ -484,7 +494,7 @@
         "Audit any brand URLs containing square brackets (e.g., faceted/filter parameters) for indexing anomalies and duplicate-URL issues stemming from mixed encoding.",
         "Avoid introducing square brackets into new URL structures until consistent handling is verified."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     },
     {
       "id": "wordpress-platform-maintenance",
@@ -496,7 +506,7 @@
         "Immediately audit for and patch the All In One SEO (AIOSEO) plugin if in use, given unauthenticated-attacker vulnerabilities.",
         "Update to Yoast SEO/Premium 28.8 where used (includes AI-assisted alt text for WooCommerce) and test post-update for regressions."
       ],
-      "last_updated": "2026-10-27"
+      "last_updated": "2026-10-28"
     }
   ],
   "processed_urls": [
@@ -508,10 +518,12 @@
     "https://ahrefs.com/blog/ai-visibility-workflow/",
     "https://ahrefs.com/blog/automated-content-creation/",
     "https://ahrefs.com/blog/claude-code-for-seo/",
+    "https://ahrefs.com/blog/google-ai-mode/",
     "https://ahrefs.com/blog/headless-content-marketing/",
     "https://ahrefs.com/blog/how-to-measure-ai-search-visibility/",
     "https://ahrefs.com/blog/how-to-optimize-for-ai-search/",
     "https://ahrefs.com/blog/marketers-ai-content-creation/",
+    "https://ahrefs.com/blog/new-features-september-2026/",
     "https://ahrefs.com/blog/query-fan-out-chatgpt/",
     "https://ahrefs.com/blog/seo-for-static-sites/",
     "https://aioseo.com/google-alerts-for-seo/?utm_source=rss&utm_medium=rss&utm_campaign=google-alerts-for-seo",
@@ -546,6 +558,7 @@
     "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
     "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
     "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+    "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
     "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
     "https://blog.google/innovation-and-ai/technology/families/teens-ai-research-findings/",
     "https://blog.google/innovation-and-ai/technology/health/medgemma-global-healthcare/",
@@ -680,12 +693,14 @@
     "https://www.searchenginejournal.com/coywolf-pack-emdash-seo-plugin-makes-sites-absurdly-fast/593026/",
     "https://www.searchenginejournal.com/critical-php-core-security-flaws-affect-websites-including-wordpress/593812/",
     "https://www.searchenginejournal.com/customer-lifecycle-goals-the-good-the-bad-the-ugly/588192/",
+    "https://www.searchenginejournal.com/decodo-launches-web-data-api-to-give-ai-agents-web-access-spn/594415/",
     "https://www.searchenginejournal.com/deepseek-opens-its-in-house-search-engine-to-developers/593526/",
     "https://www.searchenginejournal.com/details-emerge-about-google-discovers-sdf-freshness-algorithm/593774/",
     "https://www.searchenginejournal.com/emdash-1-0-challenges-wordpress-freedom-with-cloudflare-lock-in/591378/",
     "https://www.searchenginejournal.com/everyone-is-quoting-the-same-number-and-getting-different-answers/588659/",
     "https://www.searchenginejournal.com/fiverr-survey-search-freelancers-geo-demand/590403/",
     "https://www.searchenginejournal.com/flat-traffic-no-budget-what-ziff-davis-jonathan-berthold-tests-first/593483/",
+    "https://www.searchenginejournal.com/ga4-missed-two-thirds-retailers-holiday-orders-check-yours-before-peak-saeson/593007/",
     "https://www.searchenginejournal.com/generative-ui-could-turn-google-into-your-booking-com/593414/",
     "https://www.searchenginejournal.com/getting-indexed-no-longer-means-getting-visited/593412/",
     "https://www.searchenginejournal.com/google-ads-expands-customer-lifecycle-goals-in-search-and-shopping/594458/",
@@ -740,6 +755,7 @@
     "https://www.searchenginejournal.com/google-search-profiles-india-canada-brazil/592092/",
     "https://www.searchenginejournal.com/google-september-2026-spam-update-complete/592283/",
     "https://www.searchenginejournal.com/google-september-2026-spam-update/590828/",
+    "https://www.searchenginejournal.com/google-signals-a-wider-crackdown-on-ugc-seo-spam/594679/",
     "https://www.searchenginejournal.com/google-tests-paying-publishers-for-ai-answers-via-search-console/589414/",
     "https://www.searchenginejournal.com/google-ucp-update-lets-merchants-enable-cart-transfer-to-site/589713/",
     "https://www.searchenginejournal.com/google-ugc-fresh-data-program-applications/593113/",
@@ -793,6 +809,7 @@
     "https://www.searchenginejournal.com/pew-ai-job-loss-expectations-survey/589836/",
     "https://www.searchenginejournal.com/pichai-ai-agents-browsing-protocols/593986/",
     "https://www.searchenginejournal.com/prediction-the-next-massive-google-update-is-around-the-corner/591952/",
+    "https://www.searchenginejournal.com/rajan-patel-disabled-discover-source-clicks-bug/594579/",
     "https://www.searchenginejournal.com/rank-trackers-suspect-google-results/594049/",
     "https://www.searchenginejournal.com/rank-tracking-broke-in-september-the-future-is-measured-by-brand-revenue/592783/",
     "https://www.searchenginejournal.com/reddit-ai-search-picks-already-popular-comments-audit-finds/589771/",
@@ -814,6 +831,7 @@
     "https://www.searchenginejournal.com/the-ai-search-metrics-i-use-to-track-client-pipelines/589123/",
     "https://www.searchenginejournal.com/the-business-case-for-seo-is-changing-budget-justifications-should-too/590358/",
     "https://www.searchenginejournal.com/the-generative-ai-report-sucks-lets-make-it-brilliant/590679/",
+    "https://www.searchenginejournal.com/the-hreflang-magic-trick-it-routes-it-doesnt-rank/591979/",
     "https://www.searchenginejournal.com/the-junior-hiring-gap-your-2027-marketing-budget-should-name/592944/",
     "https://www.searchenginejournal.com/the-new-rules-of-journalist-outreach-based-on-millions-of-emails/592060/",
     "https://www.searchenginejournal.com/trust-as-a-conversion-lever-how-to-test-credibility-in-a-regulated-industry/589232/",
@@ -830,6 +848,7 @@
     "https://www.searchenginejournal.com/why-legacy-ppc-account-structures-are-sabotaging-your-smart-bidding-strategy/588832/",
     "https://www.searchenginejournal.com/why-reddit-belongs-in-your-pr-strategy/593602/",
     "https://www.searchenginejournal.com/why-seo-isnt-enough-anymore-and-why-thats-a-good-thing/592601/",
+    "https://www.searchenginejournal.com/why-we-should-fear-the-shadow-web-were-building-for-ai/593930/",
     "https://www.searchenginejournal.com/wikipedia-podcasts-reddit-now-drive-ai-citations-ask-your-pr-team-how-they-did-it/590994/",
     "https://www.searchenginejournal.com/wiretapping-the-serp-reverse-engineering-network-data/593419/",
     "https://www.searchenginejournal.com/wordpress-7-1-3-fixes-7-vulnerabilities-and-1-critical-flaw/592109/",
@@ -885,6 +904,7 @@
     "https://www.seoclarity.net/blog/ai-content-watermarking",
     "https://www.seoclarity.net/blog/airops-features-pricing-and-key-considerations",
     "https://www.seoclarity.net/blog/best-ai-search-content-optimization-tools",
+    "https://www.seoclarity.net/blog/best-content-analysis-tools",
     "https://www.seoclarity.net/blog/best-javascript-site-rendering-tools",
     "https://www.seoclarity.net/blog/best-seo-ai-search-split-testing-tools",
     "https://www.seoclarity.net/blog/enterprise-ai-visibility-platforms-compared-8-options-and-how-to-choose-2026",
@@ -900,6 +920,7 @@
     "https://www.seroundtable.com/bing-consumer-review-ads-42183.html",
     "https://www.seroundtable.com/bing-expandable-sitelinks-interface-42111.html",
     "https://www.seroundtable.com/bing-faded-line-separators-42192.html",
+    "https://www.seroundtable.com/bing-get-phone-number-qr-code-42397.html",
     "https://www.seroundtable.com/bing-images-editable-labels-42152.html",
     "https://www.seroundtable.com/bing-large-single-sponsored-ad-42283.html",
     "https://www.seroundtable.com/bing-local-pack-without-borders-42257.html",
@@ -920,15 +941,18 @@
     "https://www.seroundtable.com/data-google-ads-aug17-bidding-update-42086.html",
     "https://www.seroundtable.com/deez-nuts-google-easter-egg-42062.html",
     "https://www.seroundtable.com/gemini-notebook-spam-google-search-42136.html",
+    "https://www.seroundtable.com/google-404-errors-42405.html",
     "https://www.seroundtable.com/google-ads-1-click-ai-max-experiment-42324.html",
     "https://www.seroundtable.com/google-ads-ai-campaign-localization-tool-42221.html",
     "https://www.seroundtable.com/google-ads-ai-max-reporting-countries-42144.html",
     "https://www.seroundtable.com/google-ads-ai-max-vs-dynamic-search-ads-42142.html",
     "https://www.seroundtable.com/google-ads-ai-mode-personal-intelligence-42320.html",
     "https://www.seroundtable.com/google-ads-ai-review-summaries-doc-42370.html",
+    "https://www.seroundtable.com/google-ads-all-conversions-tab-live-42395.html",
     "https://www.seroundtable.com/google-ads-api-twice-a-month-42303.html",
     "https://www.seroundtable.com/google-ads-api-version-25-2-42154.html",
     "https://www.seroundtable.com/google-ads-api-version-26-42307.html",
+    "https://www.seroundtable.com/google-ads-apple-messages-button-42400.html",
     "https://www.seroundtable.com/google-ads-asset-groupinvalid-final-url-42204.html",
     "https://www.seroundtable.com/google-ads-automated-promotions-october-12-42223.html",
     "https://www.seroundtable.com/google-ads-budget-change-forecast-42147.html",
@@ -1006,6 +1030,7 @@
     "https://www.seroundtable.com/google-business-profile-api-application-delays-42085.html",
     "https://www.seroundtable.com/google-business-profiles-4-days-42139.html",
     "https://www.seroundtable.com/google-business-profiles-dietary-attributes-42281.html",
+    "https://www.seroundtable.com/google-business-profiles-ein-request-42382.html",
     "https://www.seroundtable.com/google-business-profiles-misuse-of-support-channels-42175.html",
     "https://www.seroundtable.com/google-business-profiles-new-performance-reports-42367.html",
     "https://www.seroundtable.com/google-business-profiles-permanently-closed-42121.html",
@@ -1022,11 +1047,13 @@
     "https://www.seroundtable.com/google-drops-free-product-listings-eea-42113.html",
     "https://www.seroundtable.com/google-drops-healthcare-review-snippets-42248.html",
     "https://www.seroundtable.com/google-european-ecosystem-carousel-live-42083.html",
+    "https://www.seroundtable.com/google-facebook-messenger-mme-links-42377.html",
     "https://www.seroundtable.com/google-helpful-content-main-content-and-eot-sa-42218.html",
     "https://www.seroundtable.com/google-hotel-ads-length-of-booking-bid-legacy-42330.html",
     "https://www.seroundtable.com/google-hotel-ai-overviews-42146.html",
     "https://www.seroundtable.com/google-hreflang-examples-to-uppercase-codes-42138.html",
     "https://www.seroundtable.com/google-hyphens-in-urls-doc-42346.html",
+    "https://www.seroundtable.com/google-images-save-button-overlay-42394.html",
     "https://www.seroundtable.com/google-images-suggested-by-al-42096.html",
     "https://www.seroundtable.com/google-jpeg-xl-42352.html",
     "https://www.seroundtable.com/google-local-business-query-units-42115.html",
@@ -1066,6 +1093,7 @@
     "https://www.seroundtable.com/google-search-console-multimodal-search-type-filter-42156.html",
     "https://www.seroundtable.com/google-search-console-performance-report-country-filters-42241.html",
     "https://www.seroundtable.com/google-search-console-performance-report-date-picker-broken-42286.html",
+    "https://www.seroundtable.com/google-search-fan-pov-42401.html",
     "https://www.seroundtable.com/google-search-generative-ai-control-add-42236.html",
     "https://www.seroundtable.com/google-search-horizontal-rule-line-removed-42333.html",
     "https://www.seroundtable.com/google-search-im-feeling-lucky-button-42190.html",
@@ -1110,6 +1138,7 @@
     "https://www.seroundtable.com/google-video-structured-data-creator-update-42162.html",
     "https://www.seroundtable.com/google-warns-against-deceptive-authorship-information-42238.html",
     "https://www.seroundtable.com/google-web-search-service-api-documentation-removed-42168.html",
+    "https://www.seroundtable.com/googlebot-redirects-from-homepage-to-favicon-42396.html",
     "https://www.seroundtable.com/googlemap-pins-ocean-42181.html",
     "https://www.seroundtable.com/googles-28th-birthday-doodle-42171.html",
     "https://www.seroundtable.com/is-it-new-ai-scan-tool-42322.html",
@@ -1158,6 +1187,7 @@
     "https://www.seroundtable.com/recap-10-23-2026-42368.html",
     "https://www.seroundtable.com/recap-10-26-2026-42374.html",
     "https://www.seroundtable.com/recap-10-27-2026-42380.html",
+    "https://www.seroundtable.com/recap-10-28-2026-42398.html",
     "https://www.seroundtable.com/rip-nick-wilsdon-42280.html",
     "https://www.seroundtable.com/third-party-google-rank-tracking-broken-42272.html",
     "https://www.seroundtable.com/topics-portfolio-bing-webmaster-tools-42288.html",
@@ -1174,6 +1204,7 @@
     "https://yoast.com/image-seo-alt-tag-and-title-tag-optimization/",
     "https://yoast.com/one-billion-downloads-user-stories/",
     "https://yoast.com/prompting-guide-ai-website-builders/",
+    "https://yoast.com/the-october-2026-seo-update-by-yoast-recap/",
     "https://yoast.com/the-september-2026-seo-update-by-yoast-recap/",
     "https://yoast.com/yoast-seo-for-shopify-oct-1-2026/",
     "https://yoast.com/yoast-seo-oct-13-2026/",

@@ -18,7 +18,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Agent Resource Discovery (ARD)
 
-- Use Lighthouse 13.5's ARD audit as an early diagnostic, not a compliance signal — its checks diverge from the emerging community ARD standard; re-audit once the standard finalizes.
+- Use Lighthouse 13.5's ARD audit and similar vendor AI-discoverability audits (e.g., Ahrefs Site Audit) as early diagnostics, not compliance signals — re-audit once the community ARD standard finalizes.
 - Track NLWeb/ASK protocol, WebMCP, and WordPress's canonical MCP Adapter as complementary agentic-web discovery/commerce mechanisms; pilot the MCP Adapter on a WordPress property and assess whether checkout/lead-gen forms are agent-accessible.
 - Review robots.txt and bot-detection logic for connector/cloud-browser-based personal AI agents that bypass traditional crawler user-agent patterns.
 - Deprioritize llms.txt investment — a 300K-domain study found no measurable impact on AI visibility or citations.
@@ -38,10 +38,15 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Mine first-party query sources (support tickets, call transcripts, chat logs) to surface exact phrasing that earns citations, and build content blocks around it.
 - Run citation gap-analysis to find where competitors get cited instead of the brand, and monitor Reddit/UGC platforms as citation sources with defined response protocols.
 
+## AI Content Parity / Shadow Web Risk
+
+- Audit any content served specifically to AI crawlers/feeds (llms.txt, hidden data feeds, AI-only pages) for factual parity with the public-facing site.
+- Avoid cloaking-adjacent practices where AI systems see different claims/data than human visitors — treat as a long-term trust and policy risk, not just a technical shortcut.
+
 ## AI Content Quality Control
 
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers, extended to titles, alt text, and other metadata per Google's updated guidance.
-- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given ongoing risk of a Panda-style spam update.
+- Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given Google's confirmed expansion of spam enforcement to new UGC-adjacent platforms and tools.
 - Document a formal fact-check sign-off step before publishing any AI-assisted content, and add visible sourcing plus honest product-limitation statements to build trust.
 - Verify no author bios or bylines use fabricated/deceptive authorship information per Google's explicit warning.
 - Audit commercial/decision pages for whether they actually answer buyer questions, not just recite brand descriptions.
@@ -52,7 +57,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Audit key templates for server-side rendering or static HTML fallbacks, since ChatGPT, Claude, and Perplexity still largely fail to render JavaScript; prioritize SSR/pre-rendering on high-value pricing/FAQ/guide pages.
 - Ensure sitemaps use discoverable default naming and maintain active RSS feeds, since AI training crawlers access sitemaps/RSS rather than accepting direct submission; review Cloudflare bot settings to avoid blocking this path.
 - Verify CDN and per-engine settings directly rather than assuming uniform behavior: Cloudflare governs bots by broad category, and Bing won't honor AI-training signals until early 2027.
-- Separate crawling-access decisions (robots.txt) from AI-training-use decisions — Google confirms robots.txt only governs crawling, not downstream content use; document this distinction in crawler policy, and monitor Meta's delayed business-terms update for any future crawl-permission changes.
+- Separate crawling-access decisions (robots.txt) from AI-training-use decisions — Google confirms robots.txt only governs crawling, not downstream content use; document this distinction in crawler policy.
 
 ## AI Diagnostic Reliability
 
@@ -67,7 +72,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## AI Overviews
 
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank; indexing/ranking now only buys answer-layer eligibility, not a guaranteed visit.
-- Re-audit commercial query AIOs regularly given AIO coverage now exceeding 80% of searches, up from ~50% a year ago — prioritize reviews, pricing, and comparison page types.
+- Re-audit commercial query AIOs regularly given AIO coverage now exceeding 80% of searches and AI Mode surpassing 1B monthly users — prioritize reviews, pricing, and comparison page types.
 - Adopt a structured metrics framework covering brand presence, answer accuracy, and attribution, layered with citation-to-conversion and clicks-per-citation KPIs rather than reporting mention counts alone.
 - Structure content briefs around nested sub-query/query fan-out coverage to capture AI-driven long-tail traffic, accounting for growing information-seeking share of AI assistant usage.
 - Monitor AI Overview citation cards for AI-generated summary text that may misrepresent brand/page content, and cross-check any third-party rank-tracking data against GSC directly.
@@ -97,7 +102,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Audit plan/pricing/product pages for plain-text answers to common transactional questions (cancellation, billing, trial terms, fees) rather than relying solely on structured data.
 - Benchmark brand pages against agent-readiness failure patterns and current best-practice guidance for AI shopping agent visibility.
-- Monitor Google's live Universal Cart, generative UI/booking-intermediary ambitions, and expanding information-agent capabilities in Search/Gemini for future relevance to transactional rental/application flows.
+- Monitor Google's live Universal Cart, Connected Apps hub, generative UI/booking-intermediary ambitions, and expanding information-agent capabilities in Search/Gemini for future relevance to transactional rental/application flows.
 - Prioritize owned-channel (direct site, app, email) booking/application paths as a hedge against Google-mediated transaction capture.
 
 ## AI Visibility Monitoring Tools
@@ -156,8 +161,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Algorithm Update
 
-- Check GSC Performance and Manual Actions reports across all brand properties given a second wave of unconfirmed ranking volatility/chatter within 72 hours; no official core update confirmed.
-- Note Google's recent spam update is showing minimal measurable ranking impact per independent tracking — avoid overreacting to volatility without confirmed cause.
+- Check GSC Performance and Manual Actions reports across all brand properties when unconfirmed ranking volatility/chatter surfaces; don't assume an official core update without confirmation.
+- Note Google's spam-enforcement expansion to new UGC-adjacent platforms/tools — audit syndicated, partner, affiliate, and UGC content for compliance as enforcement scope grows.
 - Only attribute ranking drops to a spam update or volatility event if policy-violating practices or confirmed lasting loss are present; treat unconfirmed spikes with skepticism.
 - When post-migration indexing stalls or old URLs reappear, evaluate underlying site quality/originality (not just redirects/canonicals) and expect migration processing to legitimately take 4+ months before escalating.
 
@@ -165,11 +170,6 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Re-review Google's recently updated Indexing API documentation (approval process, sitemap guidance, and quota details were all revised/removed) before planning any dependent listing-freshness workflows.
 - Do not build listing-freshness strategy dependent on timely or predictable Indexing API behavior given the documentation churn and historical approval delays.
-
-## Google Manual Actions
-
-- Check the GSC Manual Actions report across all brand properties periodically given reported ranking volatility in the ecosystem.
-- Audit syndicated, partner, affiliate, and UGC content for policy compliance as a precaution, including against the newly expanded shared/generated-pages spam guidance.
 
 ## Google Search Profile Badges
 
@@ -179,7 +179,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## GSC Reporting
 
-- Flag anomalous indexing count drops and broken date-picker behavior as likely reporting bugs before launching technical audits; Google (John Mueller) has explicitly said not to over-index on indexing-report freshness or slowness.
+- Flag anomalous indexing count drops and broken date-picker behavior as likely reporting bugs before launching technical audits; Google has explicitly said not to over-index on indexing-report freshness or slowness.
 - Use the multi-select country filter and Multimodal vs Text-based filter in Performance reports to build grouped regional views and baseline image-search contribution on listing-photo/infographic-heavy pages.
 - Track Preferred Source subscriber-count emails as a new baseline KPI, and re-baseline desktop vs. mobile CTR trends now that the prior logging error has been resolved.
 - Don't over-react to 'Couldn't fetch' sitemap errors alone; verify via URL inspection/live test since the error may not reflect Google's actual fetch ability.
@@ -189,11 +189,17 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Audit key templates against Google's clarified Main Content definition to ensure substantive, original content (not boilerplate/ads/nav) is the clear primary focus.
 - Verify all published author bios/profiles are real, accurate, and not fabricated or templated placeholders, per Google's explicit warning against deceptive authorship information.
-- Tie this audit into existing E-E-A-T and author schema initiatives given Google's increased scrutiny and ongoing risk of a spam-pattern update.
+- Tie this audit into existing E-E-A-T and author schema initiatives given Google's increased scrutiny and the confirmed expansion of spam enforcement.
+
+## Hreflang & International Pages
+
+- Audit international/market pages for unique local value (pricing, legal terms, regional specifics) rather than relying on hreflang tagging to carry ranking signal.
+- Check GSC indexing status of hreflang-alternate URLs since Google may leave referenced market pages unindexed.
+- Prioritize localized differentiation on market pages likely to surface in AI Mode/AI Overviews answers.
 
 ## Image Formats / JPEG XL
 
-- Avoid switching primary listing/blog/hero images to JPEG XL — Google reconfirmed (via John Mueller) that Images and Discover previews still don't support the format.
+- Avoid switching primary listing/blog/hero images to JPEG XL — Google reconfirmed Images and Discover previews still don't support the format.
 - Audit any already-adopted JPEG XL images for broken previews in Google Images/Discover and fall back to supported formats (JPEG, WebP, AVIF) where needed.
 
 ## Large Site Indexing / Aggregator Pages
@@ -207,9 +213,9 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Use GBP post view counts (Search + Maps, 18-month lookback) to benchmark and optimize post content types, and increase posting cadence given Google Posts' higher placement in the local knowledge panel.
 - Review all GBP post and listing content against the updated advertising/solicitation prohibited-content policy to avoid suspension risk.
-- Request/monitor access to the new Google Business Home beta hub and the newly-tested revamped Performance report (engagement, reviews, search trends, audience, recommendations) before full rollout.
-- Audit GBP photo prominence and description copy against the tested local knowledge panel layout change (photos vs. text position swap), and benchmark current setup against current best-practice guides for Q&A seeding and review management.
-- Apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations.
+- Check GBP listings for auto-added Facebook Messenger (m.me) links and verify they route to active, monitored pages.
+- Prepare EIN and privacy policy documentation in advance for any GBP listing updates, given Google's newly observed verification requests.
+- Audit GBP photo prominence and description copy against the tested local knowledge panel layout change, and apply early for GBP API access given confirmed processing delays if planning bulk/multi-location integrations.
 
 ## Local Service Ads Lead Reporting
 
@@ -238,12 +244,12 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Prioritize investment in direct channels (email, app, community) to hedge against accelerating YoY organic search/Discover referral decline.
 - Benchmark visibility trend against vertical-wide SaaS/publisher decline using multi-year, multi-market data; distinguish share decline from absolute volume decline and from AI-attributable loss before messaging stakeholders.
-- Review content cadence and freshness mix against Discover's freshness-algorithm factors and prepare for further Discover volatility as Google rebuilds it into an AI-driven experience and tests UI changes like disabled sources clicks.
+- Review content cadence and freshness mix against Discover's freshness-algorithm factors and prepare for further Discover volatility as Google rebuilds it into an AI-driven experience.
 
 ## Rank Tracking Reliability
 
 - Cross-check any third-party rank-tracking tool output against GSC Performance data given ongoing scraper-blocking and reported result 'poisoning'/fake data aimed at rank-tracking bots.
-- Request vendor documentation on how they detect and handle suspect/flagged results, what reprocessing looks like, and what's surfaced to customers during a flag — vendors like Semrush are now publishing validation methodology.
+- Request vendor documentation on how they detect and handle suspect/flagged results, what reprocessing looks like, and what's surfaced to customers during a flag.
 - Build contingency/redundancy into visibility reporting workflows rather than relying on a single rank-tracking vendor.
 - Shift core reporting toward brand visibility, AI citations, and revenue metrics given confirmed rank-tracking outages exposed single-metric reporting risk.
 
