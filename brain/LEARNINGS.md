@@ -108,11 +108,11 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Visibility Monitoring Tools
 
-- Pilot an AI-visibility dashboard that cross-references AI citation presence against actual Google click performance.
+- Pilot an AI-visibility dashboard that cross-references AI citation presence against actual Google click performance, and validate vendor scores against real customer behavior (exposure, recall, consideration) before trusting as a KPI.
 - Scrutinize AI share-of-voice metrics' underlying methodology before adopting as a core KPI; pair with citation-to-conversion data.
 - Use Bing Webmaster Tools' Topics Portfolio to find queries where competitors are cited but the brand isn't, and prioritize content fixes against that gap list.
+- Monitor OpenAI's forthcoming ChatGPT business tool for claiming/tracking brand presence and citations, and plan to adopt it alongside GSC/Bing workflows once available.
 - Adopt inclusion/framing/endorsement qualitative measures alongside citation counts and rankings when reporting AI visibility to stakeholders.
-- Earmark budget for AI-visibility/citation-gap initiatives cautiously given multiple studies showing minimal traffic/conversion impact to date; set a defined proof-of-impact checkpoint.
 
 ## AI-Era Content Validation Workflow
 
@@ -167,6 +167,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Set a recurring spot-check process for high-value listing pages comparing rendered search results to the actual feed.
 - Throttle high-churn feed fields (price, availability) to avoid more-than-daily changes now that Merchant Center may disapprove products on mismatch detection.
 - Deprioritize emergency fixes for low-quality listing images since poor image quality alone no longer blocks Search/Ads inclusion.
+- Build contingency into feed-dependent workflows given recurring Merchant Center/Merchant API/Feeds outages.
 
 ## Google Algorithm Update
 
@@ -174,7 +175,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Audit syndicated, partner, affiliate, and UGC content for compliance as Google's spam-enforcement scope expands to new UGC-adjacent platforms/tools — use the large-scale AI-generated content debate (e.g., Facebook Answers' millions of indexed pages) as a benchmark for what triggers scrutiny.
 - Confirm whether any brand property has a site reputation abuse manual action and check GSC notices for region-specific (EEA) impact changes.
 - Only attribute ranking drops to a spam update or volatility event if policy-violating practices or confirmed lasting loss are present.
-- When post-migration indexing stalls or old URLs reappear, evaluate underlying site quality/originality and expect migration processing to legitimately take 4+ months before escalating.
+- Don't rush emergency fixes for brief 4xx/400 responses on important URLs — Google confirms these can remain indexed temporarily; confirm quick resolution instead.
 
 ## Google Indexing API
 
@@ -224,7 +225,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Use GBP post view counts (Search + Maps, 18-month lookback) to benchmark and optimize post content types, and increase posting cadence given Google Posts' higher placement in the local knowledge panel.
 - Review all GBP post and listing content against the updated advertising/solicitation prohibited-content policy to avoid suspension risk.
-- Check GBP listings for auto-added Facebook Messenger (m.me) links and verify they route to active, monitored pages.
+- Check GBP listings for auto-added Facebook Messenger (m.me) links and verify they route to active, monitored pages; confirm newly expanded Google Maps messaging (iOS/Android) is also actively monitored.
 - Review access to and quality of auto-replies in the expanding GBP AI-powered messaging feature before enabling broadly.
 - Prepare EIN and privacy policy documentation in advance for any GBP listing updates, given Google's newly observed verification requests.
 
