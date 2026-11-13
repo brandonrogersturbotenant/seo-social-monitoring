@@ -25,7 +25,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Agent SEO Tooling (MCP / Claude Code)
 
-- Pilot MCP-based/agentic SEO tools and Claude Code workflows on one brand site to automate detection and fixing of schema mismatches, stale links, and content briefs.
+- Pilot MCP-based/agentic SEO tools (including Semrush MCP for competitor keyword/page/backlink analysis) and Claude Code workflows on one brand site to automate detection and fixing of schema mismatches, stale links, and content briefs.
 - Split audit work into deterministic automated checks, a local LLM for explanation, and human judgment for final calls rather than full automation.
 - Test low-stakes, high-volume tasks against local/on-device models to cut API costs before defaulting to frontier-model tooling.
 - Evaluate agentic workflow tooling against manual process time savings before broad adoption.
@@ -36,7 +36,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Optimize to become one of the fewer, higher-quality sources AI engines actually cite rather than chasing overall mention volume, since citation share concentrates heavily among a small set of authoritative brands per category.
 - Audit key pages to deliver the direct answer in the opening 1-2 sentences, since AI-cited pages more often answer the question immediately.
 - Build an evidence library (case studies, integration docs, outcome data, proof points) on decision pages so AI-driven visibility converts to trust, not just inclusion on a list.
-- Mine first-party query sources (support tickets, call transcripts, chat logs) to surface exact phrasing that earns citations, and run gap-analysis against competitor citations.
+- Mine first-party query sources (support tickets, call transcripts, chat logs, Reddit threads/complaints) to surface exact phrasing that earns citations, and run gap-analysis against competitor citations.
 
 ## AI Content Parity / Shadow Web Risk
 
@@ -53,10 +53,10 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Crawler Access
 
-- Hold off on blocking AI bots — commonly cited AI-referral metrics have unknown/incomplete denominators; wait for first-party log data.
+- Build a deliberate bot policy that classifies crawlers by purpose (training vs. retrieval vs. agent/on-demand fetch) rather than applying a single copy-pasted block list.
 - Run a server log analysis to confirm which AI crawlers (GPTBot, ClaudeBot, PerplexityBot) actually hit key templates and whether pages render correctly for them.
 - Audit key templates for server-side rendering or static HTML fallbacks since ChatGPT, Claude, and Perplexity still largely fail to render JavaScript.
-- Before or during any CDN migration, verify Googlebot isn't being throttled/blocked and origin servers can absorb crawl-rate spikes per Google's new CDN guidance.
+- Before or during any CDN migration, verify Googlebot isn't being throttled/blocked and origin servers can absorb crawl-rate spikes per Google's CDN guidance.
 - Separate crawling-access decisions (robots.txt) from AI-training-use decisions — robots.txt only governs crawling, not downstream content use.
 
 ## AI Diagnostic Reliability
@@ -73,25 +73,25 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank.
 - Re-audit commercial query AIOs regularly given AIO coverage now exceeding 80% of searches — prioritize reviews, pricing, and comparison page types.
-- Monitor for ads appearing inside AI Overviews/AI Mode on commercial queries (currently concentrated in apparel/electronics) and reassess citation strategy if that expands to rental/PM queries.
-- Monitor whether the AI Overviews citations card disappears on tracked queries and have a fallback method for measuring source attribution if it's removed.
-- Factor Bing's new AI-answers on/off toggle into AI-visibility reporting, since some Bing traffic will see traditional organic results instead.
+- Monitor for ads appearing inside AI Overviews/AI Mode on commercial queries and reassess citation strategy if that expands to rental/PM queries.
+- Track AI Mode UI instability (tab removal/re-addition, Ask Anything box tests) and AI-generated image reappearance as signals of continued SERP volatility, not durable feature bets.
+- Factor Bing's AI-answers on/off toggle into AI-visibility reporting, since some Bing traffic will see traditional organic results instead.
 
 ## AI Paid Media Compliance
 
 - Audit default AI automation settings in Google/Meta/OpenAI ad accounts for compliance risk given fair housing/financial-services ad regulations relevant to rental and property management advertising.
 - Confirm AI-generated content disclosure labeling is applied correctly on ads served into newly added regions (California, South Korea, Vietnam) alongside existing EU/India/New York requirements.
 - Review AI-generated 'review summaries' now appearing directly in Google Search ads for accuracy against actual brand reviews; flag inaccuracies via support.
-- Review channel-priority/budget-allocation controls and Customer Journey Insights pilot availability before accepting Google Ads automation recommendations.
+- Review the new Invalid Traffic Overview Card and updated Conversion Lift setup documentation before trusting Google Ads automation recommendations.
 - Move beyond click-only PPC measurement by layering conversion tracking, impression signals, and business-record validation as buying journeys shift toward AI research.
 
 ## AI Search Attribution
 
 - Pull 12-month GA4 LLM-referral traffic data per brand before allocating significant new budget to GEO/AEO tactics; AI assistants drive only a small, uneven share of organic decline.
-- Update analytics referral rules to capture Gemini's new UTM parameters and build fallback referrer-domain detection for ChatGPT traffic since OpenAI dropped UTM parameters.
+- Update analytics referral rules to capture Gemini's UTM parameters and build fallback referrer-domain detection for ChatGPT traffic since OpenAI dropped UTM parameters.
 - Avoid treating Direct-traffic increases as proof of AI-driven visibility; apply bot-filtering and server-log cross-checks before attributing any Direct lift to AI assistants.
-- Stop relying on single-prompt AI visibility checks; require multi-run sampling before drawing citation-presence conclusions.
-- Add conversion-rate-by-source cuts to AI/GEO reporting — referral volume alone understates AI's influence on buying decisions per recent conversion-rate research.
+- Stop relying on single-prompt AI visibility checks; require multi-run, multi-phrasing sampling before drawing citation-presence conclusions.
+- Add conversion-rate-by-source cuts to AI/GEO reporting — referral volume alone understates AI's influence on buying decisions.
 
 ## AI Search Strategy Diagnostics
 
@@ -108,8 +108,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## AI Visibility Monitoring Tools
 
-- Pilot an AI-visibility dashboard that cross-references AI citation presence against actual Google click performance, and validate vendor scores against real customer behavior (exposure, recall, consideration) before trusting as a KPI.
-- Scrutinize AI share-of-voice metrics' underlying methodology before adopting as a core KPI; pair with citation-to-conversion data.
+- Pilot an AI-visibility dashboard that cross-references AI citation presence against actual Google click performance, and validate vendor scores against real customer behavior before trusting as a KPI.
+- Audit prompt-tracking lists for narrowness and bias; expand prompt sets using varied phrasing and real user query patterns rather than a fixed canonical list per topic.
 - Use Bing Webmaster Tools' Topics Portfolio to find queries where competitors are cited but the brand isn't, and prioritize content fixes against that gap list.
 - Benchmark brand mention frequency in ChatGPT and other LLMs against direct category competitors to gauge relative AI share of voice.
 - Adopt inclusion/framing/endorsement qualitative measures alongside citation counts and rankings when reporting AI visibility to stakeholders.
@@ -137,12 +137,17 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Assign a named distribution owner to every major content asset at publish time.
 - Build a repeatable 90-day post-publish checklist (outreach, syndication, internal linking, PR) aimed at earning backlinks and AI citations.
 - Review underperforming older content against this checklist to re-ignite distribution rather than only focusing on new launches.
-- Extend outreach/monitoring to Reddit given its growing role as a PR, community, and AI-citation source; evaluate standing up a branded subreddit as part of this strategy.
+- Extend outreach/monitoring to Reddit (including using Reddit Reviews-style signals to find recurring complaints/comparisons) given its growing role as a PR, community, and AI-citation source; evaluate standing up a branded subreddit as part of this strategy.
 
 ## Content Strategy — Listicles & Comparisons
 
 - Audit existing comparison/listicle content for genuine reader utility (clear criteria, honest tradeoffs, real recommendations) rather than keyword-driven structure alone.
 - Prioritize trust-building elements (methodology transparency, first-hand testing notes, evidence of real integrations/outcomes) on comparison pages targeted at commercial/buyer-intent queries.
+
+## Content Strategy — Pillar Pages
+
+- Audit top content hubs against pillar-page best practices (comprehensive hub page + internally linked cluster/spoke pages).
+- Identify high-value topic areas lacking a clear pillar page and prioritize build-out to strengthen topical authority.
 
 ## Core Web Vitals — Soft Navigation
 
@@ -166,12 +171,12 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Audit live listing/product SERP presentation (prices, sale badges, images) against current source feed data to catch Google's cached/derived data mismatches.
 - Set a recurring spot-check process for high-value listing pages comparing rendered search results to the actual feed.
 - Throttle high-churn feed fields (price, availability) to avoid more-than-daily changes now that Merchant Center may disapprove products on mismatch detection.
-- Deprioritize emergency fixes for low-quality listing images since poor image quality alone no longer blocks Search/Ads inclusion.
-- Build contingency into feed-dependent workflows given recurring Merchant Center/Merchant API/Feeds outages.
+- Remove any date strings from Merchant Center promotion titles' redemption section to avoid disapproval under updated editorial requirements.
+- Build contingency into feed-dependent workflows given recurring Merchant Center/Merchant API/Feeds outages and policy churn.
 
 ## Google Algorithm Update
 
-- Check GSC Performance and Manual Actions reports across all brand properties now that the November 2026 core update is officially rolling out.
+- Check GSC Performance and Manual Actions reports across all brand properties now that the November 2026 core update is officially rolling out, following volatility observed Nov 8-9.
 - Audit syndicated, partner, affiliate, and UGC content for compliance as Google's spam-enforcement scope expands to new UGC-adjacent platforms/tools.
 - Confirm whether any brand property has a site reputation abuse manual action and check GSC notices for region-specific (EEA) impact changes.
 - Only attribute ranking drops to a spam update or volatility event if policy-violating practices or confirmed lasting loss are present.
@@ -192,7 +197,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## GSC Reporting
 
 - Audit any sudden click spikes for bot-traffic signatures before reporting them as organic performance gains; build a standard filtering method into monthly reporting.
-- Treat 'Crawled/Discovered — Currently Not Indexed' status as a quality signal (per Mueller) and prioritize content improvements over technical resubmission.
+- Treat 'Crawled/Discovered — Currently Not Indexed' status as a quality signal and prioritize content improvements over technical resubmission.
 - Don't treat the Links report as a complete inventory — it's a sampled view (including spammy links); supplement with third-party backlink tools for toxic-link audits.
 - Use the multi-select country filter and Multimodal vs Text-based filter in Performance reports to build grouped regional views and baseline image-search contribution on listing-photo/infographic-heavy pages.
 - Don't over-react to 'Couldn't fetch' sitemap errors alone; verify via URL inspection/live test since the error may not reflect Google's actual fetch ability.
@@ -263,10 +268,11 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Benchmark visibility trend against vertical-wide SaaS/publisher decline using multi-year, multi-market data; distinguish share decline from absolute volume decline and from AI-attributable loss before messaging stakeholders.
 - Track revenue-per-visit alongside traffic metrics, per case studies showing traffic collapse can coincide with revenue growth when other channels and conversion quality improve.
 - Review content cadence and freshness mix against Discover's freshness-algorithm factors and prepare for further Discover volatility.
+- Monitor emerging AI publisher-licensing collectives (e.g., ILC/Yahoo Scout) as a potential supplemental monetization path for content used in AI answers.
 
 ## Rank Tracking Reliability
 
-- Cross-check any third-party rank-tracking tool output against GSC Performance data given ongoing scraper-blocking, goto-link throttling, and reported result 'poisoning'/fake data aimed at rank-tracking bots.
+- Cross-check any third-party rank-tracking tool output against GSC Performance data given ongoing scraper-blocking, goto-link throttling, and reported result poisoning/fake data aimed at rank-tracking bots.
 - Request vendor documentation on how they detect and handle suspect/flagged results, how goto-link throttling may affect their data collection, and what's surfaced to customers during a flag.
 - Build contingency/redundancy into visibility reporting workflows rather than relying on a single rank-tracking vendor.
 - Shift core reporting toward brand visibility, AI citations, and revenue metrics given confirmed rank-tracking outages exposed single-metric reporting risk.
@@ -274,6 +280,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## Reddit Brand Communities
 
 - Evaluate standing up a branded subreddit focused on useful, recurring answers (rental/property management Q&A) rather than promotional content.
+- Use Reddit's product/complaint summary tools to identify recurring issues and competitor comparisons, verifying against source comments before acting.
 - Coordinate any subreddit strategy with existing Reddit monitoring/outreach workflows under the content distribution program.
 
 ## Referral/Link Spam Audits
