@@ -33,7 +33,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## AI Citations
 
 - Reframe KPIs around appearing more often over time, not holding a permanent citation — citation volatility is normal and shifts with model updates.
-- Optimize to become one of the fewer, higher-quality sources AI engines actually cite rather than chasing overall mention volume, since citation share concentrates heavily among a small set of authoritative brands per category.
+- Identify the small 'citation core' of sites AI platforms repeatedly cite per topic and prioritize authority-building to break into that set, rather than chasing overall mention volume.
 - Audit key pages to deliver the direct answer in the opening 1-2 sentences, since AI-cited pages more often answer the question immediately.
 - Build an evidence library (case studies, integration docs, outcome data, proof points) on decision pages so AI-driven visibility converts to trust, not just inclusion on a list.
 - Mine first-party query sources (support tickets, call transcripts, chat logs, Reddit threads/complaints) to surface exact phrasing that earns citations, and run gap-analysis against competitor citations.
@@ -48,8 +48,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Mandate human editorial review gates for all AI-assisted content across blogs and help centers, extended to titles, alt text, and other metadata.
 - Audit AI-assisted content for spam-pattern signals (thin, unoriginal, mass-produced pages) given expanding spam enforcement to UGC-adjacent platforms and tools.
 - Document a formal fact-check sign-off step before publishing AI-assisted content, with visible sourcing and honest product-limitation statements.
+- Pilot a structured content-refresh workflow (automated stale-page detection + LLM-drafted update + human approval) rather than ad hoc refreshes.
 - Verify no author bios or bylines use fabricated/deceptive authorship information.
-- Audit commercial/decision pages for whether they actually answer buyer questions, not just recite brand descriptions.
 
 ## AI Crawler Access
 
@@ -74,8 +74,8 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 - Abandon rigid position (1-10) tracking on AIO/AI Mode-exposed queries — focus on outcomes (visits/conversions), not rank.
 - Re-audit commercial query AIOs regularly given AIO coverage now exceeding 80% of searches — prioritize reviews, pricing, and comparison page types.
 - Monitor for ads appearing inside AI Overviews/AI Mode on commercial queries and reassess citation strategy if that expands to rental/PM queries.
-- Track AI Mode UI instability (tab removal/re-addition, Ask Anything box tests) and AI-generated image reappearance as signals of continued SERP volatility, not durable feature bets.
-- Factor Bing's AI-answers on/off toggle into AI-visibility reporting, since some Bing traffic will see traditional organic results instead.
+- Track AI Mode UI instability (tab removal/re-addition, model-version label changes, temporary-thread tests) as signals of continued SERP volatility, not durable feature bets.
+- Factor Bing's AI-answers on/off toggle and new Web Mode tab into AI-visibility reporting, since some Bing/ChatGPT traffic will see traditional organic results instead.
 
 ## AI Paid Media Compliance
 
@@ -109,7 +109,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## AI Visibility Monitoring Tools
 
 - Pilot an AI-visibility dashboard that cross-references AI citation presence against actual Google click performance, and validate vendor scores against real customer behavior before trusting as a KPI.
-- Audit prompt-tracking lists for narrowness and bias; expand prompt sets using varied phrasing and real user query patterns rather than a fixed canonical list per topic.
+- Benchmark AI rank-tracking vendors on cost-per-prompt and methodology before renewal/expansion, and audit prompt-tracking lists for narrowness/bias using varied phrasing and real user query patterns.
 - Use Bing Webmaster Tools' Topics Portfolio to find queries where competitors are cited but the brand isn't, and prioritize content fixes against that gap list.
 - Benchmark brand mention frequency in ChatGPT and other LLMs against direct category competitors to gauge relative AI share of voice.
 - Adopt inclusion/framing/endorsement qualitative measures alongside citation counts and rankings when reporting AI visibility to stakeholders.
@@ -176,11 +176,11 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## Google Algorithm Update
 
-- Check GSC Performance and Manual Actions reports across all brand properties now that the November 2026 core update is officially rolling out, following volatility observed Nov 8-9.
+- Check GSC Performance and Manual Actions reports across all brand properties for the November 2026 core update (rolling since Nov 10) against the Nov 8-9 volatility window.
+- Discount third-party rank-tracker volatility readings during this update window; validate movement with first-party GSC data.
 - Audit syndicated, partner, affiliate, and UGC content for compliance as Google's spam-enforcement scope expands to new UGC-adjacent platforms/tools.
 - Confirm whether any brand property has a site reputation abuse manual action and check GSC notices for region-specific (EEA) impact changes.
 - Only attribute ranking drops to a spam update or volatility event if policy-violating practices or confirmed lasting loss are present.
-- Don't rush emergency fixes for brief 4xx/400 responses on important URLs — Google confirms these can remain indexed temporarily; confirm quick resolution instead.
 
 ## Google Indexing API
 
@@ -196,10 +196,10 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 ## GSC Reporting
 
+- Update automated Search Analytics API pulls/dashboards to use the newly added branded-query, web multimodal, and multi-country/device filters instead of manual UI exports.
 - Audit any sudden click spikes for bot-traffic signatures before reporting them as organic performance gains; build a standard filtering method into monthly reporting.
 - Treat 'Crawled/Discovered — Currently Not Indexed' status as a quality signal and prioritize content improvements over technical resubmission.
 - Don't treat the Links report as a complete inventory — it's a sampled view (including spammy links); supplement with third-party backlink tools for toxic-link audits.
-- Use the multi-select country filter and Multimodal vs Text-based filter in Performance reports to build grouped regional views and baseline image-search contribution on listing-photo/infographic-heavy pages.
 - Don't over-react to 'Couldn't fetch' sitemap errors alone; verify via URL inspection/live test since the error may not reflect Google's actual fetch ability.
 
 ## Helpful Content Guidelines — Main Content & Fake Authors
@@ -230,7 +230,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 
 - Use GBP post view counts (Search + Maps, 18-month lookback) to benchmark and optimize post content types, and increase posting cadence given Google Posts' higher placement in the local knowledge panel.
 - Review all GBP post and listing content against the updated advertising/solicitation prohibited-content policy to avoid suspension risk.
-- Check GBP listings for auto-added Facebook Messenger (m.me) links and verify they route to active, monitored pages; confirm newly expanded Google Maps messaging (iOS/Android) is also actively monitored.
+- Audit GBP listings for auto-added and manually-addable Facebook Messenger links, ensure they route to active, monitored pages, and confirm expanded Google Maps messaging (iOS/Android) is also actively monitored.
 - Review access to and quality of auto-replies in the expanding GBP AI-powered messaging feature before enabling broadly.
 - Prepare EIN and privacy policy documentation in advance for any GBP listing updates, given Google's newly observed verification requests.
 
@@ -329,7 +329,7 @@ Condensed action playbook. Revised each morning — bullets are updated in place
 ## WordPress Platform Maintenance
 
 - Apply WordPress 7.1.4 immediately across all WordPress-based brand properties and verify the updater functions correctly post-patch.
+- Add plugin-update supply-chain verification (changelog review, vendor/ownership checks, delayed rollout window) to the patching process, not just blind auto-update.
 - Audit for and remove/patch UpdraftPlus immediately given an active backdoor-attack breach affecting 3M+ installs.
 - Confirm all WordPress-based brand properties and hosts have applied the PHP Core security patch and are on the latest patched core version, including Jetpack's recent accessibility/security update.
 - Ensure any planned maintenance downtime serves a true 503 (configured outside PHP, e.g., at web server/CDN level) with robots.txt still reachable, to avoid Google dropping URLs after prolonged server errors.
-- Immediately audit for and patch the All In One SEO (AIOSEO) plugin if in use, given unauthenticated-attacker vulnerabilities.
